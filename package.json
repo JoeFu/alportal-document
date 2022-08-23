@@ -1,0 +1,18 @@
+{
+  "name": "alportal-document",
+  "version": "1.0.0",
+  "description": "ALP 2.0 Document",
+  "main": "index.js",
+  "repository": "https://github.com/JoeFu/alportal-document.git",
+  "author": "JoeFu <fuzeqi@gmail.com>",
+  "license": "MIT",
+  "scripts": {
+    "docs:dev": "vitepress dev docs",
+    "docs:build": "vitepress build docs",
+    "docs:serve": "vitepress serve docs"
+  },
+  "devDependencies": {
+    "vitepress": "^1.0.0-alpha.10",
+    "vue": "^3.2.37"
+  }
+}
