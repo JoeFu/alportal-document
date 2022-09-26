@@ -13,6 +13,7 @@ export default(
                     '/concepts/': sidebarConcepts(),
                     '/front-end/': sidebarFrontend(),
                     '/back-end/': sidebarBackend(),
+                    '/deployment/': sidebarDeployment(),
                 },
                 footer:{
                     message: "Released by DevOps Team",
@@ -31,12 +32,21 @@ export default(
        return [  
             { text: 'Guide', link: '/guide/introduction' },
             { text: 'Concepts', link: '/concepts/introduction' },
-            { text: 'Front End', link: '/front-end/introduction' },
-            { text: 'Back End', link: '/back-end/introduction' },
+            { text: 'DevOps',
+             items:[
+                    { text: 'Front End', link: '/front-end/introduction' },
+                    { text: 'Back End', link: '/back-end/introduction' },
+                    { text: 'Deployment', link: '/deployment/introduction' },
+                    
+                    ] 
+            },
+
         
+            { text: 'User Manual ', link: 'https://andreyev-wiki.azurewebsites.net' },
+            { text: 'Release Notes ', link: 'https://andreyev-wiki.azurewebsites.net/en/BusOps/IT/ALP_UserGuide/Release-Notes/ReleaseNote20220921' },
         
 
-            { text: 'Portal 2.0', link: 'https://alportal.azurewebsites.net/' }
+            { text: 'Portal 2.0', link: 'https://alportal.azurewebsites.net' }
         ];
     }
 
@@ -108,6 +118,18 @@ export default(
                     { text:'Architecture', link: '/back-end/architecture'},
                     { text:'External Services', link: '/back-end/external-services'},
                     { text:'Additional Reading', link: '/back-end/additional-reading'},
+                ],               
+            },        
+        ];
+    }
+
+    function sidebarDeployment(){
+        return [
+            {
+                text: 'Deployment',
+                collapsable: true,
+                items: [
+                    { text:'Introduction', link: '/deployment/introduction'},
                 ],               
             },        
         ];

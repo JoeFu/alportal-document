@@ -17,11 +17,11 @@ hero:
 
 features:
   - title: 🧜‍♀️ For Fontend Developers
-    details: 
+    details: The document will describe some technical documents and design specification requirements for front-end applications.
   - title: 🌚 For Backend Developers
-    details: XXXXX
+    details: The document will describe some technical documents and design specification requirements for back-end applications.
   - title: 📸 For End User
-    details: User Operation Guide.
+    details: The document will describe the user's instructions and some troubleshooting methods.
   - title: 🧩 Release Notes
-    details: All Relesae guideline.
+    details: A changelog of the platform will be recorded in the documentation.
 ---
