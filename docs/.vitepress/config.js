@@ -4,13 +4,15 @@ export default(
 
 
     defineConfig({
-            title: 'ALP 2.0 Documentation',
+            title: 'AL Portal 2.0',
             description: 'ALP 2.0 Document',
             themeConfig: {
                 nav: nav(),
                 sidebar: {
                     '/guide/': sidebarGuide(),
                     '/concepts/': sidebarConcepts(),
+                    '/front-end/': sidebarFrontend(),
+                    '/back-end/': sidebarBackend(),
                 },
                 footer:{
                     message: "Released by DevOps Team",
@@ -29,6 +31,8 @@ export default(
        return [  
             { text: 'Guide', link: '/guide/introduction' },
             { text: 'Concepts', link: '/concepts/introduction' },
+            { text: 'Front End', link: '/front-end/introduction' },
+            { text: 'Back End', link: '/back-end/introduction' },
         
         
 
@@ -71,8 +75,7 @@ export default(
         ];
     }
 
-    function sidebarFontend(){
-
+    function sidebarFrontend(){
         return [
             {
                 text: 'Front End',
@@ -90,5 +93,22 @@ export default(
                 ],               
             },        
         ];
+    }
 
+
+    function sidebarBackend(){
+        return [
+            {
+                text: 'Back End',
+                collapsable: true,
+                items: [
+                    { text:'Introduction', link: '/back-end/introduction'},
+                    { text:'Configuration', link: '/back-end/configuration'},
+                    { text:'Key Libraries', link: '/back-end/key-libraries'},
+                    { text:'Architecture', link: '/back-end/architecture'},
+                    { text:'External Services', link: '/back-end/external-services'},
+                    { text:'Additional Reading', link: '/back-end/additional-reading'},
+                ],               
+            },        
+        ];
     }

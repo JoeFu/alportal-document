@@ -4,6 +4,9 @@ layout: home
 title: Andreyev Lawyers
 titleTemplate: Documentations for AL Portal
 
+
+editLink: true
+
 hero:
   name: Documentations for
   text: AL Portal (2.0)
@@ -13,8 +16,8 @@ hero:
       link: /guide/introduction
 
 features:
-  - title: 🧜‍♀️ [For Fontend Developers](/front-end/)
-    details: xxxxx
+  - title: 🧜‍♀️ For Fontend Developers
+    details: 
   - title: 🌚 For Backend Developers
     details: XXXXX
   - title: 📸 For End User
