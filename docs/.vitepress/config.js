@@ -43,7 +43,7 @@ export default(
 
         
             { text: 'User Manual ', link: 'https://andreyev-wiki.azurewebsites.net' },
-            { text: 'Release Notes ', link: 'https://andreyev-wiki.azurewebsites.net/en/BusOps/IT/ALP_UserGuide/Release-Notes/ReleaseNote20220921' },
+            { text: 'Release Notes ', link: '/release-notes/' },
         
 
             { text: 'Portal 2.0', link: 'https://alportal.azurewebsites.net' }
