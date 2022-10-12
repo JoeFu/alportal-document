@@ -1,9 +1,10 @@
 # Key Libraries
 
 ::: warning Note
-Please note that Vue 3 is relatively new and while the code is largely backwards compatible, it features breaking changes compared to Vue 2. As a result, the majority of libraries in the ecosystem may not be compatible with the application as of the time of writing.
 
-Efforts are being made by many of the popular libraries to support Vue 3.
+Updated at 2022 Q4
+
+The main libraries basically support Vue3. In the selection of future libraries, we tend to choose a stable version that supports Vue3.
 :::
 
 ## TypeScript
@@ -34,7 +35,9 @@ We use Tailwind CSS for styling. Tailwind provides a collection of utilities exp
 
 ::: tip Note
 
-As of the time of writing, we are still on v1 of Tailwind CSS due to built-in limitations of the Vue CLI configuration of Vue. Dependency upgrades to support this are tracked in this [issue](https://github.com/vuejs/vue-cli/issues/6064).
+Updated at 2022 Q4
+
+As of the time of writing, we are now using on v3.x of Tailwind CSS. If any issue with Tailwind, please check [Tailwind Blog](https://tailwindcss.com/blog) .
 
 :::
 
@@ -53,3 +56,12 @@ We may migrate to something else such as date-fns in the future which support th
 ## VeeValidate
 
 This is used for front end form validation. Document can be found [here](https://vee-validate.logaretm.com/v4/).
+
+## Tiny
+
+
+TinyMCE gives you total control over your rich text editing. Either create a fully customized experience via the APIs or take advantage of the out-of-the-box enterprise-grade editor to build your next generation web app. The document can be found [here](https://www.tiny.cloud/).
+
+
+
+
