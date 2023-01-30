@@ -4,7 +4,7 @@ Now that you have your environment set up, it's time to get the application runn
 
 ## Setting up the database / Running the Database Migrations
 
-### Quartz.NET
+### Quartz .NET
 
 We are currently using Quartz.NET to manage our background tasks. Set up for this requires a database to be manually created and a script to be manually run to set up the tables.
 

@@ -12,4 +12,4 @@ config.local.js
 basement_dist
 .vscode
 .temp
-caches
+cache
