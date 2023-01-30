@@ -6,7 +6,7 @@ export default (
         description: 'ALP 2.0 Document',
         head: [
             // favicon
-            ['link', { rel: "icon", sizes: "180x180", href: './imgs/server.png' }],
+            ['link', { rel: "icon", sizes: "180x180", href: '../imgs/server.png' }],
         ],
         themeConfig: {
             logo: './imgs/server.png',
