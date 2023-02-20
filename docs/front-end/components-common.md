@@ -182,9 +182,13 @@ This component that displays a "404 not found" error page.
 
 The template contains HTML markup to display the error message and a button that links back to the homepage.
 
-:::danger
-how to use?
-:::
+```typescript
+createRouter({
+  routes: [
+    { path: '/:pathMatch(.*)*', name: 'not-found', component: NotFound }
+  ]
+})
+```
 
 ## AlpCan / AlpCanAll / AlpCanAny
 
