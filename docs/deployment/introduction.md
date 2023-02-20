@@ -10,16 +10,16 @@ Currently the application is hosted on Azure. There are several components:
 
 ## Process
 
-A number of workflows have been set up using Github actions.
+A number of workflows have been set up using GitHub actions.
 
-- Automatic provisioning of "Release Notes" using the Github release feature 
+- Automatic provisioning of "Release Notes" using the GitHub release feature 
   - When Pull Requests are successfully merged
 - Automatic running of tests 
   - When Pull Requests are created
   - When commits are made that further contribute to an existing Pull Request
   - When commits are made to the Master branch
 - Automatic deployment of latest changes
-  - When a "Release" is published via Github
+  - When a "Release" is published via GitHub
   - When a tag conforming to the format `v*` is pushed to the repository (`*` represents a wildcard value in this context)
 - Automatic deployment of the latest documentation changes
 
@@ -28,9 +28,9 @@ Although there aren't any strict limitations, the currently development process 
 
 - All changes should be made on a separate branch.
 - Once changes are considered complete, they should be submitted as part of a pull request for review
-- When a pull request is accepted and merged, they automatically form part of the release notes that are drafted on Github
+- When a pull request is accepted and merged, they automatically form part of the release notes that are drafted on GitHub
   - Release notes can be categorised based on tags that are attached to pull requests. See the configuration defined at `.github/release-drafter.yml` and the documentation available [here](https://github.com/release-drafter/release-drafter) for more details.
-- Release notes can then be published via the Github interface. This will automatically trigger a deployment cycle which will push the build to the Azure App Service.
+- Release notes can then be published via the GitHub interface. This will automatically trigger a deployment cycle which will push the build to the Azure App Service.
   - This will also trigger a deployment of the documentation 
 
 ## Variables for Deployment
@@ -39,9 +39,9 @@ There two types of variables that can be define for the deployment:
 
 ### Build Variables
 
-These will either be defined statically within the Github action definition, computed based on some state, or stored as a "Secret" that is accessible to Github actions.
+These will either be defined statically within the GitHub action definition, computed based on some state, or stored as a "Secret" that is accessible to GitHub actions.
 
-As of the time of writing, the Github secrets include:
+As of the time of writing, the GitHub secrets include:
 
 - ALP_AZURE_WEBAPP_PUBLISH_PROFILE
   - The profile provided by Azure that defines where and how the ASP.NET Core application should be deployed
@@ -54,7 +54,7 @@ As of the time of writing, the Github secrets include:
 - SYNTAQ_TOKEN, SYNTAQ_URL
   - These are the URL and keys for accessing the Syntaq API
 
-Generally these are the variables that are required by the front end to be available at build time as these are baked into the front end build. As can be seen in the Github actions definition, these will need to be loaded into the configuration as Environment Variables in order for them to be accessible to the build(s).
+Generally these are the variables that are required by the front end to be available at build time as these are baked into the front end build. As can be seen in the GitHub actions definition, these will need to be loaded into the configuration as Environment Variables in order for them to be accessible to the build(s).
 
 ### Runtime Variables
 

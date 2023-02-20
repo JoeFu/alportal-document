@@ -1,7 +1,9 @@
 # Getting the Source Code
 
-## Github
+## GitHub
 
-We host our source for ALP in a private repository on Github. In order to access this repository, you must have an account on Github.
+We host our source for ALP in a **private** repository on GitHub. 
 
-You can create a Github account here https://github.com/ and ask your supervisor to grant you access to the repository.
+To access this repository, you must first have an account on GitHub. You can create a GitHub account [here](https://github.com/). 
+
+With your GitHub account set up, ask your supervisor to grant you access to the repository.

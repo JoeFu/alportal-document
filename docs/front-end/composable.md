@@ -38,6 +38,8 @@ export default defineComponent({
 </script>
 ```
 
+## Charts
+
 ## Currency
 
 Provides a helper function for formatting currency values a AUD.
@@ -181,6 +183,8 @@ You may choose to use this helper directly as with the above example or by using
 ## Listable
 
 This is a minor wrapper around getters and actions for retrieving data in the `PaginatedDTO` format. See the code for an indication of what this does.
+
+## 
 
 ## Logger
 

@@ -1,22 +1,30 @@
-# Running the Project locally
+# Running ALP Locally
 
-Now that you have your environment set up, it's time to get the application running on your local machine!
+Now that you have set up your environment and have been granted access to the ALP repository, it is time to run the application on your local machine!
 
-## Setting up the database / Running the Database Migrations
+## Setup Database
 
 ### Quartz .NET
 
-We are currently using Quartz.NET to manage our background tasks. Set up for this requires a database to be manually created and a script to be manually run to set up the tables.
+We are currently using [Quartz .NET](https://www.quartz-scheduler.net/) to handle our background tasks. Setting it up requires creating a database manually and running a script manually to set up the tables.
 
-For the default set up, the database should be named `alp_quartz`. The SQL script that needs to be run can be found [here](https://github.com/quartznet/quartznet/blob/master/database/tables/tables_postgres.sql).
+For the default set up, the database should be named `alp_quartz`. 
 
-### ALP
+The SQL script that needs to be run can be found [here](https://github.com/quartznet/quartznet/blob/master/database/tables/tables_postgres.sql).
 
-For ALP, database migrations may be run using the dotnet Entity Framework Core tools. You can install the tools by following the instructions found [here](https://docs.microsoft.com/en-us/ef/core/cli/dotnet).
+Using pgAdmin from PostgreSQL to add the new database `alp_quartz`, then run the script mentioned above by 
+* right-clicking the database in the object browser 
+* select "Query Tool", opening a new query editor window, 
+* paste or load the SQL script, 
+* press the "Execute" button to run the script.
+
+### Database Update
+
+For ALP, database update may be run using the .NET Entity Framework Core tools. You can install the tools by following the instructions found [here](https://learn.microsoft.com/en-us/ef/core/cli/dotnet#installing-the-tools).
 
 You may use them directly, which will involve specifying the directories explicitly. Alternatively you can use the `database.sh` script at the root of the project. This is a shortcut that passes in the required paths for you.
 
-The migrations can be run using the following command:
+The update can be run using the following command:
 
 ``` bash
 ./database.sh database update
@@ -28,20 +36,32 @@ dotnet ef --project ALP.Data/ALP.Data.csproj --startup-project ALP/ALP.csproj da
 
 ```
 
-Replace 'database update 'to any efcore command if you wish do the efcore operation.
+Replace 'database update' to any EFcore command if you wish do the EFcore operation.
 
 
-The default configuration assumes that your database has been set up with the default settings and that your local Postgres server accepts the credentials: `user: postgres | pass: postgres`
+The default configuration assumes that your database has been set up with the default settings and that your local Postgres server accepts the credentials: 
 
-## Running the RESTful API
+`username: postgres | password: postgres`
 
-The API can be started by simply running the project using Visual Studio or via the dotnet toolchain in the command line.
+:::tip
+Settings of the PostgreSQL server username and password can be edited in the `/ALP/ALP/appsetting.Development.json` file.
+:::
 
-## Running the SPA
+## Running the Backend
+
+The RESTful API can be started by simply running the project using Visual Studio by opening the solution file `.sln`; or via the dotnet toolchain in the command line.
+
+## Running the Frontend
 
 The Vue SPA project can be found at `/ALP/App` from the root of the project. It is located here as it is built and served by the RESTful API in a production scenario.
 
-During development, you can run the project by navigating to it, then:
+During development, you can run the project by navigating to `/ALP/App` folder, then:
 
-- Install the required packages by running `yarn install`
-- Run the application with `yarn serve`
+- Install the required packages by running 
+```
+yarn install
+```
+- Run the application with 
+```
+yarn serve
+```
