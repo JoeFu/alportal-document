@@ -31,19 +31,19 @@ Components are the fundamental building blocks of a ***Vue.js*** application, an
 
 Components can be categorized into several types, including:
 
-- Common components
+- [Common components](./components-common.md)
 
-> These are components that may be frequently used in the system and perhaps even by other components.
+> These are basic components that is frequently used in the system and by other components.
 
-- Forms components
+- [Forms components](./components-form.md)
 
 > These components are specifically designed to be used in the context of a `form`. In the current application, this means that these components are capable of managing state correctly for a [VeeValidate](https://vee-validate.logaretm.com/v4/) form context.
 
-- Inputs components
+- [Inputs components](./components-input.md)
 
 > These components handle input from the user and may include text fields, dropdowns, or other forms of input. They often have custom styling and/or logic.
 
-- UI components
+- [UI components](./components-ui.md)
 
 > These components are designed for specific views and may be reused within similar views, or simply extracted to improve the code structure.
 
@@ -65,15 +65,25 @@ Further details about these can be found in the code files and [here](/front-end
 
 ## Network
 
-This is the communication layer between the front-end application and the back-end server. It involves the handling of HTTP requests and responses, APIs, and any other protocol that allows the exchange of data between the front-end and back-end.
+Network is an **important** part of the application, it is the communication layer between the *front-end application* and the *back-end server*. It involves the handling of `HTTP requests` and `responses`, `APIs`, and any other protocol that allows the exchange of data between the front-end and back-end.
 
-It deals with  the management of the flow of data and ensuring that the application remains responsive and scalable in the face of varying network conditions.
+It deals with the management of the flow of data and ensuring that the application remains responsive and scalable in the face of varying network conditions.
 
 ```
 📦src
  ┣   📂network
  ┗   ┗   ...
 ```
+
+The folder includes files incharge of the network requests for internal APIs and 3rd party APIs such as [activeCampaingn](../back-end/external-services.md#active-campaign), [Xero](../back-end/external-services.md#xero) etc.
+
+#### Example:
+
+> For a `CalendarServiceProcy` in the `accounts-service-proxies.ts`, it is responsible for handling `requests` to a specific `URL`. 
+
+> It has 4 methods called `getCalendarEvents`, `createCalendarEvent`, `updateCalendarEvent` and `deleteCalendarEvent`, which make `HTTP` `GET`, `POST`, `PUT` and `DELETE` requests respectively.
+
+> The methods would parse contents according to the format expected by the API.
 
 Further details about these can be found in the code files `/App/src/network`.
 
@@ -85,9 +95,9 @@ Its main responsibility is to map URLs to specific components or pages, and to d
 
 In ***Vue.js***, the ***Vue Router*** library provides a convenient way to handle routing within the application, with a straightforward API for defining and managing routes.
 
-The router includes a verification process for each routing request. This verification checks for both the user's permission and authentication status, ensuring secure navigation within the application.
+The router includes a **verification process** for each routing request. This verification checks for both the user's permission and authentication status, ensuring secure navigation within the application.
 
-In addition, the router in this application also includes handling for when a requested URL is not found. In such cases, the router can redirect the user to a default "404 not found" page, providing a better user experience.
+**In addition**, the router in this application also includes handling for when a requested URL is [`notfound`](./components-common.md#notfound). In such cases, the router can redirect the user to a default "404 not found" page, providing a better user experience.
 
 ```
 📦src
@@ -126,7 +136,9 @@ Investigate approaches to simplifying store definitions.
 
 Views are the visual representations of the components in the application. They display the data that users interact with and provide the user interface.
 
-These are the actual pages of the system that are presented to the user when navigating to and from different routes managed by the router. A view is usually composed of several components, combined to create the complete representation of a page.
+These are the actual pages of the system that are presented to the user when navigating to and from different routes managed by the router. 
+
+A view is usually composed of several of the [UI](./components-ui.md), [Forms](./components-form.md) and [Inputs](./components-input.md) components, combined to create the complete representation of a page.
 
 ```
 📦src
