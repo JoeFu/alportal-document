@@ -184,7 +184,7 @@ You may choose to use this helper directly as with the above example or by using
 
 This is a minor wrapper around getters and actions for retrieving data in the `PaginatedDTO` format. See the code for an indication of what this does.
 
-## 
+## ListableRelationships
 
 ## Logger
 
