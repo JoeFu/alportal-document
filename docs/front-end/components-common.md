@@ -667,7 +667,7 @@ This component does not include any logic for managing the chart definitions. It
 This can be used as follows:
 
 ```html
-<Chart
+<chart
   :label="'Chart Title'"
   :data="chartData"
   :options="chartType"

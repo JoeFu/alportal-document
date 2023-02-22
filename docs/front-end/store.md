@@ -1,12 +1,11 @@
-# Store
-
-## Vuex
+# Vuex Store
 
 We use Vuex as the state management layer in our application. Have a quick look through the [official documentation](https://next.vuex.vuejs.org/) if you are unfamiliar with it.
 
-### TypeScript 
+:::warning TypeScript Unsupported 
 
 Vuex currently does not support TypeScript type inference. This is due to how it is written, and is not expected to improve until the next version - Vuex 5.
+:::
 
 ## API Data
 

@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-
+  
 export default (
     defineConfig({
         title: 'AL Portal 2.0',
@@ -7,13 +7,15 @@ export default (
         head: [
             // favicon
             ['link', { rel: "icon", sizes: "180x180", href: '../imgs/server.png' }],
+            ['link', { rel: 'stylesheet', href: '../.vitepress/style.styl' }],
+
         ],
         themeConfig: {
-            logo: './imgs/server.png',
+            // logo: './imgs/server.png',
             nav: nav(),
             sidebar: {
                 '/guide/': sidebarGuide(),
-                '/concepts/': sidebarConcepts(),
+                '/glossary/': sidebarGlossary(),
                 '/front-end/': sidebarFrontend(),
                 '/back-end/': sidebarBackend(),
                 '/deployment/': sidebarDeployment(),
@@ -24,7 +26,6 @@ export default (
             },
 
             lastUpdated: true,
-
         },
 
 
@@ -34,21 +35,18 @@ export default (
 function nav() {
     return [
         { text: 'Guide', link: '/guide/introduction' },
-        { text: 'Concepts', link: '/concepts/introduction' },
         {
             text: 'DevOps',
             items: [
                 { text: 'Front End', link: '/front-end/introduction' },
                 { text: 'Back End', link: '/back-end/introduction' },
                 { text: 'Deployment', link: '/deployment/introduction' },
-
             ]
         },
-
-
         { text: 'User Manual ', link: 'https://andreyev-wiki.azurewebsites.net' },
+        { text: 'Glossary', link: '/glossary/introduction' },
         { text: 'Release Notes ', link: '/release-notes/' },
-
+        { text: 'Road Map ', link: '/road-map/' },
 
         { text: 'Portal 2.0', link: 'https://alportal.azurewebsites.net' }
     ];
@@ -61,28 +59,27 @@ function sidebarGuide() {
             collapsable: true,
             items: [
                 { text: 'Introduction', link: '/guide/introduction' },
-                { text: 'Setup .Net 6 Core', link: '/guide/setup-dotnet' },
-                { text: 'Setup VueJs', link: '/guide/setup-vuejs' },
-                { text: 'Setup Postgres', link: '/guide/setup-postgres' },
-                { text: 'Getting Source', link: '/guide/getting-source' },
+                { text: 'Setup Environment', link: '/guide/setup-environment' },
+                { text: 'Getting ALP Source', link: '/guide/getting-source' },
+                { text: 'Recommended Toolbox', link: '/guide/recommended-toolbox' },
                 { text: 'Running Project', link: '/guide/running-project' },
             ],
         },
     ];
 }
-function sidebarConcepts() {
+function sidebarGlossary() {
     return [
         {
-            text: 'Concepts/Terminology',
+            text: 'Glossary and Terminology',
             collapsable: true,
             items: [
-                { text: 'Introduction', link: '/concepts/introduction' },
-                { text: 'Business Area', link: '/concepts/business-areas' },
-                { text: 'CRM', link: '/concepts/crm' },
-                { text: 'Value Delivery', link: '/concepts/value-delivery' },
-                { text: 'Value Creation', link: '/concepts/value-creation' },
-                { text: 'Time Tracking', link: '/concepts/time-tracking' },
-                { text: 'Syntaq', link: '/concepts/syntaq' },
+                { text: 'Introduction', link: '/glossary/introduction' },
+                { text: 'Business Area', link: '/glossary/business-areas' },
+                { text: 'CRM', link: '/glossary/crm' },
+                { text: 'Value Delivery', link: '/glossary/value-delivery' },
+                { text: 'Value Creation', link: '/glossary/value-creation' },
+                { text: 'Time Tracking', link: '/glossary/time-tracking' },
+                { text: 'Syntaq', link: '/glossary/syntaq' },
             ],
         },
 
@@ -99,7 +96,14 @@ function sidebarFrontend() {
                 { text: 'Configuration', link: '/front-end/configuration' },
                 { text: 'Key Libraries', link: '/front-end/key-libraries' },
                 { text: 'Architecture', link: '/front-end/architecture' },
-                { text: 'Components', link: '/front-end/components' },
+                {
+                    text: 'Components', collapsable: true, items: [
+                        { text: 'Common Components', link: '/front-end/components-common' },
+                        { text: 'Forms Components', link: '/front-end/components-form' },
+                        { text: 'Inputs Components', link: '/front-end/components-input' },
+                        { text: 'UI Components', link: '/front-end/components-ui' },
+                    ]
+                },
                 { text: 'Composable', link: '/front-end/composable' },
                 { text: 'Vuex Store', link: '/front-end/store' },
                 { text: 'Code Generation', link: '/front-end/code-generation' },

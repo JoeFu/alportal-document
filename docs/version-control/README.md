@@ -4,7 +4,7 @@ We use Git as our form of version control. Generally speaking, the software deve
 
 ## Workflow
 
-- New issue is created on Github for a new feature/bug
+- New issue is created on GitHub for a new feature/bug
 - Create a new branch for the feature/bug
 - Commit changes for that feature/bug to that new branch
 - Once complete, submit a pull request to merge that branch into the master branch
@@ -17,7 +17,7 @@ While for larger features it is preferable to have a separate branch for each fe
 
 Exercise reasonable judgement here.
 
-Branches should be named sensibly. For large features / feature specific branches, they should be named in the form `xxx-some-description` where `xxx` is the Github issue number. For non-feature specific branches, the branch should be named sensible so that it is easy to discern its purpose.
+Branches should be named sensibly. For large features / feature specific branches, they should be named in the form `xxx-some-description` where `xxx` is the GitHub issue number. For non-feature specific branches, the branch should be named sensible so that it is easy to discern its purpose.
 
 If you are experimenting with things and require a branch to store your progress, it is preferable to name the branch with the format `<your-initials>/some-description`. This ensures that it is clear who the branch belongs to, and who ask should it become stale.
 
