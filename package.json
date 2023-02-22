@@ -12,6 +12,7 @@
     "docs:serve": "vitepress serve docs"
   },
   "devDependencies": {
+    "stylus": "^0.59.0",
     "vitepress": "^1.0.0-alpha.43",
     "vitepress-plugin-mermaid": "^2.0.8",
     "vue": "^3.2.45"
