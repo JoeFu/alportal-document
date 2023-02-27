@@ -4,544 +4,911 @@ This is A brief summary of some of the UI components being used in the system to
 
 ## Admin
 
-
 ### Common
 
-#### CreateBusinessArea.vue
+The following components customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new data as an admin.
 
-#### CreateCapability.vue
+#### CreateBusinessArea
+This component can be used as follows:
 
-#### CreateEmailGroup.vue
+```html
+<create-business-area
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
 
-#### CreateIndustryCategory.vue
+The following is a visual screenshot of the modal:
+![CreateBusinessArea](../imgs/frontend/components/ui/admin/common/CreateBusinessAreas.png)
+#### CreateCapability
+This component can be used as follows:
 
-#### CreateIndustrySubCategory.vue
+```html
+<create-capability
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
 
-#### CreateLawArea.vue
+The following is a visual screenshot of the modal:
+![CreateCapability](../imgs/frontend/components/ui/admin/common/CreateCapabilities.png)
+#### CreateSubCapability
+This component can be used as follows:
 
-#### CreateLawSubArea.vue
+```html
+<create-sub-capability
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
 
-#### CreateOccupation.vue
+The following is a visual screenshot of the modal:
+![CreateSubCapability](../imgs/frontend/components/ui/admin/common/CreateSubCapabilities.png)
+#### CreateEmailGroup
+This component can be used as follows:
 
-#### CreateOffice.vue
+```html
+<create-email-group
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
 
-#### CreateOrganisationType.vue
+The following is a visual screenshot of the modal:
+![CreateEmailGroup](../imgs/frontend/components/ui/admin/common/CreateEmailGroups.png)
+#### CreateIndustryCategory
+This component can be used as follows:
 
-#### CreateSafeStorageDocumentType.vue
+```html
+<create-industry-category
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
 
-#### CreateSafeStorageSection.vue
+The following is a visual screenshot of the modal:
+![CreateIndustryCategory](../imgs/frontend/components/ui/admin/common/CreateIndustryCategories.png)
+#### CreateIndustrySubCategory
+This component can be used as follows:
 
-#### CreateSegment.vue
+```html
+<create-industry-sub-category
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
 
-#### CreateStandardDisbursement.vue
+The following is a visual screenshot of the modal:
+![CreateIndustrySubCategory](../imgs/frontend/components/ui/admin/common/CreateIndustrySubCategories.png)
+#### CreateLawArea
+This component can be used as follows:
 
-#### CreateSubCapability.vue
+```html
+<create-law-area
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
 
-#### CreateSubSegment.vue
+The following is a visual screenshot of the modal:
+![CreateLawArea](../imgs/frontend/components/ui/admin/common/CreateLawAreas.png)
+#### CreateLawSubArea
+This component can be used as follows:
 
+```html
+<create-law-sub-area
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateLawSubArea](../imgs/frontend/components/ui/admin/common/CreateLawSubAreas.png)
+#### CreateOccupation
+This component can be used as follows:
+
+```html
+<create-occupation
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateOccupation](../imgs/frontend/components/ui/admin/common/CreateOccupations.png)
+#### CreateOffice
+This component can be used as follows:
+
+```html
+<create-office
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateOffice](../imgs/frontend/components/ui/admin/common/CreateOffices.png)
+#### CreateOrganisationType
+This component can be used as follows:
+
+```html
+<create-organisation-type
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateOrganisationType](../imgs/frontend/components/ui/admin/common/CreateOrganisationTypes.png)
+#### CreateSafeStorageDocumentType
+This component can be used as follows:
+
+```html
+<create-safe-storage-document-type
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateSafeStorageDocumentType](../imgs/frontend/components/ui/admin/common/CreateSafeStorageDocumentTypes.png)
+#### CreateSafeStorageSection
+This component can be used as follows:
+
+```html
+<create-safe-storage-section
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateSafeStorageSection](../imgs/frontend/components/ui/admin/common/CreateSafeStorageSections.png)
+#### CreateSegment
+This component can be used as follows:
+
+```html
+<create-segment
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateSegment](../imgs/frontend/components/ui/admin/common/CreateSegments.png)
+#### CreateSubSegment
+This component can be used as follows:
+
+```html
+<create-sub-segment
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateSubSegment](../imgs/frontend/components/ui/admin/common/CreateSubSegments.png)
+#### CreateStandardDisbursement
+This component can be used as follows:
+
+```html
+<create-standard-disbursement
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateStandardDisbursement](../imgs/frontend/components/ui/admin/common/CreateStandardDisbursements.png)
 
 ### Dynamic-parameters
+#### CreateDynamicParameter
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Dynamic Parameter.
 
-#### CreateDynamicParameter.vue
+This component can be used as follows:
 
-#### DeleteDynamicParameter.vue
+```html
+<create-dynamic-parameter
+  v-if="state.showCreateDynamicParameterModal"
+  @close="state.showCreateDynamicParameterModal = false"
+/>
+```
 
-#### DynamicParameter.vue
+The following is a visual screenshot of the modal:
+![CreateDynamicParameter](../imgs/frontend/components/ui/admin/dynamicParameters/CreateDynamicParameters.png)
+#### DeleteDynamicParameter
+This component customises the [`modal`](./components-common.md#modal) component to display a confirmation modal for deleting Dynamic Parameter.
 
+This component can be used as follows:
+
+```html
+<delete-dynamic-parameter
+  v-if="state.showWarningModal"
+  :id="state.selectedParameter"
+  @close="state.showWarningModal = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![DeleteDynamicParameter](../imgs/frontend/components/ui/admin/dynamicParameters/DeleteDynamicParameters.png)
+#### DynamicParameter
+:::danger
+Not Used
+
+using code in `ALP\App\src\views\admin\DynamicParameters.vue`
+:::
+
+This component customises the [`slideOver`](#slideover) and the component to display a side bar for editing dynamic parameter.
+
+This component can be used as follows:
+
+```html
+
+```
+
+The following is a visual screenshot of the modal:
+![DynamicParameter](../imgs/frontend/components/ui/admin/dynamicParameters/DynamicParameter.png)
 
 ### Email-template
+#### CreateEmailTemplate
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new email templates.
 
-#### CreateEmailTemplate.vue
+This component can be used as follows:
 
+```html
+<create-email-template
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateEmailTemplate](../imgs/frontend/components/ui/admin/CreateEmailTemplates.png)
 
 ### Entity-parameters
+#### CreateEntityParameter
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
 
-#### CreateEntityParameter.vue
+This component can be used as follows:
 
-#### EntityParametersList.vue
+```html
+<create-entity-parameter
+  v-if="state.showCreateEntityParameterModal"
+  :entityType="entityType"
+  @close="state.showCreateEntityParameterModal = false"
+/>
+```
 
+The following is a visual screenshot of the modal:
+![CreateEntityParameter](../imgs/frontend/components/ui/admin/entityParameters/CreateEntityParametersList.png)
+#### EntityParametersList
+This component sets up the page to display list of entity parameters, including the [`CreateEntityParameter`](#createentityparameter) component as an event of a button.
+
+This component can be used directly as a router view:
+
+```ts
+component: () =>
+    import(
+        "@/components/ui/admin/entity-parameters/EntityParametersList.vue"
+    ),
+```
+
+The following is a visual screenshot of the modal:
+![EntityParametersList](../imgs/frontend/components/ui/admin/entityParameters/EntityParametersList.png)
 
 ### Metabase
+#### CreateMetabaseReport
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Metabase Report.
 
-#### CreateMetabaseReport.vue
+This component can be used as follows:
 
+```html
+<create-metabase-report
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateMetabaseReport](../imgs/frontend/components/ui/admin/CreateMetabaseReport.png)
 
 ### Metabase-groups
+#### CreateMetabaseReportGroup
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Metabase Report Group.
 
-#### CreateMetabaseReportGroup.vue
+This component can be used as follows:
 
+```html
+<create-metabase-report-group
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateMetabaseReportGroup](../imgs/frontend/components/ui/admin/CreateMetabaseReportGroup.png)
 
 ### Offerings
+#### ComponentSelector
+This component customises the [`slideOver`](#slideover) and the component to display a side bar for selecting a component. Including ways to add new component or edit current components.
 
-#### ComponentSelector.vue
+This component can be used as follows:
 
-#### CreateOffering.vue
+```html
+<component-selector
+    v-if="outcomeState.showComponentSelectorFor"
+    :key="$route.params.outcomeId"
+    :offering-id="id"
+    :outcome-id="outcomeState.showComponentSelectorFor"
+    @close="outcomeState.showComponentSelectorFor = null"
+/>
+```
 
-#### CreateOfferingCategory.vue
+The following is a visual screenshot of the side bar:
+![ComponentSelector](../imgs/frontend/components/ui/admin/offering/ComponentSelector.png)
+#### CreateOffering
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering.
 
-#### CreateOfferingComponent.vue
+This component can be used as follows:
 
-#### CreateOfferingOutcome.vue
+```html
+<create-offering
+    v-if="state.showCreateOffering"
+    @close="state.showCreateOffering = false"
+/>
+```
 
-#### InlineOfferingComponent.vue
+The following is a visual screenshot of the modal:
+![CreateOffering](../imgs/frontend/components/ui/admin/offering/CreateOffering.png)
+#### CreateOfferingCategory
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering category.
 
-#### InlineOfferingOutcome.vue
+This component can be used as follows:
 
-#### InlineOfferingOutcomeObjectionGuarantee.vue
+```html
+<create-offering-category
+    v-if="state.showCreateOfferingCategory"
+    @close="state.showCreateOfferingCategory = false" 
+/>
+```
 
-#### InlineOfferingProblemOutcome.vue
+The following is a visual screenshot of the modal:
+![CreateOfferingCategory](../imgs/frontend/components/ui/admin/offering/CreateOfferingCategory.png)
+#### CreateOfferingComponent
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering component.
 
-#### MergeOffering.vue
+This component can be used as follows:
 
+```html
+<create-offering-component
+    v-if="state.showCreateComponent"
+    @close="state.showCreateComponent = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateOfferingComponent](../imgs/frontend/components/ui/admin/offering/CreateOfferingComponent.png)
+#### CreateOfferingOutcome
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+
+This component can be used as follows:
+
+```html
+<create-business-area
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateOfferingOutcome](../imgs/frontend/components/ui/admin/offering/CreateOfferingOutcome.png)
+#### InlineOfferingComponent
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+
+This component can be used as follows:
+
+```html
+<create-business-area
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![InlineOfferingComponent](../imgs/frontend/components/ui/admin/offering/InlineOfferingComponent.png)
+#### InlineOfferingOutcome
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+
+This component can be used as follows:
+
+```html
+<create-business-area
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![InlineOfferingOutcome](../imgs/frontend/components/ui/admin/offering/InlineOfferingOutcome.png)
+#### InlineOfferingOutcomeObjectionGuarantee
+
+#### InlineOfferingProblemOutcome
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+
+This component can be used as follows:
+
+```html
+<create-business-area
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![InlineOfferingProblemOutcome](../imgs/frontend/components/ui/admin/offering/InlineOfferingProblemOutcome.png)
+#### MergeOffering
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+
+This component can be used as follows:
+
+```html
+<create-business-area
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![MergeOffering](../imgs/frontend/components/ui/admin/offering/MergeOffering.png)
 
 ### Project-templates
 
-#### CreateProjectTemplate.vue
+#### CreateProjectTemplate
 
-#### CreateProjectTemplateScheduler.vue
+#### CreateProjectTemplateScheduler
 
-#### InlineProjectTemplateTask.vue
+#### InlineProjectTemplateTask
 
-#### InlineProjectTemplateTaskStep.vue
+#### InlineProjectTemplateTaskStep
 
-#### ProjectTemplateTask.vue
+#### ProjectTemplateTask
 
-#### ProjectTemplateTaskMetadata.vue
+#### ProjectTemplateTaskMetadata
 
 
 
 ### Resource-urls
 
-#### CreateResourceUrl.vue
+#### CreateResourceUrl
 
 
 ### Roles
 
-#### CreateRole.vue
+#### CreateRole
 
-#### Role.vue
+#### Role
 
 
 ### Sprints
 
-#### CreateSprint.vue
+#### CreateSprint
 
 
 ### Standard-tasks
 
-#### CreateStandardTask.vue
+#### CreateStandardTask
 
-#### InlineStandardTaskStep.vue
+#### InlineStandardTaskStep
 
-#### StandardTask.vue
+#### StandardTask
 
-#### StandardTaskMetadata.vue
+#### StandardTaskMetadata
 
 
 ### Trusts
 
-#### CreateTrustAccount.vue
+#### CreateTrustAccount
 
 
 ### Users
 
-#### CreateRemuneration.vue
+#### CreateRemuneration
 
-#### CreateUser.vue
+#### CreateUser
 
 
 
 ## Clients
 
 
-### CreateClient.vue
+### CreateClient
 
 
 
 ## Contacts
 
 
-### CreateContact.vue
+### CreateContact
 
 
-### ShowACUnsubscribe.vue
+### ShowACUnsubscribe
 
 
 
 ## Documents
 
 
-### ActiveDocuments.vue
+### ActiveDocuments
 
 
-### CompleteDocumentReview.vue
+### CompleteDocumentReview
 
 
-### Document.vue
+### Document
 
 
-### DocumentActions.vue
+### DocumentActions
 
 
-### DocumentFilters.vue
+### DocumentFilters
 
 
-### DocumentList.vue
+### DocumentList
 
 
-### ReceivedDocumentReviewRequests.vue
+### ReceivedDocumentReviewRequests
 
 
-### RequestDocumentReview.vue
+### RequestDocumentReview
 
 
-### RequestedDocumentReviewRequests.vue
+### RequestedDocumentReviewRequests
 
 
-### ResourceSelector.vue
+### ResourceSelector
 
 
-### SyntaqResourceSelector.vue
+### SyntaqResourceSelector
 
 
 
 ## Emails
 
 
-### EmailDisplay.vue
+### EmailDisplay
 
 
-### EmailGroup.vue
+### EmailGroup
 
 
-### EmailList.vue
+### EmailList
 
 
 
 ## Feedback
 
 
-### CreateBugReport.vue
+### CreateBugReport
 
 
-### CreateSuggestion.vue
+### CreateSuggestion
 
 
-### UploadDocument.vue
+### UploadDocument
 
 
 
 ## Invoices
 
 
-### CreateFixedPriceItem.vue
+### CreateFixedPriceItem
 
 
-### CreateInvoice.vue
+### CreateInvoice
 
 
-### EditInvoiceNote.vue
+### EditInvoiceNote
 
 
-### InlineInvoice.vue
+### InlineInvoice
 
 
-### InvoiceDisbursementSelector.vue
+### InvoiceDisbursementSelector
 
 
-### InvoiceTimeEntrySelector.vue
+### InvoiceTimeEntrySelector
 
 
-### UpdateInvoiceDate.vue
+### UpdateInvoiceDate
 
 
 
 ## layout
 
 
-### ActionMultiselect.vue
+### ActionMultiselect
 
 
-### AdminMenu.vue
+### AdminMenu
 
 
-### ComponentSlideOver.vue
+### ComponentSlideOver
 
 
-### Detail.vue
+### Detail
 
 
-### DocumentMenu.vue
+### DocumentMenu
 
 
-### DownloadMenu.vue
+### DownloadMenu
 
 
-### EmailMenu.vue
+### EmailMenu
 
 
-### FeedbackButton.vue
+### FeedbackButton
 
 
-### Layout.vue
+### Layout
 
 
-### MainMenu.vue
+### MainMenu
 
 
-### MasterDetail.vue
+### MasterDetail
 
 
-### NavBar.vue
+### NavBar
 
 
-### NotificationMenu.vue
+### NotificationMenu
 
 
-### ProjectTaskSlideOver.vue
+### ProjectTaskSlideOver
 
 
-### QuickLinks.vue
+### QuickLinks
 
 
-### ReminderMenu.vue
+### ReminderMenu
 
 
-### SideBar.vue
+### SideBar
 
 
-### SlideOver.vue
+### SlideOver
 
 
-### StaffDirectory.vue
+### StaffDirectory
 
 
-### TimerMenu.vue
+### TimerMenu
 
 
 
 ## Mailregister
 
 
-### CreateIncomingMail.vue
+### CreateIncomingMail
 
 
-### CreateOutgoingMail.vue
+### CreateOutgoingMail
 
 
 
 ## Matters
 
 
-### AddMatterNote.vue
+### AddMatterNote
 
 
-### AddMatterOutcome.vue
+### AddMatterOutcome
 
 
-### AssignEmailToMatter.vue
+### AssignEmailToMatter
 
 
-### CreateDisbursement.vue
+### CreateDisbursement
 
 
-### CreateMatter.vue
+### CreateMatter
 
 
-### CreateTrustTransactionRequest.vue
+### CreateTrustTransactionRequest
 
 
-### EditContactNote.vue
+### EditContactNote
 
 
-### EditMatterNote.vue
+### EditMatterNote
 
 
-### InlineMatter.vue
+### InlineMatter
 
 
-### InlineMatterComponent.vue
+### InlineMatterComponent
 
 
-### InlineMatterOutcome.vue
+### InlineMatterOutcome
 
 
-### MatterComponentTimeEntries.vue
+### MatterComponentTimeEntries
 
 
-### MatterTimeEntriesForMatter.vue
+### MatterTimeEntriesForMatter
 
 
-### MatterTrustRequests.vue
+### MatterTrustRequests
 
 
-### MatterTrustTransactions.vue
+### MatterTrustTransactions
 
 
-### ReassignEmails.vue
+### ReassignEmails
 
 
-### SalesTimeEntriesForMatter.vue
+### SalesTimeEntriesForMatter
 
 
-### UpdateMatterStatus.vue
+### UpdateMatterStatus
 
 
 
 ## Offerings
 
 
-### InlineOfferingComponent.vue
+### InlineOfferingComponent
 
 
-### InlineOfferingOutcome.vue
+### InlineOfferingOutcome
 
 
-### InlineOfferingOutcomeObjectionGuarantee.vue
+### InlineOfferingOutcomeObjectionGuarantee
 
 
-### InlineOfferingProblemOutcome.vue
+### InlineOfferingProblemOutcome
 
 
 
 ## Organisations
 
 
-### CreateOrganisation.vue
+### CreateOrganisation
 
 
-### EditOrganizationNote.vue
+### EditOrganizationNote
 
 
 
 ## Pqeadjustment
 
 
-### CreatePQEAdjustment.vue
+### CreatePQEAdjustment
 
 
 
 ## Projects
 
 
-### AssignEmailToProject.vue
+### AssignEmailToProject
 
 
-### CreateProject.vue
+### CreateProject
 
 
-### CreateProjectTask.vue
+### CreateProjectTask
 
 
-### EditProjectNote.vue
+### EditProjectNote
 
 
-### InlineProject.vue
+### InlineProject
 
 
-### InlineProjectTask.vue
+### InlineProjectTask
 
 
-### InlineProjectTaskCard.vue
+### InlineProjectTaskCard
 
 
-### InlineProjectTaskStep.vue
+### InlineProjectTaskStep
 
 
-### ProjectTask.vue
+### ProjectTask
 
 
-### ProjectTaskMetadata.vue
+### ProjectTaskMetadata
 
 
-### ProjectTimeEntriesForProject.vue
+### ProjectTimeEntriesForProject
 
 
 
 ## Relationships
 
 
-### CreateOrganisationRelationship.vue
+### CreateOrganisationRelationship
 
 
-### CreateRelationship.vue
+### CreateRelationship
 
 
 
 ## Reminders
 
 
-### CreateReminder.vue
+### CreateReminder
 
 
 
 ## Resource-urls
 
 
-### ResourceUrlSelector.vue
+### ResourceUrlSelector
 
 
 
 ## Safestorage
 
 
-### CreateContactSafeStorage.vue
+### CreateContactSafeStorage
 
 
-### CreateOrganisationSafeStorage.vue
+### CreateOrganisationSafeStorage
 
 
 
 ## Time-tracking
 
 
-### CreateTimeEntry.vue
+### CreateTimeEntry
 
 
-### CreateTimeEntryForm.vue
+### CreateTimeEntryForm
 
 
-### CreateTimeEntryForMatter.vue
+### CreateTimeEntryForMatter
 
 
-### CreateTimeEntryFormForMatter.vue
+### CreateTimeEntryFormForMatter
 
 
-### CreateTimeEntryFormForProject.vue
+### CreateTimeEntryFormForProject
 
 
-### CreateTimeEntryForProject.vue
+### CreateTimeEntryForProject
 
 
-### InlineAddSalesTimeEntries.vue
+### InlineAddSalesTimeEntries
 
 
-### InlineMatterTimeEntries.vue
+### InlineMatterTimeEntries
 
 
-### InlineProjectTimeEntries.vue
+### InlineProjectTimeEntries
 
 
-### InlineSalesTimeEntries.vue
+### InlineSalesTimeEntries
 
 
-### MatterTimeEntries.vue
+### MatterTimeEntries
 
 
-### ProjectTimeEntries.vue
+### ProjectTimeEntries
 
 
-### SalesTimeEntries.vue
+### SalesTimeEntries
 
 
-### SubmitTimer.vue
+### SubmitTimer
 
 
-### TimerMatterSelector.vue
+### TimerMatterSelector
 
 
-### TimerProjectTaskSelector.vue
+### TimerProjectTaskSelector
 
 
 
-## GlobalModals.vue
+## GlobalModals

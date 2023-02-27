@@ -61,7 +61,7 @@ There are a number of helper methods and components available on the front end t
 
 These are:
 
-- The infinite table component. `AlpInfiniteTable` (As seen [here](/front-end/components-common#alpinfinitetable))
+- The infinite table component. `AlpInfiniteTable` (As seen [here](/front-end/components#alpinfinitetable))
 - The more general infinite container component. `AlpInfiniteContainer` (As seen [here](https://github.com/AndreyevLawyers/ALP))
 - The infinite list composable function(s). (As seen [here](/front-end/composable#infinitelist))
 - The infinite Vuex store helper. `ResourceInfiniteVuex` (As seen [here](/front-end/store#resourceinfinitevuex))
