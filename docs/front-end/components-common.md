@@ -124,7 +124,7 @@ This can be used as follows:
 
 ## AlpInnerSection
 
-:::danger Currently Not In Use
+:::danger Deprecate
 :::
 
 ## NavLink
@@ -335,10 +335,6 @@ This can be used as follows:
 - `iconName`: The name of the font-awesome icon to display in the button.
 - `iconClass`: (Optional) A class to apply to the font-awesome icon.
 
-:::danger
-See what would hold the text in the button, the description or there isnt a text, just icon?
-:::
-
 
 ## FontAwesomeIconButton
 
@@ -394,14 +390,14 @@ This can be used as follows:
 
 ## AlpIcon
 
-:::danger 
-seems like no longer in use, all changed to font-awesome-icon from external font awesome icons
+:::danger Deprecate
+Switched to font-awesome-icon from external font awesome icons
 :::
 
 ## AlpIconButton
 
-:::danger
-not using font awesome?
+:::danger Pending
+this component is currently not using font awesome, pending confirmation
 :::
 
 This component renders a customizable and reusable icon button with optional alerts and loaders with several props that control its behavior and appearance.
@@ -470,7 +466,7 @@ This can be used as follows:
 
 
 ## AlpTable
-This is a component for displaying a table. It automatically displays data from a provided array of objects.
+This is a component for displaying a table with resizable headers and allow for selection of rows. It includes pagination, sorting, and filtering functionality to allow easy navigation. It automatically displays data from a provided array of objects.
 
 This can be used as follows:
 
@@ -481,21 +477,45 @@ This can be used as follows:
   identifier="id"
   :loading="loading"
   :values="items"
+  :issorting="true"
+  :isResizableColumns="true"
+  :isMultiSelection="true"
+  :deSelectCheckBoxCount="state.deSelectCheckBoxCount"
+  pageName="resourceDocuments"
   @selected="onSelected"
-/>
+>
+  <template v-slot:status="{ value }">
+    <td v-if="value.status == 1">
+    </td>
+    <td v-if="value.status == 2">
+    </td>
+  </template>
+</alp-table>
 ```
 
 #### Props
-
-- `headers` indicates the header cells that should be used for the table
-- `fields` indicates the fields that should be used for the table. This lines up with the header cells.
-- `items` is an array of objects that should be rendered for the table
-- `loading` indicates the loading status of the data. A loading wheel is displayed when this is true.
-- `identifier` is the unique key that will be used as the `key` for the elements in the table. This defaults to `id`
+- `headers`: (`array`) indicates the header cells that should be used for the table
+- `fields`: (`array`) indicates the fields that should be used for the table. This lines up with the header cells.
+- `values` is an array of objects that should be rendered for the table
+- `loading`: (`boolean`) indicates the loading status of the data. A loading wheel is displayed when this is true.
+- `identifier`: (`string`) is the unique key that will be used as the `key` for the elements in the table. This defaults to `id`
+- `isMultiSelection`: (`boolean`) to decide if muiltiSelection is allowed 
+> Default value: `false`
+- `deSelectCheckBoxCount`: (`number`) 
+> Default value: `0`
+- `issorting`: (`boolean`)
+> Default value: `false`
+- `isResizableColumns`: (`boolean`) 
+> Default value: `false`
+- `pageName`: (`string`) 
+> Default value: `""`
 
 #### Events
 
 - `selected`: emitted when a row in the table is clicked. The event is emitted with the value of the object in the corresponding row.
+- `select-all`: emitted when `selectAll` function is called by checking the "*select all*" checkbox, the event selects all **displayed** rows in the table.
+- `clicked`: emitted when the table is clicked.
+
 
 ::: tip Fields
 By default fields will correspond to properties on the objects passed in via `values`. These also accept dot notation for traversing the nested properties of the objects. That is, for an object:
@@ -512,7 +532,7 @@ By default fields will correspond to properties on the objects passed in via `va
 The value of `c` can be displayed using the field definition `b.c`.
 
 Alternatively, named slots may be used to provide a custom implementation of the table cell. An example of this will be shown below.
-::: 
+
 
 ```html
 <alp-table
@@ -530,29 +550,34 @@ Alternatively, named slots may be used to provide a custom implementation of the
   </template>
 </alp-table>
 ```
-
 This will provide a custom renderer for the field `a` which will override the default property rendering.
+::: 
+
+
 
 ## AlpInfiniteTable
 
-This component is similar to the [`AlpTable`](#alptable), with an added feature that creates an **infinite scrolling table**, with support for selecting and sorting rows and columns for current displaying items in the table.
+This component is similar to the [`AlpTable`](#alptable), with an added feature that creates an **infinite scrolling table**, with support for selecting and sorting rows and columns for all current displaying items in the table.
 
-When the user scrolls to the bottom of the table, the component triggers an event load-more to indicate that it needs to load more items.
+When the user scrolls to the bottom of the table, the component triggers an event `load-more` to indicate that it needs to load more items.
 
 This can be used as follows:
 
 ```html
 <alp-infinite-table
-  :values="items"
   :headers="['A', 'B', 'D']"
   :fields="['a', 'b', 'c.d']"
+  identifier="id"
   :loading="loading"
-  :isResizableColumns="true"
+  :values="items"
   :issorting="true"
+  :isResizableColumns="true"
   :isMultiSelection="true"
-  :identifier="'id'"
+  :deSelectCheckBoxCount="state.deSelectCheckBoxCount"
+  pageName="resourceDocuments"
   @selected="onSelected"
   @load-more="fetch"
+  :wrapperDivClass="'w-full'"
 >
   <template v-slot:status="{ value }">
     <td v-if="value.status == 1">
@@ -827,8 +852,7 @@ The setup function sets up the component's behavior by defining several function
 
 ## AlpHtmlVIewer
 
-:::danger
-Not Used
+:::danger Deprecate
 :::
 
 ## FieldDisplay
@@ -990,8 +1014,7 @@ The component uses the "usePopper" composable from "@/composable/popper" to mana
 
 This can be used as follows:
 
-:::danger
-Not Used
+:::danger Deprecate
 :::
 
 ```html

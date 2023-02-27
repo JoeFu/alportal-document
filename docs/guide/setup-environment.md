@@ -23,7 +23,8 @@ We are currently using .NET Core 6 for the backend development.
 
 ***Node.js*** can be installed from https://nodejs.org/. The latest LTS version is the generally recommended.
 
-:::danger node js 16.9 or latest LTS?
+:::danger Pending
+node js 16.9 or latest LTS?
 :::
 
 ### Installing the Yarn Package Manager

@@ -31,19 +31,21 @@ Components are the fundamental building blocks of a ***Vue.js*** application, an
 
 Components can be categorized into several types, including:
 
-- [Common components](./components-common.md)
+#### [Common components](./components-common.md)
 
 > These are basic components that is frequently used in the system and by other components.
 
-- [Forms components](./components-form.md)
+#### [Forms components](./components-form.md)
 
 > These components are specifically designed to be used in the context of a `form`. In the current application, this means that these components are capable of managing state correctly for a [VeeValidate](https://vee-validate.logaretm.com/v4/) form context.
 
-- [Inputs components](./components-input.md)
+#### [Inputs components](./components-input.md)
 
 > These components handle input from the user and may include text fields, dropdowns, or other forms of input. They often have custom styling and/or logic.
 
-- [UI components](./components-ui.md)
+#### UI components
+> - [Admin](./components-ui-admin.md)
+> - [User](./components-ui-user.md)
 
 > These components are designed for specific views and may be reused within similar views, or simply extracted to improve the code structure.
 
@@ -138,7 +140,7 @@ Views are the visual representations of the components in the application. They 
 
 These are the actual pages of the system that are presented to the user when navigating to and from different routes managed by the router. 
 
-A view is usually composed of several of the [UI](./components-ui.md), [Forms](./components-form.md) and [Inputs](./components-input.md) components, combined to create the complete representation of a page.
+A view is usually composed of several of the [UI](#ui-components), [Forms](#forms-components) and [Inputs](#inputs-components) components, combined to create the complete representation of a page.
 
 ```
 📦src

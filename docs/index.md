@@ -17,11 +17,18 @@ hero:
 
 features:
   - title: 🧜‍♀️ For Fontend Developers
+    link: /front-end/introduction
     details: The document will describe some technical documents and design specification requirements for front-end applications.
   - title: 🌚 For Backend Developers
+    link: /back-end/introduction
     details: The document will describe some technical documents and design specification requirements for back-end applications.
-  - title: 📸 For End User
-    details: The document will describe the user's instructions and some troubleshooting methods.
+  - title: 📸 For Deployment Team
+    link: /deployment/introduction
+    details: The document will describe instructions and details for deployment of the application, as well as some troubleshooting methods.
+  # - title: 📸 For End User
+  #   link: /front-end/introduction
+  #   details: The document will describe the user's instructions and some troubleshooting methods.
   - title: 🧩 Release Notes
+    link: /release-notes/
     details: A changelog of the platform will be recorded in the documentation.
 ---

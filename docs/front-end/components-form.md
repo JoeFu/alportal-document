@@ -106,8 +106,8 @@ This component is a label component that can be used with form input fields. It 
 
 The fieldLabel component is used by placing it before an input field that needs a label. 
 
-:::danger
-can put in a pic of user view
+:::danger Pending
+Insert User View screen shot
 :::
 
 This can be used as follows:

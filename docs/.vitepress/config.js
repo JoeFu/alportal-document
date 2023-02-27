@@ -1,5 +1,5 @@
 import { defineConfig } from "vitepress";
-  
+
 export default (
     defineConfig({
         title: 'AL Portal 2.0',
@@ -43,7 +43,7 @@ function nav() {
                 { text: 'Deployment', link: '/deployment/introduction' },
             ]
         },
-        { text: 'User Manual ', link: 'https://andreyev-wiki.azurewebsites.net' },
+        // { text: 'User Manual ', link: 'https://andreyev-wiki.azurewebsites.net' },
         { text: 'Glossary', link: '/glossary/introduction' },
         { text: 'Release Notes ', link: '/release-notes/' },
         { text: 'Road Map ', link: '/road-map/' },
@@ -101,7 +101,12 @@ function sidebarFrontend() {
                         { text: 'Common Components', link: '/front-end/components-common' },
                         { text: 'Forms Components', link: '/front-end/components-form' },
                         { text: 'Inputs Components', link: '/front-end/components-input' },
-                        { text: 'UI Components', link: '/front-end/components-ui' },
+                        {
+                            text: 'UI Components', collapsable: true, items: [
+                                { text: 'Admin', link: '/front-end/components-ui-admin' },
+                                { text: 'User', link: '/front-end/components-ui-user' },
+                            ]
+                        },
                     ]
                 },
                 { text: 'Composable', link: '/front-end/composable' },

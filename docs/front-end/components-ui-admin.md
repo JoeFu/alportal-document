@@ -1,14 +1,12 @@
-# UI Components
+# UI Admin Components
 
-This is A brief summary of some of the UI components being used in the system today.
+This is A brief summary of the UI admin components being used in the system today.
 
-## Admin
-
-### Common
+## Common
 
 The following components customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new data as an admin.
 
-#### CreateBusinessArea
+### CreateBusinessArea
 This component can be used as follows:
 
 ```html
@@ -20,7 +18,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateBusinessArea](../imgs/frontend/components/ui/admin/common/CreateBusinessAreas.png)
-#### CreateCapability
+### CreateCapability
 This component can be used as follows:
 
 ```html
@@ -32,7 +30,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateCapability](../imgs/frontend/components/ui/admin/common/CreateCapabilities.png)
-#### CreateSubCapability
+### CreateSubCapability
 This component can be used as follows:
 
 ```html
@@ -44,7 +42,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateSubCapability](../imgs/frontend/components/ui/admin/common/CreateSubCapabilities.png)
-#### CreateEmailGroup
+### CreateEmailGroup
 This component can be used as follows:
 
 ```html
@@ -56,7 +54,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateEmailGroup](../imgs/frontend/components/ui/admin/common/CreateEmailGroups.png)
-#### CreateIndustryCategory
+### CreateIndustryCategory
 This component can be used as follows:
 
 ```html
@@ -68,7 +66,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateIndustryCategory](../imgs/frontend/components/ui/admin/common/CreateIndustryCategories.png)
-#### CreateIndustrySubCategory
+### CreateIndustrySubCategory
 This component can be used as follows:
 
 ```html
@@ -80,7 +78,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateIndustrySubCategory](../imgs/frontend/components/ui/admin/common/CreateIndustrySubCategories.png)
-#### CreateLawArea
+### CreateLawArea
 This component can be used as follows:
 
 ```html
@@ -92,7 +90,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateLawArea](../imgs/frontend/components/ui/admin/common/CreateLawAreas.png)
-#### CreateLawSubArea
+### CreateLawSubArea
 This component can be used as follows:
 
 ```html
@@ -104,7 +102,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateLawSubArea](../imgs/frontend/components/ui/admin/common/CreateLawSubAreas.png)
-#### CreateOccupation
+### CreateOccupation
 This component can be used as follows:
 
 ```html
@@ -116,7 +114,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateOccupation](../imgs/frontend/components/ui/admin/common/CreateOccupations.png)
-#### CreateOffice
+### CreateOffice
 This component can be used as follows:
 
 ```html
@@ -128,7 +126,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateOffice](../imgs/frontend/components/ui/admin/common/CreateOffices.png)
-#### CreateOrganisationType
+### CreateOrganisationType
 This component can be used as follows:
 
 ```html
@@ -140,7 +138,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateOrganisationType](../imgs/frontend/components/ui/admin/common/CreateOrganisationTypes.png)
-#### CreateSafeStorageDocumentType
+### CreateSafeStorageDocumentType
 This component can be used as follows:
 
 ```html
@@ -152,7 +150,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateSafeStorageDocumentType](../imgs/frontend/components/ui/admin/common/CreateSafeStorageDocumentTypes.png)
-#### CreateSafeStorageSection
+### CreateSafeStorageSection
 This component can be used as follows:
 
 ```html
@@ -164,7 +162,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateSafeStorageSection](../imgs/frontend/components/ui/admin/common/CreateSafeStorageSections.png)
-#### CreateSegment
+### CreateSegment
 This component can be used as follows:
 
 ```html
@@ -176,7 +174,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateSegment](../imgs/frontend/components/ui/admin/common/CreateSegments.png)
-#### CreateSubSegment
+### CreateSubSegment
 This component can be used as follows:
 
 ```html
@@ -188,7 +186,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateSubSegment](../imgs/frontend/components/ui/admin/common/CreateSubSegments.png)
-#### CreateStandardDisbursement
+### CreateStandardDisbursement
 This component can be used as follows:
 
 ```html
@@ -201,8 +199,8 @@ This component can be used as follows:
 The following is a visual screenshot of the modal:
 ![CreateStandardDisbursement](../imgs/frontend/components/ui/admin/common/CreateStandardDisbursements.png)
 
-### Dynamic-parameters
-#### CreateDynamicParameter
+## Dynamic-parameters
+### CreateDynamicParameter
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Dynamic Parameter.
 
 This component can be used as follows:
@@ -216,7 +214,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateDynamicParameter](../imgs/frontend/components/ui/admin/dynamicParameters/CreateDynamicParameters.png)
-#### DeleteDynamicParameter
+### DeleteDynamicParameter
 This component customises the [`modal`](./components-common.md#modal) component to display a confirmation modal for deleting Dynamic Parameter.
 
 This component can be used as follows:
@@ -231,11 +229,9 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![DeleteDynamicParameter](../imgs/frontend/components/ui/admin/dynamicParameters/DeleteDynamicParameters.png)
-#### DynamicParameter
-:::danger
-Not Used
-
-using code in `ALP\App\src\views\admin\DynamicParameters.vue`
+### DynamicParameter
+:::danger Deprecate
+Using code in `ALP\App\src\views\admin\DynamicParameters.vue`
 :::
 
 This component customises the [`slideOver`](#slideover) and the component to display a side bar for editing dynamic parameter.
@@ -249,8 +245,8 @@ This component can be used as follows:
 The following is a visual screenshot of the modal:
 ![DynamicParameter](../imgs/frontend/components/ui/admin/dynamicParameters/DynamicParameter.png)
 
-### Email-template
-#### CreateEmailTemplate
+## Email-template
+### CreateEmailTemplate
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new email templates.
 
 This component can be used as follows:
@@ -265,8 +261,8 @@ This component can be used as follows:
 The following is a visual screenshot of the modal:
 ![CreateEmailTemplate](../imgs/frontend/components/ui/admin/CreateEmailTemplates.png)
 
-### Entity-parameters
-#### CreateEntityParameter
+## Entity-parameters
+### CreateEntityParameter
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
 
 This component can be used as follows:
@@ -281,7 +277,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateEntityParameter](../imgs/frontend/components/ui/admin/entityParameters/CreateEntityParametersList.png)
-#### EntityParametersList
+### EntityParametersList
 This component sets up the page to display list of entity parameters, including the [`CreateEntityParameter`](#createentityparameter) component as an event of a button.
 
 This component can be used directly as a router view:
@@ -296,8 +292,8 @@ component: () =>
 The following is a visual screenshot of the modal:
 ![EntityParametersList](../imgs/frontend/components/ui/admin/entityParameters/EntityParametersList.png)
 
-### Metabase
-#### CreateMetabaseReport
+## Metabase
+### CreateMetabaseReport
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Metabase Report.
 
 This component can be used as follows:
@@ -312,8 +308,8 @@ This component can be used as follows:
 The following is a visual screenshot of the modal:
 ![CreateMetabaseReport](../imgs/frontend/components/ui/admin/CreateMetabaseReport.png)
 
-### Metabase-groups
-#### CreateMetabaseReportGroup
+## Metabase-groups
+### CreateMetabaseReportGroup
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Metabase Report Group.
 
 This component can be used as follows:
@@ -328,8 +324,8 @@ This component can be used as follows:
 The following is a visual screenshot of the modal:
 ![CreateMetabaseReportGroup](../imgs/frontend/components/ui/admin/CreateMetabaseReportGroup.png)
 
-### Offerings
-#### ComponentSelector
+## Offerings
+### ComponentSelector
 This component customises the [`slideOver`](#slideover) and the component to display a side bar for selecting a component. Including ways to add new component or edit current components.
 
 This component can be used as follows:
@@ -346,7 +342,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the side bar:
 ![ComponentSelector](../imgs/frontend/components/ui/admin/offering/ComponentSelector.png)
-#### CreateOffering
+### CreateOffering
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering.
 
 This component can be used as follows:
@@ -360,7 +356,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateOffering](../imgs/frontend/components/ui/admin/offering/CreateOffering.png)
-#### CreateOfferingCategory
+### CreateOfferingCategory
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering category.
 
 This component can be used as follows:
@@ -374,7 +370,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateOfferingCategory](../imgs/frontend/components/ui/admin/offering/CreateOfferingCategory.png)
-#### CreateOfferingComponent
+### CreateOfferingComponent
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering component.
 
 This component can be used as follows:
@@ -388,13 +384,13 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateOfferingComponent](../imgs/frontend/components/ui/admin/offering/CreateOfferingComponent.png)
-#### CreateOfferingOutcome
-This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+### CreateOfferingOutcome
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering outcome.
 
 This component can be used as follows:
 
 ```html
-<create-business-area
+<create-offering-outcome
   v-if="state.showCreate"
   @close="state.showCreate = false"
 />
@@ -402,37 +398,42 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![CreateOfferingOutcome](../imgs/frontend/components/ui/admin/offering/CreateOfferingOutcome.png)
-#### InlineOfferingComponent
-This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+### InlineOfferingComponent
+This component creates and displays each offering outcome component integrating the [`UpDownSwitch`](./components-common.md#updownswitch) component and the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality.
 
 This component can be used as follows:
 
 ```html
-<create-business-area
-  v-if="state.showCreate"
-  @close="state.showCreate = false"
+<inline-offering-component
+  v-for="component in components"
+  :key="component.id"
+  :offering-id="id"
+  :outcome-id="outcome.id"
+  :component="component"
 />
 ```
 
-The following is a visual screenshot of the modal:
+The following is a visual screenshot of the component:
 ![InlineOfferingComponent](../imgs/frontend/components/ui/admin/offering/InlineOfferingComponent.png)
-#### InlineOfferingOutcome
-This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+### InlineOfferingOutcome
+This component creates and displays each offering outcome integrating the [`UpDownSwitch`](./components-common.md#updownswitch) component and the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality.
 
 This component can be used as follows:
 
 ```html
-<create-business-area
-  v-if="state.showCreate"
-  @close="state.showCreate = false"
+<inline-offering-outcome
+  :id="id"
+  :outcome="item"
+  @add-component="outcomeState.showComponentSelectorFor = $event"
 />
 ```
 
-The following is a visual screenshot of the modal:
+The following is a visual screenshot of the component:
 ![InlineOfferingOutcome](../imgs/frontend/components/ui/admin/offering/InlineOfferingOutcome.png)
-#### InlineOfferingOutcomeObjectionGuarantee
-
-#### InlineOfferingProblemOutcome
+### InlineOfferingOutcomeObjectionGuarantee
+:::danger Deprecate
+:::
+### InlineOfferingProblemOutcome
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
 
 This component can be used as follows:
@@ -446,7 +447,7 @@ This component can be used as follows:
 
 The following is a visual screenshot of the modal:
 ![InlineOfferingProblemOutcome](../imgs/frontend/components/ui/admin/offering/InlineOfferingProblemOutcome.png)
-#### MergeOffering
+### MergeOffering
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
 
 This component can be used as follows:
@@ -461,454 +462,59 @@ This component can be used as follows:
 The following is a visual screenshot of the modal:
 ![MergeOffering](../imgs/frontend/components/ui/admin/offering/MergeOffering.png)
 
-### Project-templates
+## Project-templates
 
-#### CreateProjectTemplate
+### CreateProjectTemplate
 
-#### CreateProjectTemplateScheduler
+### CreateProjectTemplateScheduler
 
-#### InlineProjectTemplateTask
+### InlineProjectTemplateTask
 
-#### InlineProjectTemplateTaskStep
+### InlineProjectTemplateTaskStep
 
-#### ProjectTemplateTask
+### ProjectTemplateTask
 
-#### ProjectTemplateTaskMetadata
-
-
-
-### Resource-urls
-
-#### CreateResourceUrl
-
-
-### Roles
-
-#### CreateRole
-
-#### Role
-
-
-### Sprints
-
-#### CreateSprint
-
-
-### Standard-tasks
-
-#### CreateStandardTask
-
-#### InlineStandardTaskStep
-
-#### StandardTask
-
-#### StandardTaskMetadata
-
-
-### Trusts
-
-#### CreateTrustAccount
-
-
-### Users
-
-#### CreateRemuneration
-
-#### CreateUser
-
-
-
-## Clients
-
-
-### CreateClient
-
-
-
-## Contacts
-
-
-### CreateContact
-
-
-### ShowACUnsubscribe
-
-
-
-## Documents
-
-
-### ActiveDocuments
-
-
-### CompleteDocumentReview
-
-
-### Document
-
-
-### DocumentActions
-
-
-### DocumentFilters
-
-
-### DocumentList
-
-
-### ReceivedDocumentReviewRequests
-
-
-### RequestDocumentReview
-
-
-### RequestedDocumentReviewRequests
-
-
-### ResourceSelector
-
-
-### SyntaqResourceSelector
-
-
-
-## Emails
-
-
-### EmailDisplay
-
-
-### EmailGroup
-
-
-### EmailList
-
-
-
-## Feedback
-
-
-### CreateBugReport
-
-
-### CreateSuggestion
-
-
-### UploadDocument
-
-
-
-## Invoices
-
-
-### CreateFixedPriceItem
-
-
-### CreateInvoice
-
-
-### EditInvoiceNote
-
-
-### InlineInvoice
-
-
-### InvoiceDisbursementSelector
-
-
-### InvoiceTimeEntrySelector
-
-
-### UpdateInvoiceDate
-
-
-
-## layout
-
-
-### ActionMultiselect
-
-
-### AdminMenu
-
-
-### ComponentSlideOver
-
-
-### Detail
-
-
-### DocumentMenu
-
-
-### DownloadMenu
-
-
-### EmailMenu
-
-
-### FeedbackButton
-
-
-### Layout
-
-
-### MainMenu
-
-
-### MasterDetail
-
-
-### NavBar
-
-
-### NotificationMenu
-
-
-### ProjectTaskSlideOver
-
-
-### QuickLinks
-
-
-### ReminderMenu
-
-
-### SideBar
-
-
-### SlideOver
-
-
-### StaffDirectory
-
-
-### TimerMenu
-
-
-
-## Mailregister
-
-
-### CreateIncomingMail
-
-
-### CreateOutgoingMail
-
-
-
-## Matters
-
-
-### AddMatterNote
-
-
-### AddMatterOutcome
-
-
-### AssignEmailToMatter
-
-
-### CreateDisbursement
-
-
-### CreateMatter
-
-
-### CreateTrustTransactionRequest
-
-
-### EditContactNote
-
-
-### EditMatterNote
-
-
-### InlineMatter
-
-
-### InlineMatterComponent
-
-
-### InlineMatterOutcome
-
-
-### MatterComponentTimeEntries
-
-
-### MatterTimeEntriesForMatter
-
-
-### MatterTrustRequests
-
-
-### MatterTrustTransactions
-
-
-### ReassignEmails
-
-
-### SalesTimeEntriesForMatter
-
-
-### UpdateMatterStatus
-
-
-
-## Offerings
-
-
-### InlineOfferingComponent
-
-
-### InlineOfferingOutcome
-
-
-### InlineOfferingOutcomeObjectionGuarantee
-
-
-### InlineOfferingProblemOutcome
-
-
-
-## Organisations
-
-
-### CreateOrganisation
-
-
-### EditOrganizationNote
-
-
-
-## Pqeadjustment
-
-
-### CreatePQEAdjustment
-
-
-
-## Projects
-
-
-### AssignEmailToProject
-
-
-### CreateProject
-
-
-### CreateProjectTask
-
-
-### EditProjectNote
-
-
-### InlineProject
-
-
-### InlineProjectTask
-
-
-### InlineProjectTaskCard
-
-
-### InlineProjectTaskStep
-
-
-### ProjectTask
-
-
-### ProjectTaskMetadata
-
-
-### ProjectTimeEntriesForProject
-
-
-
-## Relationships
-
-
-### CreateOrganisationRelationship
-
-
-### CreateRelationship
-
-
-
-## Reminders
-
-
-### CreateReminder
+### ProjectTemplateTaskMetadata
 
 
 
 ## Resource-urls
 
-
-### ResourceUrlSelector
-
+### CreateResourceUrl
 
 
-## Safestorage
+## Roles
+
+### CreateRole
+
+### Role
 
 
-### CreateContactSafeStorage
+## Sprints
+
+### CreateSprint
 
 
-### CreateOrganisationSafeStorage
+## Standard-tasks
+
+### CreateStandardTask
+
+### InlineStandardTaskStep
+
+### StandardTask
+
+### StandardTaskMetadata
 
 
+## Trusts
 
-## Time-tracking
-
-
-### CreateTimeEntry
+### CreateTrustAccount
 
 
-### CreateTimeEntryForm
+## Users
+
+### CreateRemuneration
+
+### CreateUser
 
 
-### CreateTimeEntryForMatter
-
-
-### CreateTimeEntryFormForMatter
-
-
-### CreateTimeEntryFormForProject
-
-
-### CreateTimeEntryForProject
-
-
-### InlineAddSalesTimeEntries
-
-
-### InlineMatterTimeEntries
-
-
-### InlineProjectTimeEntries
-
-
-### InlineSalesTimeEntries
-
-
-### MatterTimeEntries
-
-
-### ProjectTimeEntries
-
-
-### SalesTimeEntries
-
-
-### SubmitTimer
-
-
-### TimerMatterSelector
-
-
-### TimerProjectTaskSelector
-
-
-
-## GlobalModals
