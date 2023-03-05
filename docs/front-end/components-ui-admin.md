@@ -1,6 +1,12 @@
 # UI Admin Components
 
-This is A brief summary of the UI admin components being used in the system today.
+This is A brief overview of the UI ***Admin*** components being used in the system today.
+
+:::tip Note
+Updated Q1 2023
+:::
+
+
 
 ## Common
 
@@ -234,7 +240,7 @@ The following is a visual screenshot of the modal:
 Using code in `ALP\App\src\views\admin\DynamicParameters.vue`
 :::
 
-This component customises the [`slideOver`](#slideover) and the component to display a side bar for editing dynamic parameter.
+This component customises the [`slideOver`](components-ui-user.md#slideover) window for editing dynamic parameter.
 
 This component can be used as follows:
 
@@ -259,11 +265,11 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateEmailTemplate](../imgs/frontend/components/ui/admin/CreateEmailTemplates.png)
+![CreateEmailTemplate](../imgs/frontend/components/ui/admin/email-template/CreateEmailTemplates.png)
 
 ## Entity-parameters
 ### CreateEntityParameter
-This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new entity parameter.
 
 This component can be used as follows:
 
@@ -306,7 +312,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateMetabaseReport](../imgs/frontend/components/ui/admin/CreateMetabaseReport.png)
+![CreateMetabaseReport](../imgs/frontend/components/ui/admin/metabase/CreateMetabaseReport.png)
 
 ## Metabase-groups
 ### CreateMetabaseReportGroup
@@ -322,11 +328,11 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateMetabaseReportGroup](../imgs/frontend/components/ui/admin/CreateMetabaseReportGroup.png)
+![CreateMetabaseReportGroup](../imgs/frontend/components/ui/admin/metabase-groups/CreateMetabaseReportGroup.png)
 
 ## Offerings
 ### ComponentSelector
-This component customises the [`slideOver`](#slideover) and the component to display a side bar for selecting a component. Including ways to add new component or edit current components.
+This component customises the [`slideOver`](components-ui-user.md#slideover) window for selecting a component. Including ways to add new component or edit current components.
 
 This component can be used as follows:
 
@@ -434,28 +440,32 @@ The following is a visual screenshot of the component:
 :::danger Deprecate
 :::
 ### InlineOfferingProblemOutcome
-This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+This component creates and displays each of the offering problem outcome integrating the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality.
 
 This component can be used as follows:
 
 ```html
-<create-business-area
-  v-if="state.showCreate"
-  @close="state.showCreate = false"
+<inline-offering-problem-outcome
+  v-for="problemOutcome in problemOutcomes.filter(
+    (o) => o.type == type.value
+  )"
+  :key="problemOutcome.id"
+  :id="id"
+  :problem-outcome="problemOutcome"
 />
 ```
 
-The following is a visual screenshot of the modal:
+The following is a visual screenshot of the component:
 ![InlineOfferingProblemOutcome](../imgs/frontend/components/ui/admin/offering/InlineOfferingProblemOutcome.png)
 ### MergeOffering
-This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new business area.
+This component customises the [`modal`](./components-common.md#modal), the [`modalForm`](./components-common.md#modalform) and the [`offeringSelector`](components-input.md#xxxxxselectors) components to display a modal for merging offerings.
 
 This component can be used as follows:
 
 ```html
-<create-business-area
-  v-if="state.showCreate"
-  @close="state.showCreate = false"
+<merge-offering
+  v-if = "state.showMergeOffering"
+  @close= "state.showMergeOffering = false"
 />
 ```
 
@@ -463,58 +473,290 @@ The following is a visual screenshot of the modal:
 ![MergeOffering](../imgs/frontend/components/ui/admin/offering/MergeOffering.png)
 
 ## Project-templates
-
 ### CreateProjectTemplate
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Project Template.
 
+This component can be used as follows:
+
+```html
+<create-project-template
+    v-if="state.showCreate"
+    @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateProjectTemplate](../imgs/frontend/components/ui/admin/projectTemplate/CreateProjectTemplates.png)
 ### CreateProjectTemplateScheduler
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Project Template scheduler, which also includes a toggle option for repeats. 
 
+This component can be used as follows:
+
+```html
+<create-project-template-scheduler
+    v-if="state.showCreate"
+    :id="id"
+    @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateProjectTemplateScheduler](../imgs/frontend/components/ui/admin/projectTemplate/CreateProjectTemplateScheduler.png)
 ### InlineProjectTemplateTask
+This component creates and displays each Inline Project Template Tasks, integrating the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality, an option to choose from inline input for normal task and search and choosing from [`standard tasks`](#standard-tasks).
 
+This component can be used as follows:
+
+```html
+<inline-project-template-task
+  class="mt-1 transition duration-200"
+  :key="value.id"
+  :project-template-id="id"
+  :project-template-task="value"
+  @selected="
+  taskState.isDisableTasksDragAndDrop = true;
+  $router.push({
+  name: 'Project Template Task',
+  params: { id, taskId: value.id }
+  });
+  "
+/>
+```
+
+The following is a visual screenshot of the component:
+![InlineProjectTemplateTask](../imgs/frontend/components/ui/admin/projectTemplate/InlineProjectTemplateTask.png)
 ### InlineProjectTemplateTaskStep
+This component is created using the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality for task steps.
 
+This component can be used as follows:
+
+```html
+<inline-project-template-task-step
+  :project-template-id="projectTemplateId"
+  :project-template-task-id="id"
+  :project-template-task-step="value"
+  class="flex items-center py-2 mb-1 border border-gray-300 hover:border-indigo-300 hover:bg-blue-100 rounded-lg"
+  :key="value.id"
+  :is-steps-check-list="state.isStepsCheckList"
+/>
+```
+
+The following is a visual screenshot of the component:
+![InlineProjectTemplateTaskStep](../imgs/frontend/components/ui/admin/projectTemplate/InlineProjectTemplateTaskStep.png)
 ### ProjectTemplateTask
+This component sets up the page to display the [`slideOver`](components-ui-user.md#slideover) window for editing the project template task, including the [`InlineInput`](./components-input.md#inlineinput) and [`InlineProjectTemplateTaskStep`](#inlineprojecttemplatetaskstep) components.
 
+This component can be used directly as a router view:
+
+```ts
+component: () =>
+    import(
+        "@/components/ui/admin/project-templates/ProjectTemplateTask.vue"
+    ),
+```
+
+The following is a visual screenshot of the component:
+![ProjectTemplateTask](../imgs/frontend/components/ui/admin/projectTemplate/ProjectTemplateTask.png)
 ### ProjectTemplateTaskMetadata
+This component is created using the [`dynamicInput`](./components-input.md#dynamicinput) component to allow inline editing funtionality for task steps.
 
+This component can be used as follows:
+
+```html
+<project-template-task-metadata
+  :project-template-id="projectTemplateId"
+  :id="id"
+/>
+```
+
+The following is a visual screenshot of the component:
+![ProjectTemplateTaskMetadata](../imgs/frontend/components/ui/admin/projectTemplate/ProjectTemplateTaskMetadata.png)
 
 
 ## Resource-urls
-
 ### CreateResourceUrl
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Resource Url.
 
+This component can be used as follows:
+
+```html
+<create-resource-url
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateResourceUrl](../imgs/frontend/components/ui/admin/resource-urls/CreateResourceUrls.png)
 
 ## Roles
-
 ### CreateRole
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new roles.
 
+This component can be used as follows:
+
+```html
+<create-role
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateRole](../imgs/frontend/components/ui/admin/roles/CreateRole.png)
 ### Role
+This component customises the [`slideOver`](components-ui-user.md#slideover) window for managing permissions in the system of a role.
+
+This component can be used as follows:
+
+```html
+
+<role
+  v-if="state.selectedRoleId"
+  :id="state.selectedRoleId"
+  :key="state.selectedRoleId"
+  @close="state.selectedRoleId = null"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![Role](../imgs/frontend/components/ui/admin/roles/Role.png)
 
 
 ## Sprints
-
 ### CreateSprint
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new sprint.
 
+This component can be used as follows:
+
+```html
+<create-sprint
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateSprint](../imgs/frontend/components/ui/admin/sprints/CreateSprint.png)
 
 ## Standard-tasks
-
 ### CreateStandardTask
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new standard task.
 
+This component can be used as follows:
+
+```html
+<create-standard-task
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateStandardTask](../imgs/frontend/components/ui/admin/standard-tasks/CreateStandardTask.png)
 ### InlineStandardTaskStep
+This component creates and displays each Inline Standard Task Steps, integrating the [`EditInlineInput`](./components-input.md#editinlineinput) component to allow inline editing funtionality, an option to select and choose resources to be included in the task step using the [`ResourceSelector`](components-ui-user.md#resourceselector), [`ResourceUrlSelector`](components-ui-user.md#resourceurlselector) and [`SyntaqResourceSelector`](components-ui-user.md#syntaqresourceselector).
 
+This component can be used as follows:
+
+```html
+<inline-standard-task-step
+  :standard-task-id="id"
+  :standard-task-step="value"
+  class="class"
+  :key="value.id"
+  :is-steps-check-list="state.isStepsCheckList"
+/>
+```
+
+The following is a visual screenshot of the component:
+![InlineStandardTaskStep](../imgs/frontend/components/ui/admin/standard-tasks/InlineStandardTaskStep.png)
 ### StandardTask
+This component sets up the page to display the [`slideOver`](components-ui-user.md#slideover) window for editing the project template task, including the [`InlineInput`](./components-input.md#inlineinput) and [`InlineStandardTaskStep`](#inlinestandardtaskstep) components.
 
+This component can be used directly as a router view:
+
+```ts
+component: () =>
+  import(
+    "@/components/ui/admin/standard-tasks/StandardTask.vue"
+  ),
+```
+
+The following is a visual screenshot of the component:
+![StandardTask](../imgs/frontend/components/ui/admin/standard-tasks//StandardTask.png)
 ### StandardTaskMetadata
+This component is created using the [`dynamicInput`](./components-input.md#dynamicinput) component to allow inline editing funtionality for task metadata.
 
+This component can be used as follows:
+
+```html
+<standard-task-metadata 
+  :id="id" 
+/>
+```
+
+The following is a visual screenshot of the component:
+![StandardTaskMetadata](../imgs/frontend/components/ui/admin/standard-tasks/StandardTaskMetadata.png)
 
 ## Trusts
-
 ### CreateTrustAccount
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform) components to display a modal for creating new trust account.
 
+This component can be used as follows:
+
+```html
+<create-trust-account
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateTrustAccount](../imgs/frontend/components/ui/admin/trusts/CreateTrustAccount.png)
 
 ## Users
+### ChangePassword
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for changing password.
 
+This component can be used as follows:
+
+```html
+<change-password
+  v-if="stateUser.showCreate"
+  @close="stateUser.showCreate = false"
+  :id="id"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![ChangePassword](../imgs/frontend/components/ui/admin/users/ChangePassword.png)
 ### CreateRemuneration
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Remuneration.
 
+This component can be used as follows:
+
+```html
+<create-remuneration
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateRemuneration](../imgs/frontend/components/ui/admin/users/CreateRemunerations.png)
 ### CreateUser
+This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new user.
 
+This component can be used as follows:
+
+```html
+<create-user
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
+```
+
+The following is a visual screenshot of the modal:
+![CreateUser](../imgs/frontend/components/ui/admin/users/CreateUsers.png)
 

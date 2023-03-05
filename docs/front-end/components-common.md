@@ -1,6 +1,9 @@
 # Common Components
 
 The following will talk about some of the common components implemented for use in the system.
+:::tip Note
+Updated Q1 2023
+:::
 
 ## AlpHeading
 

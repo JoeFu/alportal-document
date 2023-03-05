@@ -1,6 +1,9 @@
 # Inputs Components
 
 This is a brief summary of some of the inputs components being used in the system today.
+:::tip Note
+Updated Q1 2023
+:::
 
 ## Selectors
 ### SearchSelector
