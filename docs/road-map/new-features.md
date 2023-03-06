@@ -1,19 +1,44 @@
-# Road Map
+# New Features
+This page includes some of the new features the application is considering in the future versions.
 
-This page is used to outline the planned **features**, **improvements**, and **bug fixes** that will be included in future releases. 
+## AI
+Read on [OpenAI](https://openai.com/blog/chatgpt-plus), hoping to embed ChatGPT into the ALP application to aid in system tasks to be more automated.
 
-# Improvement
-## Migration to Pinia
-The officially recommended state management tool for Vue projects has changed to Pinia.
-#### What is Pinia?
-Pinia is a lightweight alternative to Vuex for state management in Vue.js applications. 
+## LLM
+Communications Line Laying Module (LLM). 
+> Ability to train on our own data. Ownership of trained data. Foundry.
 
-It provides a simpler and more intuitive API, better type-safety, and improved performance. 
-#### Migration
-Migrating from Vuex to Pinia involves updating the state management code in the application to use the Pinia API instead of Vuex.
+> Ability to run on our own servers.
 
-Migration is planned for version to be released in **2023 Q4**.
+Read on [LLM](https://community.openai.com/t/how-a-llm-based-application-integrates-a-custom-function-api/27887).
+### Stage 1:
+- Use of natural language functions to speed up tasks in Portal.
+- Short-medium term strategy: Do not use to do direct legal work for now. Use NL ability to improve Portal functions.
+- Email summaries.
+- Time recording – check for incorrect language. Make recommended time entries from things like emails and calendar entries. Tie-in with Dash prompts.
+### Stage 2:
+- Tweak towards our dataset.
+- Try [this](https://github.com/nebuly-ai/nebullvm/tree/main/apps/accelerate/chatllama?utm_source=tldrai)
 
-# Bug Fixes
+## Client portal
+Limited direct access for clients to key data based on one-time passwords.
+### ToDo
+- research client need.
+  - Update their own details (name, address, subscriptions, etc.)
+  - Invoicing/payments.
+  - Key documents – permanent record
+  - Matter status, 
+  - etc (Limited)
+- Corporate and key referrers.
+- Emails to clients on Matter -> triggers link to request OTP.
 
-# Feature
+## Mobile App or Mini-Browser
+- Limited functions
+  - Time entry
+  - Contact look up –> call
+
+## Global Search
+New feature of Global Searching the entire application.
+
+## Email Upgrade
+- To include Conversation

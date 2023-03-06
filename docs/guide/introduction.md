@@ -16,7 +16,7 @@ With its user-friendly interface and advanced features, the portal app helps law
 
 Whether you are working independently or as part of a team, the portal app is an essential tool that will revolutionize the way you work and help you stay ahead of the curve in an ever-changing legal landscape.
 
-::: danger Pending Reviewed
+::: danger Pending Review
 :::
 
 ## Application Features
