@@ -10,7 +10,7 @@ Contacts can be related to each other; as family members, professional relations
 
 ## Organisations
 
-Organistions are the various companies and organisations that the firm interacts with.
+Organisations are the various companies and organisations that the firm interacts with.
 
 ## Clients
 

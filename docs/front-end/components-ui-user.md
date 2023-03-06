@@ -377,7 +377,7 @@ This component can be used as follows:
 The following is a visual of this component at work.
 ![`InlineInvoice`](../imgs/frontend/components/ui/invoices/InlineInvoice.png)
 ### InvoiceDisbursementSelector
-This component customises the [`SlideOver`](#slideover) window for selecting a disbersement.
+This component customises the [`SlideOver`](#slideover) window for selecting a disbursement.
 
 This component can be used as follows:
 
@@ -476,47 +476,15 @@ This component can be used by just wrapping the contents just like that of a `di
 The following is a visual of this component at work.
 ![`Detail`](../imgs/frontend/components/ui/layout/Detail.png)
 ### MasterDetail
+This component is for rendering the breadcrumbs of the currently displayed page in the main container. This is very useful in helping the user visualise and navigate 
+This is usually used by wrapping the whole page. 
 
-This component can be used as follows:
-
-```html
-
-```
+This component can be used by just wrapping the contents just like that of a `div` component.
 
 The following is a visual of this component at work.
 ![`MasterDetail`](../imgs/frontend/components/ui/layout/MasterDetail.png)
-### DocumentMenu
-This component is to render the menu for documents that includes [`ActiveDocuments`](#activedocuments),[`ReceivedDocumentReviewRequests`](#receiveddocumentreviewrequests) and [`RequestedDocumentReviewRequests`](#requesteddocumentreviewrequests).
-
-This component can be used as follows:
-
-```html
-<document-menu v-else-if="state.showMenu == 'documents'" />
-```
-The following is a visual of this component at work.
-![`DocumentMenu`](../imgs/frontend/components/ui/layout/DocumentMenu.png)
-### DownloadMenu
-This is to render the downloading menu to list current downloading jobs. 
-
-This component can be used as follows:
-
-```html
-<download-menu v-else-if="state.showMenu == 'downloads'" />
-```
-
-The following is a visual of this component at work.
-![`DownloadMenu`](../imgs/frontend/components/ui/layout/DownloadMenu.png)
-### EmailMenu
-This is to render the new email floating page when clicking the top menu email option.
-
-This component can be used as follows:
-
-```html
-<email-menu v-else-if="state.showMenu === 'emails'" />
-```
-The following is a visual of this component at work.
-![`EmailMenu`](../imgs/frontend/components/ui/layout/EmailMenu.png)
 ### MainMenu
+This component is to render the whole main menu on the left side of the page. 
 
 This component can be used as follows:
 
@@ -530,28 +498,72 @@ This component can be used as follows:
 
 The following is a visual of this component at work.
 ![`MainMenu`](../imgs/frontend/components/ui/layout/MainMenu.png)
-### NotificationMenu
+### DocumentMenu
+This component is to render the menu for documents that includes [`ActiveDocuments`](#activedocuments),[`ReceivedDocumentReviewRequests`](#receiveddocumentreviewrequests) and [`RequestedDocumentReviewRequests`](#requesteddocumentreviewrequests).
 
 This component can be used as follows:
 
 ```html
+<document-menu v-else-if="state.showMenu == 'documents'" />
+```
+The following is a visual of this component at work.
+![`DocumentMenu`](../imgs/frontend/components/ui/layout/DocumentMenu.png)
+### DownloadMenu
+This component is to render the downloading menu to list current downloading jobs. 
 
+This component can be used as follows:
+
+```html
+<download-menu v-else-if="state.showMenu == 'downloads'" />
+```
+
+The following is a visual of this component at work.
+![`DownloadMenu`](../imgs/frontend/components/ui/layout/DownloadMenu.png)
+### EmailMenu
+This component is to render the new email floating page when clicking the top menu email option.
+
+This component can be used as follows:
+
+```html
+<email-menu v-else-if="state.showMenu === 'emails'" />
+```
+The following is a visual of this component at work.
+![`EmailMenu`](../imgs/frontend/components/ui/layout/EmailMenu.png)
+### NotificationMenu
+This component is to render the floating notification menu window. 
+
+This component can be used as follows:
+
+```html
+<notification-menu v-else-if="state.showMenu === 'notifications'" />
 ```
 
 The following is a visual of this component at work.
 ![`NotificationMenu`](../imgs/frontend/components/ui/layout/NotificationMenu.png)
 ### ReminderMenu
+This component is to render the floating reminder menu window. 
 
 This component can be used as follows:
 
 ```html
-
+<reminder-menu v-else-if="state.showMenu === 'reminders'" />
 ```
 
 The following is a visual of this component at work.
 ![`ReminderMenu`](../imgs/frontend/components/ui/layout/ReminderMenu.png)
+### TimerMenu
+This component is to render the floating timer menu window. 
+
+This component can be used as follows:
+
+```html
+<timer-menu v-else-if="state.showMenu === 'timers'" />
+```
+
+The following is a visual of this component at work.
+![`TimerMenu`](../imgs/frontend/components/ui/layout/TimerMenu.png)
 ### StaffDirectory
-This component customises the [`SlideOver`](#slideover) window for managing permissions in the system of a role.
+This component customises the [`SlideOver`](#slideover) window for rendering the staff directory.
 
 This component can be used as follows:
 
@@ -565,19 +577,28 @@ This component can be used as follows:
 ```
 The following is a visual of this component at work.
 ![`StaffDirectory`](../imgs/frontend/components/ui/layout/StaffDirectory.png)
-
-### TimerMenu
+### SideBar
+This component is used to render the group of menu items on the top right hand corner, including [`DocumentMenu`](#documentmenu),[`DownloadMenu`](#downloadmenu),[`EmailMenu`](#emailmenu),[`NotificationMenu`](#notificationmenu), [`ReminderMenu`](#remindermenu),    , and [`TimerMenu`](#timermenu)[`StaffDirectory`](#staffdirectory).
 
 This component can be used as follows:
 
 ```html
-
+<side-bar
+  :handleHover="handleExpand"
+  :handleMouseLeave="handleClose"
+  class="md:flex flex-shrink-0 flex-grow-0"
+  :msg="state.msg"
+  :showAdminMenu="state.isShowAdminMenu"
+  :handleMobileviewNatigation="handleMobileviewNatigation"
+/>
 ```
-
+<!-- :::danger Bug
+wrong spelling in code
+::: -->
 The following is a visual of this component at work.
-![`TimerMenu`](../imgs/frontend/components/ui/layout/TimerMenu.png)
+![`SideBar`](../imgs/frontend/components/ui/layout/SideBar.png)
 ### Layout
-This component renders the overall page for the main layout, with the top and side navigations. This consists of the [`MainMenu`](#mainmenu) for the side navigation; [`DocumentMenu`](#documentmenu),[`DownloadMenu`](#downloadmenu),[`EmailMenu`](#emailmenu),[`NotificationMenu`](#notificationmenu), [`ReminderMenu`](#remindermenu),    , and [`TimerMenu`](#timermenu)[`StaffDirectory`](#staffdirectory) used for the top nevigations.  
+This component renders the overall page for the main layout, with the top and side navigation. This consists of the [`MainMenu`](#mainmenu) for the side navigation; [`SideBar`](#sidebar) used for the top navigation menu.  
 
 This component can be used as follows:
 ```ts
@@ -593,31 +614,13 @@ The following is a visual of this component at work.
 :::danger Deprecate
 Switched to sidebar
 :::
-
-
 ### QuickLinks
 :::danger Deprecate
 :::
 
-### SideBar
-
-This component can be used as follows:
-
-```html
-<side-bar
-  :handleHover="handleExpand"
-  :handleMouseLeave="handleClose"
-  class="md:flex flex-shrink-0 flex-grow-0"
-  :msg="state.msg"
-  :showAdminMenu="state.isShowAdminMenu"
-  :handleMobileviewNatigation="handleMobileviewNatigation"
-/>
-```
-The following is a visual of this component at work.
-![`SideBar`](../imgs/frontend/components/ui/layout/SideBar.png)
 
 
-## Mailregister
+## MailRegister
 ### CreateIncomingMail
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for registering new incoming mail.
 
@@ -642,11 +645,16 @@ This can be used according to [`GlobalModals`](#globalmodals).
 The following is a visual of this component at work.
 ![`AddMatterNote`](../imgs/frontend/components/ui/matters/AddMatterNote.png)
 ### AddMatterOutcome
+This component renders a [`modal`](components-common.md#modal) component for selecting an outcome to add to the matter according to the type of matter.
 
 This component can be used as follows:
 
 ```html
-
+<add-matter-outcome
+  v-if="state.showAddOutcomes"
+  :id="id"
+  @close="state.showAddOutcomes = false"
+/>
 ```
 
 The following is a visual of this component at work.
@@ -659,15 +667,16 @@ This can be used according to [`GlobalModals`](#globalmodals).
 The following is a visual of this component at work.
 ![`AssignEmailToMatter`](../imgs/frontend/components/ui/matters/AssignEmailToMatter.png)
 ### CreateDisbursement
+This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for filling in form to create a disbursement.
 
 This component can be used as follows:
 
 ```html
 <create-disbursement
-        :matter-id="id"
-        v-if="state.showCreate"
-        @close="state.showCreate = false"
-      />
+  :matter-id="id"
+  v-if="state.showCreate"
+  @close="state.showCreate = false"
+/>
 ```
 The following is a visual of this component at work.
 ![`CreateDisbursement`](../imgs/frontend/components/ui/matters/CreateDisbursement.png)
@@ -679,11 +688,16 @@ This can be used according to [`GlobalModals`](#globalmodals).
 The following is a visual of this component at work.
 ![`CreateMatter`](../imgs/frontend/components/ui/matters/CreateMatter.png)
 ### CreateTrustTransactionRequest
+This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for creating a Trust Transaction Request.
 
 This component can be used as follows:
 
 ```html
-
+<create-trust-transaction-request
+  v-if="state.showCreate"
+  :id="id"
+  @close="state.showCreate = false"
+/>
 ```
 
 The following is a visual of this component at work.
@@ -703,17 +717,24 @@ This can be used according to [`GlobalModals`](#globalmodals).
 The following is a visual of this component at work.
 ![`EditMatterNote`](../imgs/frontend/components/ui/matters/EditMatterNote.png)
 ### InlineMatter
+This component is to display a Matter in a line for a page of list of Matters in "My Matters Report". 
+This line of Matter renders an overview of the matter, including MatterId in coloured badge, latest note of matter, status of matter and more. 
 
 This component can be used as follows:
 
 ```html
-
+<inline-matter
+  class="mb-3 transition duration-200 shadow-lg"
+  v-for="item in items"
+  :key="item.id"
+  :matter="item"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`InlineMatter`](../imgs/frontend/components/ui/matters/InlineMatter.png)
 ### InlineMatterComponent
-
+This component renders the inline matter outcome component as shown in the visual below. This component includes a `multiUserSelector` to assign the component to a staff member, `timer` to record time entries as well as a `dueDate` for the component.
 
 This component can be used as follows:
 
@@ -731,65 +752,94 @@ This component can be used as follows:
 The following is a visual of this component at work.
 ![`InlineMatterComponent`](../imgs/frontend/components/ui/matters/InlineMatterComponent.png)
 ### InlineMatterOutcome
+This component renders a container to hold the [`InlineMatterComponent`](#inlinemattercomponent) according to their outcomes.
 
 This component can be used as follows:
 
 ```html
-
+<inline-matter-outcome
+  class="my-1 mx-2 transition duration-200"
+  v-for="item in matterOutcomes"
+  :key="item.id"
+  :matter-id="id"
+  :outcome="item"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`InlineMatterOutcome`](../imgs/frontend/components/ui/matters/InlineMatterOutcome.png)
-
 ### MatterComponentTimeEntries
+This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) for creating time entries for a matter outcome component.
 
 This component can be used as follows:
 
 ```html
 <matter-component-time-entries
-					:matter-id="id"
-					:outcome-id="outcomeId"
-					:id="componentId"
-				/>
+  :matter-id="id"
+  :outcome-id="outcomeId"
+  :id="componentId"
+/>
 ```
 The following is a visual of this component at work.
 ![`MatterComponentTimeEntries`](../imgs/frontend/components/ui/matters/MatterComponentTimeEntries.png)
-
 ### MatterTimeEntriesForMatter
+This component renders the page under each matter that shows all of the matter time entries of the matter.
 
 This component can be used as follows:
 
 ```html
 <matter-time-entries-for-matter
-        v-if="state.selectedType == 'matter'"
-        :id="id"
-        :invoiced="state.invoiced"
-        :billable-type="state.billableType"
-        :user="state.user"
-        :search="state.search"
-        @selected="getSelectedTimeEntry($event)"
-      />
+  v-if="state.selectedType == 'matter'"
+  :id="id"
+  :invoiced="state.invoiced"
+  :billable-type="state.billableType"
+  :user="state.user"
+  :search="state.search"
+  @selected="getSelectedTimeEntry($event)"
+/>
 ```
 The following is a visual of this component at work.
 ![`MatterTimeEntriesForMatter`](../imgs/frontend/components/ui/matters/MatterTimeEntriesForMatter.png)
-### MatterTrustRequests
+### SalesTimeEntriesForMatter
+This component renders the page under each matter that shows all of the sales time entries of the matter.
 
 This component can be used as follows:
 
 ```html
- <matter-trust-requests 
-        v-if="state.selectedType == 'requests'" 
-        :id="id" 
-      />
+<sales-time-entries-for-matter
+  v-if="state.selectedType == 'sales'"
+  :id="id"
+  :user="state.user"
+  :search="state.search"
+  @selected="getSelectedTimeEntry($event)"
+/>
+```
+
+The following is a visual of this component at work.
+![`SalesTimeEntriesForMatter`](../imgs/frontend/components/ui/matters/SalesTimeEntriesForMatter.png)
+### MatterTrustRequests
+This component renders the page under each matter that shows all of the trust requests of the matter.
+
+This component can be used as follows:
+
+```html
+<matter-trust-requests 
+  v-if="state.selectedType == 'requests'" 
+  :id="id" 
+/>
 ```
 The following is a visual of this component at work.
 ![`MatterTrustRequests`](../imgs/frontend/components/ui/matters/MatterTrustRequests.png)
 ### MatterTrustTransactions
+This component renders the page under each matter that shows all of the trust transactions of the matter.
 
 This component can be used as follows:
 
 ```html
-
+<matter-trust-transactions
+  v-if="state.selectedType == 'transactions'"
+  :id="id"
+/>
 ```
 
 The following is a visual of this component at work.
@@ -804,16 +854,6 @@ This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
 ![``](../imgs/frontend/components/ui -->
-### SalesTimeEntriesForMatter
-
-This component can be used as follows:
-
-```html
-
-```
-
-The following is a visual of this component at work.
-![`SalesTimeEntriesForMatter`](../imgs/frontend/components/ui/matters/SalesTimeEntriesForMatter.png)
 ### UpdateMatterStatus
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for updating status of a matter.
 
@@ -824,6 +864,8 @@ The following is a visual of this component at work.
 
 ## Offerings
 ### InlineOfferingComponent
+
+This component renders the inline offering component under an offering outcome. 
 
 This component can be used as follows:
 
@@ -839,6 +881,7 @@ This component can be used as follows:
 The following is a visual of this component at work.
 ![`InlineOfferingComponent`](../imgs/frontend/components/ui/offerings/InlineOfferingComponent.png)
 ### InlineOfferingOutcome
+This component renders the inline offering outcome under an offering.
 
 This component can be used as follows:
 
@@ -860,11 +903,20 @@ The following is a visual of this component at work.
 :::danger Deprecate
 :::
 ### InlineOfferingProblemOutcome
+This component renders the inline offering problem outcome under an offering.  
 
 This component can be used as follows:
 
 ```html
-
+<inline-offering-problem-outcome
+  v-for="problemOutcome in problemOutcomes.filter(
+    (o) => o.type == type.value
+  )"
+  :key="problemOutcome.id"
+  :id="id"
+  :problem-outcome="problemOutcome"
+  disabled
+/>
 ```
 
 The following is a visual of this component at work.
@@ -886,11 +938,11 @@ This can be used according to [`GlobalModals`](#globalmodals).
 The following is a visual of this component at work.
 ![`EditOrganizationNote`](../imgs/frontend/components/ui/organisations/EditOrganizationNote.png)
 
-## Pqeadjustment
+## PqeAdjustment
 ### CreatePQEAdjustment
-:::danger Pending confirmation
+<!-- :::danger Pending confirmation
 Should this be in admin/user instead?
-:::
+::: -->
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for creating PQE adjustment.
 
 This can be used according to [`GlobalModals`](#globalmodals).
@@ -900,7 +952,7 @@ The following is a visual of this component at work.
 
 ## Projects
 ### AssignEmailToProject
-This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for assigning email to choosen project.
+This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for assigning email to chosen project.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
@@ -928,6 +980,7 @@ This can be used according to [`GlobalModals`](#globalmodals).
 The following is a visual of this component at work.
 ![`EditProjectNote`](../imgs/frontend/components/ui/projects/EditProjectNote.png)
 ### InlineProject
+This component renders each inline projects under my projects. This includes function for inline editing of names, owners, tasks and other functions such as changing status of the project. 
 
 This component can be used as follows:
 
@@ -941,16 +994,26 @@ This component can be used as follows:
 The following is a visual of this component at work.
 ![`InlineProject`](../imgs/frontend/components/ui/projects/InlineProject.png)
 ### InlineProjectTask
+This component renders each inline projects task under [`InlineProject`](#inlineproject). This includes function for inline editing of take names, assigning staff members, setting status of task and a timer for time entry records. 
 
 This component can be used as follows:
 
 ```html
-
+<inline-project-task
+  class="mt-1 transition duration-200"
+  v-for="item in projectTasks"
+  :key="item.id"
+  :project-id="project.id"
+  :project-task="item"
+  @selected="$emit('task-selected', item.id)"
+  @updated="fetchProjectTasks"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`InlineProjectTask`](../imgs/frontend/components/ui/projects/InlineProjectTask.png)
 ### InlineProjectTaskCard
+This component renders a task card similar to that of a kanban to be viewed and dragged for rearranging. [`AlpDraggable`](components-common.md#alpdraggable) component will be needed to allow dragging. 
 
 This component can be used as follows:
 
@@ -966,11 +1029,20 @@ This component can be used as follows:
 The following is a visual of this component at work.
 ![`InlineProjectTaskCard`](../imgs/frontend/components/ui/projects/InlineProjectTaskCard.png)
 ### InlineProjectTaskStep
+This component renders an inline task step under the [`ProjectTask`](#projecttask) that allows adding of resources.
 
 This component can be used as follows:
 
 ```html
-
+<inline-project-task-step
+  :project-id="projectId"
+  :project-task-id="id"
+  :project-task-step="value"
+  class="flex items-center"
+  :key="value.id"
+  :is-steps-check-list="state.isStepsCheckList"
+  @updated="$emit('stepUpdated')"
+/>
 ```
 
 The following is a visual of this component at work.
@@ -981,26 +1053,39 @@ This component customises the [`ProjectTaskSlideOver`](#projecttaskslideover) wi
 This component can be used as follows:
 
 ```html
-
+<project-task
+  v-if="state.selectedProjectId && state.selectedTaskId"
+  :key="state.selectedTaskId"
+  :project-id="state.selectedProjectId"
+  :id="state.selectedTaskId"
+  @close="taskSelected(null, null)"
+/>
 ```
 The following is a visual of this component at work.
 ![`ProjectTask`](../imgs/frontend/components/ui/projects/ProjectTask.png)
 ### ProjectTaskMetadata
+This component renders the metadata section in the [`ProjectTask`](#projecttask).
 
 This component can be used as follows:
 
 ```html
-
+<project-task-metadata :project-id="projectId" :id="id" />
 ```
 
 The following is a visual of this component at work.
 ![`ProjectTaskMetadata`](../imgs/frontend/components/ui/projects/ProjectTaskMetadata.png)
 ### ProjectTimeEntriesForProject
+This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for filling in form to create a time entry for project, under Projects > Time entries.
 
 This component can be used as follows:
 
 ```html
-
+<project-time-entries-for-project
+  :id="id"
+  :user="state.user"
+  :search="state.search"
+  @selected="getSelectedTimeEntry($event)"
+/>
 ```
 
 The following is a visual of this component at work.
@@ -1008,11 +1093,16 @@ The following is a visual of this component at work.
 
 ## Relationships
 ### CreateOrganisationRelationship
+This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for creating a new organisation relationship.
 
 This component can be used as follows:
 
 ```html
-
+<create-organisation-relationship
+  v-if="state.showCreateRelationshipModal"
+  :id="id"
+  @close="closeCreate()"
+/>
 ```
 
 The following is a visual of this component at work.
@@ -1036,33 +1126,48 @@ The following is a visual of this component at work.
 
 ## Resource-urls
 ### ResourceUrlSelector
+This component renders a [`modal`](components-common.md#modal) for selecting a resource URL.
 
 This component can be used as follows:
 
 ```html
-
+<resource-url-selector
+  v-if="resourceState.showUrlSelector"
+  @selected="addUrlResource($event)"
+  @close="resourceState.showUrlSelector = false"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`ResourceUrlSelector`](../imgs/frontend/components/ui/resource-urls/ResourceUrlSelector.png)
 
-## Safestorage
+## SafeStorage
 ### CreateContactSafeStorage
+This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for creating a safe storage for a contact.
 
 This component can be used as follows:
 
 ```html
-
+<create-contact-safe-storage
+  v-if="state.showCreate"
+  :contact_id="id"
+  @close="state.showCreate = false"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`CreateContactSafeStorage`](../imgs/frontend/components/ui/safestorage/CreateContactSafeStorage.png)
 ### CreateOrganisationSafeStorage
+This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for creating a safe storage for an organisation.
 
 This component can be used as follows:
 
 ```html
-
+<create-organisation-safe-storage
+  v-if="state.showCreate"
+  :organisation_id="id"
+  @close="state.showCreate = false"
+/>
 ```
 
 The following is a visual of this component at work.
@@ -1076,20 +1181,17 @@ This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
 ![`CreateTimeEntry`](../imgs/frontend/components/ui/time-tracking/CreateTimeEntryForm.png)
-
 ### CreateTimeEntryForm
 This component consists of the form to fill for [`CreateTimeEntry`](#createtimeentry) using the [`modalform`](components-common.md#modalform) component.
-
 ### CreateTimeEntryForMatter
-This is a component calling [`CreateTimeEntryFormForMatter`](#createtimeentryformformatter) into a [`modal`](components-common.md#modal) to customise for creating a new time entry for matter.
+This is a component calling [`CreateTimeEntryFormForMatter`](#createtimeentryformformatter) into a [`modal`](components-common.md#modal) to customise for creating a new time entry for matter as well as for sales.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
 ![`CreateTimeEntryForMatter`](../imgs/frontend/components/ui/time-tracking/CreateTimeEntryFormForMatter.png)
 ### CreateTimeEntryFormForMatter
-This component consists of the form to fill for [`CreateTimeEntryForMatter`](#createtimeentryformatter) using the [`modalform`](components-common.md#modalform) component.
-
+This component consists of the form to fill for [`CreateTimeEntryForMatter`](#createtimeentryformatter) using the [`modalform`](components-common.md#modalform) component. This component consists of both forms for matter and for sales.
 ### CreateTimeEntryForProject
 This is a component calling [`CreateTimeEntryFormForProject`](#createtimeentryformforproject) into a [`modal`](components-common.md#modal) to customise for creating a new time entry inside a project.
 
@@ -1099,8 +1201,8 @@ The following is a visual of this component at work.
 ![`CreateTimeEntryForProject`](../imgs/frontend/components/ui/time-tracking/CreateTimeEntryFormForProject.png)
 ### CreateTimeEntryFormForProject
 This component consists of the form to fill for [`CreateTimeEntryForProject`](#createtimeentryforproject) using the [`modalform`](components-common.md#modalform) component.
-
 ### InlineAddMatterTimeEntries
+This component renders a inline adding of time entry for matter. This component is under "**Time Tracking**" > "**Time Entries**" section. It adopts the inline creating instead of the [`modal`](components-common.md#modal) in the [`CreateTimeEntryForMatter`](#createtimeentryformatter).
 
 This component can be used as follows:
 
@@ -1113,90 +1215,143 @@ This component can be used as follows:
 
 The following is a visual of this component at work.
 ![`InlineAddMatterTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineAddMatterTimeEntries.png)
-
-timetracking->timeentries->inline adding new time entry function
-
 ### InlineAddProjectTimeEntries
+This component renders a inline adding of time entry for project. This component is under "**Time Tracking**" > "**Time Entries**" section. It adopts the inline creating instead of the [`modal`](components-common.md#modal) in the [`CreateTimeEntryForProject`](#createtimeentryforproject).
 
 This component can be used as follows:
 
 ```html
-
+<inline-add-project-time-entries 
+  :start-date="startDate"
+  :end-date="endDate"
+/> 
 ```
 
 The following is a visual of this component at work.
 ![`InlineAddProjectTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineAddProjectTimeEntries.png)
 ### InlineAddSalesTimeEntries
+This component renders a inline adding of time entry for sales. This component is under "**Time Tracking**" > "**Time Entries**" section. It adopts the inline creating instead of the [`modal`](components-common.md#modal) in the [`CreateTimeEntryForMatter`](#createtimeentryformatter).
 
 This component can be used as follows:
 
 ```html
-
+<inline-add-sales-time-entries
+  :start-date="startDate"
+  :end-date="endDate"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`InlineAddSalesTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineAddSalesTimeEntries.png)
-
 ### InlineMatterTimeEntries
+This component renders each inline matter time entries under "**Time Tracking**" > "**Time Entries**" > "**Matter**" section.  
 
 This component can be used as follows:
 
 ```html
-
+<inline-matter-time-entries
+  class="mb-1 transition duration-200 mx-2"
+  v-for="item in items"
+  :key="item.id"
+  :matterTimeEntry="item"
+  @load-more="fetch"
+  @selected="$emit('selected', $event)"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`InlineMatterTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineMatterTimeEntries.png)
-timetracking->timeentries->display time entry function
-
 ### InlineProjectTimeEntries
+This component renders each inline matter time entries under "**Time Tracking**" > "**Time Entries**" > "**Project**" section.  
 
 This component can be used as follows:
 
 ```html
-
+<inline-project-time-entries
+  class="mb-1 transition duration-200 mx-2"
+  v-for="item in items"
+  :key="item.id"
+  :projectTimeEntry="item"
+  @load-more="fetch"
+  @selected="$emit('selected', $event)"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`InlineProjectTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineProjectTimeEntries.png)
 ### InlineSalesTimeEntries
+This component renders each inline matter time entries under "**Time Tracking**" > "**Time Entries**" > "**Sales**" section.  
 
 This component can be used as follows:
 
 ```html
-
+<inline-sales-time-entries
+  class="mb-1 transition duration-200 mx-2"
+  v-for="item in items"
+  :key="item.id"
+  :salesTimeEntry="item"
+  @load-more="fetch"
+  @selected="$emit('selected', $event)"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`InlineSalesTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineSalesTimeEntries.png)
-
 ### MatterTimeEntries
+This component renders the page for matter time entries that includes both the [`InlineAddMatterTimeEntries`](#inlineaddmattertimeentries) for adding new matter time entry as well as the [`InlineMatterTimeEntries`](#inlinemattertimeentries).
 
 This component can be used as follows:
 
 ```html
-
+<matter-time-entries
+  v-if="state.selectedType == 'matter'"
+  :search="state.search"
+  :start-date="startDate"
+  :end-date="endDate"
+  :invoiced="state.invoiced"
+  :billable-type="state.billableType"
+  :matter="state.matter"
+  :user="state.user"
+  @selected="getSelectedTimeEntry($event)"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`MatterTimeEntries`](../imgs/frontend/components/ui/time-tracking/MatterTimeEntries.png)
 `InlineAddMatterTimeEntries` + `InlineMatterTimeEntries`
 ### ProjectTimeEntries
+This component renders the page for project time entries that includes both the [`InlineAddProjectTimeEntries`](#inlineaddprojecttimeentries) for adding new project time entry as well as the [`InlineProjectTimeEntries`](#inlineprojecttimeentries).
 
 This component can be used as follows:
 
 ```html
-
+<project-time-entries
+  v-if="state.selectedType == 'project'"
+  :search="state.search"
+  :start-date="startDate"
+  :end-date="endDate"
+  :user="state.user"
+  @selected="getSelectedTimeEntry($event)"
+/>
 ```
 
 The following is a visual of this component at work.
 ![`ProjectTimeEntries`](../imgs/frontend/components/ui/time-tracking/ProjectTimeEntries.png)
 ### SalesTimeEntries
+This component renders the page for matter time entries that includes both the [`InlineAddSalesTimeEntries`](#inlineaddsalestimeentries) for adding new matter time entry as well as the [`InlineSalesTimeEntries`](#inlinesalestimeentries).
 
 This component can be used as follows:
 
 ```html
-
+<sales-time-entries
+  v-if="state.selectedType == 'sales'"
+  :search="state.search"
+  :start-date="startDate"
+  :end-date="endDate"
+  :matter="state.matter"
+  :user="state.user"
+  @selected="getSelectedTimeEntry($event)"
+/>
 ```
 
 The following is a visual of this component at work.
@@ -1211,9 +1366,9 @@ The following is a visual of this component at work.
 ![`SubmitTimer`](../imgs/frontend/components/ui/time-tracking/SubmitTimer.png)
 ### TimerMatterSelector
 :::danger Deprecate
-Using `matter-selector-field` `matter-component-selector-field` directly in `submittimer`
+Using `matter-selector-field` `matter-component-selector-field` directly in `SubmitTimer`
 :::
 ### TimerProjectTaskSelector
 :::danger Deprecate
-Using `project-task-selector-field` directly in `submittimer`
+Using `project-task-selector-field` directly in `SubmitTimer`
 :::

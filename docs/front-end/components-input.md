@@ -59,7 +59,7 @@ The component `emits` several events that allow for handling changes to the sele
 > - `item` (value: `Object`): The template for displaying each item in the dropdown list.
 > - `additional`: Additional content to display above the list of items in the dropdown.
 
-### XxxxxSelectors
+### XXXSelectors
 
 The different selectors in the `/App/src/components/inputs/selectors` folder makes use of the root component `searchSelector` and customises it for their requirement.
 
@@ -112,7 +112,7 @@ This can be used as follows:
 #### Events:
 
 - `update:modelValue` : Emits when the date is changed by the user. The event payload is the selected date as an ISO-formatted string.
-- `triggerFilter` : Emits when the date is changed by **the user** or **programatically**. This event can be used to trigger a filter or search action based on the selected date.
+- `triggerFilter` : Emits when the date is changed by **the user** or **programmatically**. This event can be used to trigger a filter or search action based on the selected date.
 
 ## GooglePlacesAutocomplete
 
@@ -459,9 +459,9 @@ This can be used as follows:
 
 This component allows the user to edit a text string in place, directly in the page. 
 The inlineTextarea component uses the [VeeValidate](../front-end/key-libraries.md#veevalidate) library to validate the input text. When the user finishes editing and clicks the checkmark button, the input text is validated against the `rules` `prop`. 
-- If the text is valid, the `create` and `update:modelValue` events are emmited, the updated value is passed as an argument, and the textarea is hidden. 
+- If the text is valid, the `create` and `update:modelValue` events are emitted, the updated value is passed as an argument, and the textarea is hidden. 
 - If the text is invalid, an `error` message is displayed and the user is prompted to correct the input. 
-- If the user cancels editing or the input is invalid, the `cancel` event is emmited and the textarea is hidden.
+- If the user cancels editing or the input is invalid, the `cancel` event is emitted and the textarea is hidden.
 
 This can be used as follows:
 

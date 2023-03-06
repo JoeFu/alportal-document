@@ -7,7 +7,7 @@ Updated Q1 2023
 
 ## Selectors
 
-This is a group of `selectorField` components that utilises the group of [`selector`](components-input.md#xxxxxselectors) components to provide a *dropdown list* to select an ***option***, and bind the selected ***option*** to a form field. Which is to autocomplete forms after selecting an ***option***.
+This is a group of `selectorField` components that utilises the group of [`selector`](components-input.md#xxxselectors) components to provide a *dropdown list* to select an ***option***, and bind the selected ***option*** to a form field. Which is to autocomplete forms after selecting an ***option***.
 
 It uses `useField` function from the [veevalidate](key-libraries.md#veevalidate) library to handle form validation before emitting the selected ***option*** object to the parent component when the field value changes.
 

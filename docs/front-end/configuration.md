@@ -4,7 +4,7 @@ The front-end of the app can make use of several configuration variables to cont
 
 Read more about the usage of environment variable and mode in ***Vite*** [here](https://vitejs.dev/guide/env-and-mode.html).
 
-## Currenet Variables
+## Current Variables
 
 ###  `VITE_APP_API_ROOT`
 
@@ -18,7 +18,7 @@ These variables define the credentials necessary for the user to request access 
 
 ### `VITE_APP_GOOGLE_API_KEY`
 
-This variable specifies the Google API Key that is used for accessing Google related services on the front end, specifically the Places API for searching and autocompleting address details.
+This variable specifies the Google API Key that is used for accessing Google related services on the front end, specifically the Places API for searching and auto completing address details.
 
 ### `VITE_SYNTAQ_URL`, `VITE_SYNTAQ_TOKEN`
 

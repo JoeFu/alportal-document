@@ -77,11 +77,11 @@ It deals with the management of the flow of data and ensuring that the applicati
  ┗   ┗   ...
 ```
 
-The folder includes files incharge of the network requests for internal APIs and 3rd party APIs such as [activeCampaingn](../back-end/external-services.md#active-campaign), [Xero](../back-end/external-services.md#xero) etc.
+The folder includes files in charge of the network requests for internal APIs and 3rd party APIs such as [activeCampaign](../back-end/external-services.md#active-campaign), [Xero](../back-end/external-services.md#xero) etc.
 
 #### Example:
 
-> For a `CalendarServiceProcy` in the `accounts-service-proxies.ts`, it is responsible for handling `requests` to a specific `URL`. 
+> For a `CalendarServiceProxy` in the `accounts-service-proxies.ts`, it is responsible for handling `requests` to a specific `URL`. 
 
 > It has 4 methods called `getCalendarEvents`, `createCalendarEvent`, `updateCalendarEvent` and `deleteCalendarEvent`, which make `HTTP` `GET`, `POST`, `PUT` and `DELETE` requests respectively.
 
@@ -99,7 +99,7 @@ In ***Vue.js***, the ***Vue Router*** library provides a convenient way to handl
 
 The router includes a **verification process** for each routing request. This verification checks for both the user's permission and authentication status, ensuring secure navigation within the application.
 
-**In addition**, the router in this application also includes handling for when a requested URL is [`notfound`](./components-common.md#notfound). In such cases, the router can redirect the user to a default "404 not found" page, providing a better user experience.
+**In addition**, the router in this application also includes handling for when a requested URL is [`notFound`](./components-common.md#notfound). In such cases, the router can redirect the user to a default "404 not found" page, providing a better user experience.
 
 ```
 📦src

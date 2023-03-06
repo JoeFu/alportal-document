@@ -53,7 +53,6 @@ This can be used as follows:
   :loading="loading"
   :values="items"
   @load-more="fetch"
-  @selected="selecteItem"
 >
   <template v-slot="{ value }">
   </template>
@@ -289,11 +288,9 @@ Where:
 
 ## AlpButtonWithText
 
-:::danger
-Similar to [AlpButton](#alpbutton) but nolonger need to call font-awesome icon when using as it is called internally
-
-is this similar to the fontawesomeiconbutton, alpiconbutton, actionbutton?
-:::
+<!-- :::danger
+Similar to [AlpButton](#alpbutton) but no longer need to call font-awesome icon when using as it is called internally
+::: -->
 
 This component renders an icon with an optional context, and when the user hovers over it, a tooltip appears with the description of the component. The tooltip is positioned using the [Popper.js](./key-libraries.md#popper) library. The color of the component can be customized using the `color` prop.
 
@@ -342,7 +339,7 @@ This can be used as follows:
 ## FontAwesomeIconButton
 
 :::danger
-Seems like same as alpiconbutton, and this is only used once
+Seems like same as [`AlpIconButton`](#alpiconbutton), and this is only used once
 :::
 
 This is a reusable component that renders a clickable icon button with an optional label. It supports different states such as `active`, `highlighted`, `pending` and `alert`. It uses [Font Awesome](key-libraries.md#font-awesome) icon library to display icons.
@@ -502,7 +499,7 @@ This can be used as follows:
 - `values` is an array of objects that should be rendered for the table
 - `loading`: (`boolean`) indicates the loading status of the data. A loading wheel is displayed when this is true.
 - `identifier`: (`string`) is the unique key that will be used as the `key` for the elements in the table. This defaults to `id`
-- `isMultiSelection`: (`boolean`) to decide if muiltiSelection is allowed 
+- `isMultiSelection`: (`boolean`) to decide if multiSelection is allowed 
 > Default value: `false`
 - `deSelectCheckBoxCount`: (`number`) 
 > Default value: `0`

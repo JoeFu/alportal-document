@@ -405,7 +405,7 @@ This component can be used as follows:
 The following is a visual screenshot of the modal:
 ![CreateOfferingOutcome](../imgs/frontend/components/ui/admin/offering/CreateOfferingOutcome.png)
 ### InlineOfferingComponent
-This component creates and displays each offering outcome component integrating the [`UpDownSwitch`](./components-common.md#updownswitch) component and the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality.
+This component creates and displays each offering outcome component integrating the [`UpDownSwitch`](./components-common.md#updownswitch) component and the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing functionality.
 
 This component can be used as follows:
 
@@ -422,7 +422,7 @@ This component can be used as follows:
 The following is a visual screenshot of the component:
 ![InlineOfferingComponent](../imgs/frontend/components/ui/admin/offering/InlineOfferingComponent.png)
 ### InlineOfferingOutcome
-This component creates and displays each offering outcome integrating the [`UpDownSwitch`](./components-common.md#updownswitch) component and the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality.
+This component creates and displays each offering outcome integrating the [`UpDownSwitch`](./components-common.md#updownswitch) component and the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing functionality.
 
 This component can be used as follows:
 
@@ -440,7 +440,7 @@ The following is a visual screenshot of the component:
 :::danger Deprecate
 :::
 ### InlineOfferingProblemOutcome
-This component creates and displays each of the offering problem outcome integrating the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality.
+This component creates and displays each of the offering problem outcome integrating the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing functionality.
 
 This component can be used as follows:
 
@@ -458,7 +458,7 @@ This component can be used as follows:
 The following is a visual screenshot of the component:
 ![InlineOfferingProblemOutcome](../imgs/frontend/components/ui/admin/offering/InlineOfferingProblemOutcome.png)
 ### MergeOffering
-This component customises the [`modal`](./components-common.md#modal), the [`modalForm`](./components-common.md#modalform) and the [`offeringSelector`](components-input.md#xxxxxselectors) components to display a modal for merging offerings.
+This component customises the [`modal`](./components-common.md#modal), the [`modalForm`](./components-common.md#modalform) and the [`offeringSelector`](components-input.md#xxxselectors) components to display a modal for merging offerings.
 
 This component can be used as follows:
 
@@ -503,7 +503,7 @@ This component can be used as follows:
 The following is a visual screenshot of the modal:
 ![CreateProjectTemplateScheduler](../imgs/frontend/components/ui/admin/projectTemplate/CreateProjectTemplateScheduler.png)
 ### InlineProjectTemplateTask
-This component creates and displays each Inline Project Template Tasks, integrating the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality, an option to choose from inline input for normal task and search and choosing from [`standard tasks`](#standard-tasks).
+This component creates and displays each Inline Project Template Tasks, integrating the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing functionality, an option to choose from inline input for normal task and search and choosing from [`standard tasks`](#standard-tasks).
 
 This component can be used as follows:
 
@@ -526,7 +526,7 @@ This component can be used as follows:
 The following is a visual screenshot of the component:
 ![InlineProjectTemplateTask](../imgs/frontend/components/ui/admin/projectTemplate/InlineProjectTemplateTask.png)
 ### InlineProjectTemplateTaskStep
-This component is created using the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing funtionality for task steps.
+This component is created using the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing functionality for task steps.
 
 This component can be used as follows:
 
@@ -558,7 +558,7 @@ component: () =>
 The following is a visual screenshot of the component:
 ![ProjectTemplateTask](../imgs/frontend/components/ui/admin/projectTemplate/ProjectTemplateTask.png)
 ### ProjectTemplateTaskMetadata
-This component is created using the [`dynamicInput`](./components-input.md#dynamicinput) component to allow inline editing funtionality for task steps.
+This component is created using the [`dynamicInput`](./components-input.md#dynamicinput) component to allow inline editing functionality for task steps.
 
 This component can be used as follows:
 
@@ -655,7 +655,7 @@ This component can be used as follows:
 The following is a visual screenshot of the modal:
 ![CreateStandardTask](../imgs/frontend/components/ui/admin/standard-tasks/CreateStandardTask.png)
 ### InlineStandardTaskStep
-This component creates and displays each Inline Standard Task Steps, integrating the [`EditInlineInput`](./components-input.md#editinlineinput) component to allow inline editing funtionality, an option to select and choose resources to be included in the task step using the [`ResourceSelector`](components-ui-user.md#resourceselector), [`ResourceUrlSelector`](components-ui-user.md#resourceurlselector) and [`SyntaqResourceSelector`](components-ui-user.md#syntaqresourceselector).
+This component creates and displays each Inline Standard Task Steps, integrating the [`EditInlineInput`](./components-input.md#editinlineinput) component to allow inline editing functionality, an option to select and choose resources to be included in the task step using the [`ResourceSelector`](components-ui-user.md#resourceselector), [`ResourceUrlSelector`](components-ui-user.md#resourceurlselector) and [`SyntaqResourceSelector`](components-ui-user.md#syntaqresourceselector).
 
 This component can be used as follows:
 
@@ -686,7 +686,7 @@ component: () =>
 The following is a visual screenshot of the component:
 ![StandardTask](../imgs/frontend/components/ui/admin/standard-tasks//StandardTask.png)
 ### StandardTaskMetadata
-This component is created using the [`dynamicInput`](./components-input.md#dynamicinput) component to allow inline editing funtionality for task metadata.
+This component is created using the [`dynamicInput`](./components-input.md#dynamicinput) component to allow inline editing functionality for task metadata.
 
 This component can be used as follows:
 

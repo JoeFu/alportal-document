@@ -273,7 +273,7 @@ Example Usage
 </template>
 
 <script>
-  import { useListable } from './composables/listable';
+  import { useListable } from './composable/listable';
 
   export default {
     setup() {
@@ -394,7 +394,7 @@ Example usage:
 ```ts
 const {fireConfirm, fireSuccessToast, fireErrorToast} = useNotify()
 
-fireConfirm("Some confirmaion message");
+fireConfirm("Some confirmation message");
 // Displays a pop up dialog for the user to confirm. This currently uses Sweetalert2
 
 fireSuccessToast("Some success message");
@@ -497,7 +497,7 @@ Additional parameters are included as provided by `patchQueryParams`
 
 ## Popper
 
-This provides a wrapper for handling the configuration of a simple Popper based dismissable dialog. This uses [Popper](key-libraries.md#popper).
+This provides a wrapper for handling the configuration of a simple Popper based dismissible dialog. This uses [Popper](key-libraries.md#popper).
 
 Given a:
 
