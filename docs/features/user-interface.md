@@ -22,7 +22,7 @@ In practice, what this means is that the results should be filtered by `Paginate
 `PaginatedInput` is a simple DTO that expects:
 
 - A `Search` parameter. This is a simple text search that can be used to filter the results
-- A `Limit` parameter. This is the number of results that should be returned for this particulary query
+- A `Limit` parameter. This is the number of results that should be returned for this particularly query
 - An `Offset` parameter. This is the number of results that should be skipped in the query before taking the next `Limit` results.
 
 For more complex scenarios, a subclass of the PaginatedInput is recommended to be used, e.g.
@@ -61,7 +61,7 @@ There are a number of helper methods and components available on the front end t
 
 These are:
 
-- The infinite table component. `AlpInfiniteTable` (As seen [here](/front-end/components#alpinfinitetable))
+- The infinite table component. `AlpInfiniteTable` (As seen [here](/front-end/components-common#alpinfinitetable))
 - The more general infinite container component. `AlpInfiniteContainer` (As seen [here](https://github.com/AndreyevLawyers/ALP))
 - The infinite list composable function(s). (As seen [here](/front-end/composable#infinitelist))
 - The infinite Vuex store helper. `ResourceInfiniteVuex` (As seen [here](/front-end/store#resourceinfinitevuex))

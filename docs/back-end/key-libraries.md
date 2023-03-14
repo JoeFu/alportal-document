@@ -8,9 +8,9 @@
 
 Automapper is being used to map from database models to Data Transfer Objects (DTOs).
 
-## Quartz.NET
+## Quartz .NET
 
-[Quartz.NET](https://github.com/quartznet/quartznet) is being use to schedule and run background jobs.
+[Quartz .NET](https://www.quartz-scheduler.net/) is being use to schedule and run background jobs.
 
 The "industry standard" is HangFire, however, we experienced issues with jobs indefinitely stalling when used with PostgreSQL.
 

@@ -18,14 +18,18 @@ The script will also make some minor adjustments to the generated code to change
 
 The backend has been configured to declare multiple Swagger definitions. As of the time of writing:
 
-- Accounts
-- CRM
-- Documents
-- Matters
-- Offerings
-- Projects
-- Common
+> - Accounts
+> - CRM
+> - Documents
+> - Matters
+> - Offerings
+> - Projects
+> - Common
 
 This groups similar functionality within separate Swagger documents. 
 
-However, the primary reason for this is to reduce the size of the generated front-end service proxies by allowing for multiple files to be generated. Given the number of service endpoints, and the current lack of support for creating separate files by NSwag, the service proxies file was becoming prohibitively large. This significantly impacted compilation performance whenever a minor change to the service proxies was required.
+However, the primary reason for this is to reduce the size of the generated front-end service proxies by allowing for multiple files to be generated. 
+
+:::warning
+Given the number of service endpoints, and the current lack of support for creating separate files by NSwag, the service proxies file was becoming prohibitively large. This significantly impacted compilation performance whenever a minor change to the service proxies was required.
+:::

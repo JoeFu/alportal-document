@@ -1,12 +1,14 @@
-# Store
+# Vuex Store
 
-## Vuex
+We use Vuex as the state management layer in our application. It serves as a centralized store for all the components, with rules ensuring that the state can only be mutated in a predictable fashion. 
 
-We use Vuex as the state management layer in our application. Have a quick look through the [official documentation](https://next.vuex.vuejs.org/) if you are unfamiliar with it.
+Have a quick look through the [official documentation](https://next.vuex.vuejs.org/) if you are unfamiliar with it.
 
-### TypeScript 
+:::warning [Pending Migration](../road-map/system-improvement.md#migration-to-pinia)
+The official state management library for Vue has changed to [`Pinia`](https://pinia.vuejs.org/). 
 
-Vuex currently does not support TypeScript type inference. This is due to how it is written, and is not expected to improve until the next version - Vuex 5.
+Migration of our application to Pinia would be one of our future tasks. 
+:::
 
 ## API Data
 

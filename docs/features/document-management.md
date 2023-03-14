@@ -10,7 +10,7 @@ Document management is a critical aspect of the legal workflow. On a regular bas
 
 The portal therefore introduces a streamlined mechanism by which as much of this workflow can be accessed / managed / controlled by the system itself.
 
-Some specific functionalites is specific to the Microsoft Office range of documents, but all types of documents can be stored in the system.
+Some specific functionalities is specific to the Microsoft Office range of documents, but all types of documents can be stored in the system.
 
 ## Overview
 
@@ -43,7 +43,7 @@ The benefit to this approach is that we retain a foreign key reference to the re
 `DocumentVersion` can be seen as an "instance" of a document. It contains:
 
 - A reference to the document
-- A numberic version number of the document version
+- A numeric version number of the document version
 - A storage identifier - a reference to the document that has been stored in Azure Blob Storage
 
 All documents will have at least one version; the initial state of the document. All subsequent changes to the document (the contents of the file) will result in an incremented version, a new version of the file uploaded to Azure Blob Storage and a new DocumentVersion instance.

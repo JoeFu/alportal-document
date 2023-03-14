@@ -1,11 +1,10 @@
 # Introduction
 
-
-::: warning 
-Updated at 2022 Q4
+::: tip  Updated at 2023 Q1
 :::
 
-The front end is built using Vue.js, specifically Vue 3. This project was scaffolded using [Vite](https://vitejs.dev/).
-As of the time of writing, the configuration provided by Vite.
+The frontend of this project was constructed using [***Vue.js***](additional-reading.md#vue), specifically **Vue 3**, which had a major upgrade from previous versions.
 
-We speed up our compile times comparing with Vue Cli, the one we previous using.
+To streamline the development process, the project was scaffolded using [Vite](https://vitejs.dev/). 
+
+The use of ***Vite*** has allowed us to significantly improve our compile times compared to our previous usage of ***Vue CLI***, from nearly 10 to 20 minutes to the current just over **a minute**.
