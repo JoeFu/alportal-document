@@ -1,0 +1,31 @@
+name: Deploy
+on:
+  push:
+    branches:
+      - main
+
+env:
+  AZURE_WEBAPP_NAME: alportal-docs    # set this to your application's name
+  NODE_VERSION: '16.x'                # set this to the node version to use
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest    
+    steps:
+    - uses: actions/checkout@v2
+    - uses: actions/setup-node@v3
+      with:
+        node-version: ${{ env.NODE_VERSION }}
+        cache: yarn
+    - run: yarn install --frozen-lockfile
+    
+    - name: Build
+      run: 
+        yarn docs:build
+
+    - name: 'Deploy'
+      uses: azure/webapps-deploy@v2
+      with:
+        app-name: ${{ env.AZURE_WEBAPP_NAME }}
+        publish-profile: ${{ secrets.DOCS_AZURE_WEBAPP_PUBLISH_PROFILE }}
+        package: docs/.vitepress/dist
