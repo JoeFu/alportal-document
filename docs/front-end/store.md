@@ -4,10 +4,10 @@ We use Vuex as the state management layer in our application. It serves as a cen
 
 Have a quick look through the [official documentation](https://next.vuex.vuejs.org/) if you are unfamiliar with it.
 
-:::warning Pending Migration
-The official state management library for Vue has changed to [`Pinia`](https://pinia.vuejs.org/). Migration of our application to Pinia would be one of our future tasks. 
+:::warning [Pending Migration](../road-map/system-improvement.md#migration-to-pinia)
+The official state management library for Vue has changed to [`Pinia`](https://pinia.vuejs.org/). 
 
-Code pending migration.
+Migration of our application to Pinia would be one of our future tasks. 
 :::
 
 ## API Data

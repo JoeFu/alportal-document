@@ -1,8 +1,6 @@
 # Key Libraries
 
-::: warning Note
-
-Updated at 2023 Q1
+::: tip Future
 
 The main libraries basically support Vue3. In the selection of future libraries, we tend to choose a stable version that supports Vue3.
 :::

@@ -30,16 +30,16 @@ This is a configuration file used for Node.js packages. It provides information 
 
 The `name` field specifies the name of the package. The `version` field specifies the version number of the package. The `private` field, if set to true, prevents the package from being accidentally published to a public repository.
 
-#### Scripts
+### Scripts
 
 The `scripts` field defines commands that can be run with the package. 
 
 For example,
->- the `serve` script starts a development server on `port 8080` using the **Vite** build tool. 
->- the `build` script creates a production build of the package, 
->- the `test` script runs tests using the `vitest` command.
+> - `serve` script starts a development server on `port 8080` using the **Vite** build tool. 
+> - `build` script creates a production build of the package, 
+> - `test` script runs tests using the `vitest` command.
 
-#### Dependencies
+### Dependencies
 
 The `dependencies` field lists the packages that the current package depends on. Each dependency has a name and a version range. 
 
@@ -47,7 +47,7 @@ For example,
 
 > `@vueuse/core`: `^9.3.0` specifies that the package depends on version 9.3.0 or higher.
 
-#### DevDependencies
+### DevDependencies
 
 The `devDependencies` field lists packages that are only needed for development, such as testing and build tools. These packages are not included in the production build of the package. 
 

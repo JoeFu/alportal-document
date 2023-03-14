@@ -95,20 +95,20 @@ Here is the tool that you can convert resrful api request (curl) to c#. [curl to
 
 - While Creat the contact, checkbox is used for user allow the contact being added to Active Campaign or not. 
 
-![Create Contact](../imgs/create_contact_v1.png)
+![Create Contact](/create_contact_v1.png)
 
 - Check the contact subscribtion status. Just jump into the conatct info page.
 
-![Active Campaign Status](../imgs/contact_active_campaingn_status.png)
+![Active Campaign Status](/contact_active_campaingn_status.png)
 
 - If the conact is subscribed, click the button to unsubsribe.
 
-![Unsbuscribe](../imgs/contact_active_campaign_unsubscribe.png)
+![Unsbuscribe](/contact_active_campaign_unsubscribe.png)
 
 - Any Change on Email, First Name, Last Name will automaticly synced to Active Campaign Serve.
 
 - Check Active Campaingn Activities, go the Markketing tab, All recent activieties will shown on the list.
-![Active Campaingn Activities](../imgs/contact_active_campaign_marketing.png)
+![Active Campaingn Activities](/contact_active_campaign_marketing.png)
 
 
 ## Xero

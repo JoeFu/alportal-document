@@ -4,7 +4,7 @@
 
 *Vue.js* has comprehensive documentation that covers everything from basic concepts to advanced features. This is an essential resource for any developer working with *Vue.js*.
 
-Read more about it [HERE](https://vuejs.org/guide/introduction.html).
+Read more about it [HERE](https://vuejs.org/).
 
 ## Vuex
 
@@ -16,7 +16,7 @@ Read more about it [HERE](https://vuex.vuejs.org/guide/).
 
 *Pinia* is the ***NEW*** recommended official state management library for *Vue*. Future upgrades of the system would include migrating to *Pinia*. 
 
-Read more about it [HERE](https://pinia.vuejs.org/core-concepts/).
+Read more about it [HERE](https://pinia.vuejs.org/getting-started.html).
 
 ## NSwag
 
@@ -28,7 +28,7 @@ Read more about it [HERE](https://learn.microsoft.com/en-us/aspnet/core/tutorial
 
 *Quartz* is a job scheduling library that allows developers to schedule and manage tasks in their applications. It provides a powerful and flexible scheduling engine that can be used to trigger tasks at specified times or intervals. Quartz is widely used in the software development industry and supports a variety of programming languages and frameworks.
 
-Read more about it [HERE](https://www.quartz-scheduler.net/features.html).
+Read more about it [HERE](https://www.quartz-scheduler.net/documentation/quartz-3.x/quick-start.html).
 
 ## Vue.js + .NET Core tutorial
 

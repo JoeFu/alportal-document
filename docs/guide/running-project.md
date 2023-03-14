@@ -9,14 +9,14 @@ Now that you have set up your environment and have been granted access to the AL
 We are currently using [Quartz .NET](https://www.quartz-scheduler.net/) to handle our background tasks. Setting it up requires creating a database manually and running a script manually to set up the tables.
 
 For the default set up, the database should be named `alp_quartz`. 
-
+#### SQL script
 The SQL script that needs to be run can be found [here](https://github.com/quartznet/quartznet/blob/master/database/tables/tables_postgres.sql).
 
 Using pgAdmin from PostgreSQL to add the new database `alp_quartz`, then run the script mentioned above by 
-* right-clicking the database in the object browser 
-* select "Query Tool", opening a new query editor window, 
-* paste or load the SQL script, 
-* press the "Execute" button to run the script.
+> 1. Right-click the database in the object browser 
+> 2. Select "Query Tool", opening a new query editor window, 
+> 3. Paste or Load the [SQL script](#sql-script) mentioned above, 
+> 4. Click the "Execute" button to run the script.
 
 ### Database Update
 
@@ -43,13 +43,17 @@ The default configuration assumes that your database has been set up with the de
 
 `username: postgres | password: postgres`
 
-:::tip
-Settings of the PostgreSQL server username and password can be edited in the `/ALP/ALP/appsetting.Development.json` file.
-:::
+### Troubleshooting
+If you have used other username and password for database servers, it can be changed in the `/ALP/ALP/appsetting.Development.json` file.
+
 
 ## Running the Backend
 
 The RESTful API can be started by simply running the project using Visual Studio by opening the solution file `.sln`; or via the dotnet toolchain in the command line.
+
+:::tip
+- You might face warning from backend when logged in with the following details, just press continue and you would successfully get into the system.
+:::
 
 ## Running the Frontend
 
@@ -65,3 +69,19 @@ yarn install
 ```
 yarn serve
 ```
+
+:::tip
+Please do use `http://localhost:8080` to login to program running locally instead of the `http://127.0.0.1:8080/`
+:::
+
+## Local Logging in
+
+To login to the system when running locally, an admin user is initialised.
+
+:::tip Log in
+Username : `admin@example.com`
+
+Password : `qwe123`
+
+One-Time Passcode : Can be ***viewed*** and ***edited*** in **database table** 'alp/table/user_one_time_passwords'
+:::

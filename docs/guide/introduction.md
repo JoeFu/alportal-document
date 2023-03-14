@@ -1,9 +1,9 @@
 # Introduction
 
-The ***AL Portal*** (***ALP***) is a web application developed by [SYNTAQ](https://www.syntaq.com/) to aid Law firms in all matters including client and case management, document digitalisation and automation and more. 
-::: warning Used by?
+The ***AL Portal*** (***ALP***) is a web application developed by [SYNTAQ](https://www.syntaq.com/) to aid Law firms in all matters including *Client and Case Management*, *Document Digitalisation and Automation* and more. 
+<!-- ::: warning Used by?
 &nbsp;
-:::
+::: -->
 
 ## Why ALP?
 
@@ -16,16 +16,16 @@ With its user-friendly interface and advanced features, the portal app helps law
 
 Whether you are working independently or as part of a team, the portal app is an essential tool that will revolutionize the way you work and help you stay ahead of the curve in an ever-changing legal landscape.
 
-::: danger Pending Review
-:::
+<!-- ::: danger Pending Review
+::: -->
 
 ## Application Features
 ***ALP*** provides services such as **Email**, **calendar**, **client** and **case** **management**, **document digitalization**, and **automation**. It provides users with the ability to generate simple and complex documents based on information they provide through forms, or via API calls. 
 
 The Portal allow users to generate a wide range of legal documents, streamlining the process by injecting data collected by the system.
 
-::: danger Pending Review
-:::
+<!-- ::: danger Pending Review
+::: -->
    
 
 ## Overall Architecture
@@ -40,7 +40,7 @@ We also use the following supporting services.
 - An ***Apache Tika Server*** for text extraction
 
 The diagram below shows the overall architecture of the ***ALP*** application.
-![ArchitectureOverview](../imgs/guide/Overview_Layered_Diagram.png)
+![ArchitectureOverview](../public/guide/Overview_Layered_Diagram.png)
 
 
 ## Getting Started

@@ -1,9 +1,9 @@
 # Common Components
 
 The following will talk about some of the common components implemented for use in the system.
-:::tip Note
-Updated Q1 2023
-:::
+<!-- ::: tip  Updated at 2023 Q1
+::: -->
+
 
 ## AlpHeading
 
@@ -126,7 +126,7 @@ This can be used as follows:
 
 ## AlpInnerSection
 
-:::danger Deprecate
+:::danger Deprecated
 :::
 
 ## NavLink
@@ -288,10 +288,6 @@ Where:
 
 ## AlpButtonWithText
 
-<!-- :::danger
-Similar to [AlpButton](#alpbutton) but no longer need to call font-awesome icon when using as it is called internally
-::: -->
-
 This component renders an icon with an optional context, and when the user hovers over it, a tooltip appears with the description of the component. The tooltip is positioned using the [Popper.js](./key-libraries.md#popper) library. The color of the component can be customized using the `color` prop.
 
 This can be used as follows:
@@ -338,9 +334,9 @@ This can be used as follows:
 
 ## FontAwesomeIconButton
 
-:::danger
+<!-- :::danger Used Only Once
 Seems like same as [`AlpIconButton`](#alpiconbutton), and this is only used once
-:::
+::: -->
 
 This is a reusable component that renders a clickable icon button with an optional label. It supports different states such as `active`, `highlighted`, `pending` and `alert`. It uses [Font Awesome](key-libraries.md#font-awesome) icon library to display icons.
 
@@ -390,15 +386,14 @@ This can be used as follows:
 
 ## AlpIcon
 
-:::danger Deprecate
-Switched to font-awesome-icon from external font awesome icons
+:::danger Deprecated
 :::
 
 ## AlpIconButton
 
-:::danger Pending
+<!-- :::danger Pending Review
 this component is currently not using font awesome, pending confirmation
-:::
+::: -->
 
 This component renders a customizable and reusable icon button with optional alerts and loaders with several props that control its behavior and appearance.
 
@@ -852,7 +847,7 @@ The setup function sets up the component's behavior by defining several function
 
 ## AlpHtmlVIewer
 
-:::danger Deprecate
+:::danger Deprecated
 :::
 
 ## FieldDisplay
@@ -1007,23 +1002,23 @@ This can be used as follows:
 ```
 
 ## AlpDropdown
-
-This component creates a dropdown menu. It consists of a clickable selector element that toggles the visibility of a descriptor element containing the options.
+:::danger Deprecated
+:::
+<!-- This component creates a dropdown menu. It consists of a clickable selector element that toggles the visibility of a descriptor element containing the options.
 
 The component uses the "usePopper" composable from "@/composable/popper" to manage the positioning and visibility of the descriptor element.
 
 This can be used as follows:
 
-:::danger Deprecate
-:::
+
 
 ```html
 
-```
+``` 
 
 #### Props:
 
-- `label`: a required string prop that represents the label of the selector element.
+- `label`: a required string prop that represents the label of the selector element.-->
 
 ## AlpOptions
 
@@ -1096,85 +1091,3 @@ This can be used as follows:
 This component uses the `emits` option to declare the two events: "up" and "down". When the user clicks on the up or down icon, the component `emits` the corresponding event using `$emit()`, which can be used to trigger a method or update data in the parent component.
 
 The component uses Font Awesome icons to display the chevron up and down icons.
-
-
-
-
-# others
-<!-- ## AlpIcon
-
-This leverages the [Font Awesome](https://fontawesome.com/) framework to allow for the selection of any of the available icons in the framework.
-https://fontawesome.com/search?o=r&m=free
-This can be used as follows:
-
-```html
-<alp-icon icon="icon-name" :size="24" />
-```
-
-Where:
-
-- `icon-name` is the icon name as defined by Iconify. This is required.s
-- `size` is the height/width of the icon. This is optional and defaults to 18. -->
-
-<!-- ## AlpButton
-
-This is a generic button component that supports several variants. This allows for consistent of styling throughout the system.
-
-This can be used as follows:
-
-```html
-<alp-button variant="default" :active="false" :small="false" />
-```
-
-Where:
-
-- `variant` determines the theme of the button. This is optional and will default to `default`. Valid options include:
-  - `default`
-  - `plain`
-  - `inverse`
-  - `success`
-  - `danger`
-- `active` indicates that the button is active and will visually highlight the button. The highlighting style is the same or similar to the hovering an inactive button. This is `false` by default.
-- `small` indicates that the button should have slightly reduced padding. This is `false` by default.
-
- -->
-
-<!-- ## AlpFocusInput
-
-This is an input that will automatically focus / blur an input when specific keys are pressed.
-
-This can be used as follows:
-
-```html
-<alp-focus-input focus-on="/" blur-on="Escape" />
-```
-
-Where:
-
-- `focus-on` is the key that should trigger the focusing of the input. This defaults to `/`
-- `blur-on` is the key that should trigger the un-focusing of the input. This defaults to `Escape`
-
-Keys should correspond the key values as defined [here](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent/key/Key_Values).
-
-This input supports being of values, and can be used as follows:
-
-```html
-<alp-focus-input v-model="state.value" />
-``` -->
-
-
-<!-- ## AlpChart
-
-This is a simple wrapper for rendering Chart.js based charts / graphs. It renders a simple label and a canvas containing the chart.
-
-This component does not include any logic for managing the chart definitions. It simply relays the provided chart definitions, and handles the creation of the chart instance and the updating of the canvas if the definition changes.
-
-For more details regarding the definition of charts, please refer to the [official documentation](https://www.chartjs.org/).  -->
-
-<!-- ## AlpLoader
-
-This is a wrapper for an SVG representing a loading wheel. It features a few basic props for managing the appearance of the loading wheel. It is expected to be animated separately, for example using the tailwind animation class `animate-spin`.
-
-- `size`: The size of the loading wheel. This controls both the height and width of the SVG image.
-
-The colour of the loader has been configured to be `currentColor`; that is, the colour may be changed by changing the `color`. -->

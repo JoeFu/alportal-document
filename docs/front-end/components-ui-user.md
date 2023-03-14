@@ -1,9 +1,9 @@
 # UI User Components
 
-This Is A brief overview of the UI ***User*** Components being used in the system today.
-:::tip Note
-Updated Q1 2023
-:::
+This Is a brief overview of the UI ***User*** Components being used in the system today.
+<!-- ::: tip  Updated at 2023 Q1
+::: -->
+
 
 ## GlobalModals
 
@@ -59,7 +59,7 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateClient`](../imgs/frontend/components/ui/clients/CreateClient.png)
+![`CreateClient`](../public/frontend/components/ui/clients/CreateClient.png)
  
 ## Contacts
 ### CreateContact
@@ -68,14 +68,14 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateContact`](../imgs/frontend/components/ui/contacts/CreateContacts.png)
+![`CreateContact`](../public/frontend/components/ui/contacts/CreateContacts.png)
 ### ShowACUnsubscribe
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for unsubscribing newsletters for a contact providing reasons.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`ShowACUnsubscribe`](../imgs/frontend/components/ui/contacts/showACUnsubscribeModal.png)
+![`ShowACUnsubscribe`](../public/frontend/components/ui/contacts/showACUnsubscribeModal.png)
 
 
 ## Directory
@@ -90,7 +90,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`EmailGroup`](../imgs/frontend/components/ui/directory/EmailGroup.png)
+![`EmailGroup`](../public/frontend/components/ui/directory/EmailGroup.png)
 ### People
 This component is for fetching and displaying People, with Name, Rate, Email and description of person. This component enables adding People to email recipient.
 
@@ -102,7 +102,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`People`](../imgs/frontend/components/ui/directory/People.png)
+![`People`](../public/frontend/components/ui/directory/People.png)
 
 ## Documents
 ### DocumentList
@@ -127,7 +127,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`DocumentList`](../imgs/frontend/components/ui/documents/DocumentList.png)
+![`DocumentList`](../public/frontend/components/ui/documents/DocumentList.png)
 ### Document
 This component customises the [`SlideOver`](#slideover) window for managing a document draft histories.
 
@@ -150,7 +150,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`Document`](../imgs/frontend/components/ui/documents/Document.png)
+![`Document`](../public/frontend/components/ui/documents/Document.png)
 ### DocumentActions
 This component is for listing each document in the document list, with actions like download, add to reminder, [`RequestDocumentReview`](#requestdocumentreview), attach to email and more.
 
@@ -168,7 +168,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`DocumentActions`](../imgs/frontend/components/ui/documents/DocumentActions.png)
+![`DocumentActions`](../public/frontend/components/ui/documents/DocumentActions.png)
 ### DocumentFilters
 
 This component customises the [`SlideOver`](#slideover) window for managing filters in document viewing.
@@ -185,8 +185,8 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`DocumentFilters`](../imgs/frontend/components/ui/documents/DocumentFilter.png)
-:::danger Possible Bug ![bug](../imgs/bug/bug_OfferingResources_DocumentFilters.png)
+![`DocumentFilters`](../public/frontend/components/ui/documents/DocumentFilter.png)
+:::danger Possible Bug ![bug](../public/bug/bug_OfferingResources_DocumentFilters.png)
 :::
 ### ActiveDocuments
 This component shows a floating container of the active documents, displays 'No Active Document Found' when empty.
@@ -196,14 +196,14 @@ This component can be used as follows:
 <active-documents v-if="tab == 'active'" />
 ```
 The following is a visual of this component at work.
-![`ActiveDocuments`](../imgs/frontend/components/ui/documents/ActiveDocumemts.png)
+![`ActiveDocuments`](../public/frontend/components/ui/documents/ActiveDocumemts.png)
 ### RequestDocumentReview
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for requesting a Staff for a document review with an included message.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`RequestDocumentReview`](../imgs/frontend/components/ui/documents/RequestDocumentreview.png)
+![`RequestDocumentReview`](../public/frontend/components/ui/documents/RequestDocumentreview.png)
 ### ReceivedDocumentReviewRequests
 This component is to display a floating container to show the received requests for document reviews as a reviewer.
 
@@ -214,9 +214,9 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component with documents and while empty.
-![`ReceivedDocumentReviewRequests`](../imgs/frontend/components/ui/documents/ReceivedDocumentReviewRequests.png)
+![`ReceivedDocumentReviewRequests`](../public/frontend/components/ui/documents/ReceivedDocumentReviewRequests.png)
 
-![`ReceivedDocumentReviewRequestsEmpty`](../imgs/frontend/components/ui/documents/ReceivedDocumentReviewRequestsEmpty.png)
+![`ReceivedDocumentReviewRequestsEmpty`](../public/frontend/components/ui/documents/ReceivedDocumentReviewRequestsEmpty.png)
 ### RequestedDocumentReviewRequests
 This component is to display a floating container to show the requested document reviews and their status.
 
@@ -226,16 +226,16 @@ This component can be used as follows:
 <requested-document-review-requests v-if="tab == 'requested'" />
 ```
 The following is a visual of this component with documents and while empty.
-![`RequestedDocumentReviewRequests`](../imgs/frontend/components/ui/documents/RequestedDocumentReviewRequests.png)
+![`RequestedDocumentReviewRequests`](../public/frontend/components/ui/documents/RequestedDocumentReviewRequests.png)
 
-![`RequestedDocumentReviewRequests`](../imgs/frontend/components/ui/documents/RequestedDocumentReviewRequestsEmpty.png)
+![`RequestedDocumentReviewRequests`](../public/frontend/components/ui/documents/RequestedDocumentReviewRequestsEmpty.png)
 ### CompleteDocumentReview
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for completing document review providing a message.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CompleteDocumentReview`](../imgs/frontend/components/ui/documents/CompleteDocumentReview.png)
+![`CompleteDocumentReview`](../public/frontend/components/ui/documents/CompleteDocumentReview.png)
 ### ResourceSelector
 This component is to display a resource selector with search bar and filtering, using [`modal`](components-common.md#modal).
 
@@ -250,7 +250,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`ResourceSelector`](../imgs/frontend/components/ui/documents/ResourceSelector.png)
+![`ResourceSelector`](../public/frontend/components/ui/documents/ResourceSelector.png)
 ### SyntaqResourceSelector
 This component is to display a Syntaq resource selector with a search bar, using [`modal`](components-common.md#modal).
 
@@ -265,7 +265,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`SyntaqResourceSelector`](../imgs/frontend/components/ui/documents/SyntaqResourceSelector.png)
+![`SyntaqResourceSelector`](../public/frontend/components/ui/documents/SyntaqResourceSelector.png)
 
 
 ## Emails
@@ -286,7 +286,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`EmailList`](../imgs/frontend/components/ui/emails/EmailList.png)
+![`EmailList`](../public/frontend/components/ui/emails/EmailList.png)
 ### EmailDisplay
 This component is to display a email in a container, including options for assigning email to matter/project, convert to pdf, and other common email options.
 
@@ -305,7 +305,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`EmailDisplay`](../imgs/frontend/components/ui/emails/EmailDisplay.png)
+![`EmailDisplay`](../public/frontend/components/ui/emails/EmailDisplay.png)
 
 ## Feedback
 ### CreateBugReport
@@ -314,14 +314,14 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateBugReport`](../imgs/frontend/components/ui/feedback/CreateBugReport.png)
+![`CreateBugReport`](../public/frontend/components/ui/feedback/CreateBugReport.png)
 ### CreateSuggestion
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for submitting a suggestion with description, type drop down selection and file uploads.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateSuggestion`](../imgs/frontend/components/ui/feedback/CreateSuggestion.png)
+![`CreateSuggestion`](../public/frontend/components/ui/feedback/CreateSuggestion.png)
 ### UploadDocument
 This component is for the 'drag and drop' file upload function of the two components above, [`CreateBugReport`](#createbugreport) and [`CreateSuggestion`](#createsuggestion).
 
@@ -346,21 +346,21 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`CreateFixedPriceItem`](../imgs/frontend/components/ui/invoices/CreateFixedPriceItem.png)
+![`CreateFixedPriceItem`](../public/frontend/components/ui/invoices/CreateFixedPriceItem.png)
 ### CreateInvoice
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for creating a new invoice.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateInvoice`](../imgs/frontend/components/ui/invoices/CreateInvoice.png)
+![`CreateInvoice`](../public/frontend/components/ui/invoices/CreateInvoice.png)
 ### EditInvoiceNote
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for updating existing invoice notes.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`EditInvoiceNote`](../imgs/frontend/components/ui/invoices/EditInvoiceNote.png)
+![`EditInvoiceNote`](../public/frontend/components/ui/invoices/EditInvoiceNote.png)
 ### InlineInvoice
 This component is to display an invoice in a line for a page of list of invoices. This line of invoice uses colored badges to differentiate type and status of the invoice. This component also allows downloading as pdf, sending reminders and more.
 
@@ -375,7 +375,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`InlineInvoice`](../imgs/frontend/components/ui/invoices/InlineInvoice.png)
+![`InlineInvoice`](../public/frontend/components/ui/invoices/InlineInvoice.png)
 ### InvoiceDisbursementSelector
 This component customises the [`SlideOver`](#slideover) window for selecting a disbursement.
 
@@ -390,7 +390,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`InvoiceDisbursementSelector`](../imgs/frontend/components/ui/invoices/InvoiceDisbursementSelector.png)
+![`InvoiceDisbursementSelector`](../public/frontend/components/ui/invoices/InvoiceDisbursementSelector.png)
 ### InvoiceTimeEntrySelector
 This component customises the [`SlideOver`](#slideover) window for managing time entries to include in the invoice.
 
@@ -405,7 +405,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`InvoiceTimeEntrySelector`](../imgs/frontend/components/ui/invoices/InvoiceTimeEntrySelector.png)
+![`InvoiceTimeEntrySelector`](../public/frontend/components/ui/invoices/InvoiceTimeEntrySelector.png)
 ### UpdateInvoiceDate
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for updating invoice date.
 
@@ -420,12 +420,12 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`UpdateInvoiceDate`](../imgs/frontend/components/ui/invoices/UpdateInvoiceDate.png)
+![`UpdateInvoiceDate`](../public/frontend/components/ui/invoices/UpdateInvoiceDate.png)
 
 
 ## Layout
 ### ActionMultiselect
-:::danger Deprecate
+:::danger Deprecated
 :::
 ### AdminMenu
 
@@ -442,7 +442,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`AdminMenu`](../imgs/frontend/components/ui/layout/AdminMenu.png)
+![`AdminMenu`](../public/frontend/components/ui/layout/AdminMenu.png)
 ### SlideOver
 
 This component can be used as follows:
@@ -456,7 +456,7 @@ This component can be used as follows:
 </slide-over>
 ```
 The following is a visual of this component at work.
-![`SlideOver`](../imgs/frontend/components/ui/layout/SlideOver.png)
+![`SlideOver`](../public/frontend/components/ui/layout/SlideOver.png)
 ### ComponentSlideOver
 This component is similar to that of [`SlideOver`](#slideover), with slight changes to color and side of the slide over window.
 
@@ -467,14 +467,14 @@ This component is similar to that of [`SlideOver`](#slideover), with slight chan
 Refer to [`SlideOver`](#slideover) for usage example.
 
 The following is a visual of this component at work.
-![`ProjectTaskSlideOver`](../imgs/frontend/components/ui/layout/ProjectTaskSlideOver.png)
+![`ProjectTaskSlideOver`](../public/frontend/components/ui/layout/ProjectTaskSlideOver.png)
 ### Detail
 This component renders a container to contain details in a box with grey background.
 
 This component can be used by just wrapping the contents just like that of a `div` component.
 
 The following is a visual of this component at work.
-![`Detail`](../imgs/frontend/components/ui/layout/Detail.png)
+![`Detail`](../public/frontend/components/ui/layout/Detail.png)
 ### MasterDetail
 This component is for rendering the breadcrumbs of the currently displayed page in the main container. This is very useful in helping the user visualise and navigate 
 This is usually used by wrapping the whole page. 
@@ -482,7 +482,7 @@ This is usually used by wrapping the whole page.
 This component can be used by just wrapping the contents just like that of a `div` component.
 
 The following is a visual of this component at work.
-![`MasterDetail`](../imgs/frontend/components/ui/layout/MasterDetail.png)
+![`MasterDetail`](../public/frontend/components/ui/layout/MasterDetail.png)
 ### MainMenu
 This component is to render the whole main menu on the left side of the page. 
 
@@ -497,7 +497,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`MainMenu`](../imgs/frontend/components/ui/layout/MainMenu.png)
+![`MainMenu`](../public/frontend/components/ui/layout/MainMenu.png)
 ### DocumentMenu
 This component is to render the menu for documents that includes [`ActiveDocuments`](#activedocuments),[`ReceivedDocumentReviewRequests`](#receiveddocumentreviewrequests) and [`RequestedDocumentReviewRequests`](#requesteddocumentreviewrequests).
 
@@ -507,7 +507,7 @@ This component can be used as follows:
 <document-menu v-else-if="state.showMenu == 'documents'" />
 ```
 The following is a visual of this component at work.
-![`DocumentMenu`](../imgs/frontend/components/ui/layout/DocumentMenu.png)
+![`DocumentMenu`](../public/frontend/components/ui/layout/DocumentMenu.png)
 ### DownloadMenu
 This component is to render the downloading menu to list current downloading jobs. 
 
@@ -518,7 +518,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`DownloadMenu`](../imgs/frontend/components/ui/layout/DownloadMenu.png)
+![`DownloadMenu`](../public/frontend/components/ui/layout/DownloadMenu.png)
 ### EmailMenu
 This component is to render the new email floating page when clicking the top menu email option.
 
@@ -528,7 +528,7 @@ This component can be used as follows:
 <email-menu v-else-if="state.showMenu === 'emails'" />
 ```
 The following is a visual of this component at work.
-![`EmailMenu`](../imgs/frontend/components/ui/layout/EmailMenu.png)
+![`EmailMenu`](../public/frontend/components/ui/layout/EmailMenu.png)
 ### NotificationMenu
 This component is to render the floating notification menu window. 
 
@@ -539,7 +539,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`NotificationMenu`](../imgs/frontend/components/ui/layout/NotificationMenu.png)
+![`NotificationMenu`](../public/frontend/components/ui/layout/NotificationMenu.png)
 ### ReminderMenu
 This component is to render the floating reminder menu window. 
 
@@ -550,7 +550,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`ReminderMenu`](../imgs/frontend/components/ui/layout/ReminderMenu.png)
+![`ReminderMenu`](../public/frontend/components/ui/layout/ReminderMenu.png)
 ### TimerMenu
 This component is to render the floating timer menu window. 
 
@@ -561,7 +561,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`TimerMenu`](../imgs/frontend/components/ui/layout/TimerMenu.png)
+![`TimerMenu`](../public/frontend/components/ui/layout/TimerMenu.png)
 ### StaffDirectory
 This component customises the [`SlideOver`](#slideover) window for rendering the staff directory.
 
@@ -576,7 +576,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`StaffDirectory`](../imgs/frontend/components/ui/layout/StaffDirectory.png)
+![`StaffDirectory`](../public/frontend/components/ui/layout/StaffDirectory.png)
 ### SideBar
 This component is used to render the group of menu items on the top right hand corner, including [`DocumentMenu`](#documentmenu),[`DownloadMenu`](#downloadmenu),[`EmailMenu`](#emailmenu),[`NotificationMenu`](#notificationmenu), [`ReminderMenu`](#remindermenu),    , and [`TimerMenu`](#timermenu)[`StaffDirectory`](#staffdirectory).
 
@@ -596,7 +596,7 @@ This component can be used as follows:
 wrong spelling in code
 ::: -->
 The following is a visual of this component at work.
-![`SideBar`](../imgs/frontend/components/ui/layout/SideBar.png)
+![`SideBar`](../public/frontend/components/ui/layout/SideBar.png)
 ### Layout
 This component renders the overall page for the main layout, with the top and side navigation. This consists of the [`MainMenu`](#mainmenu) for the side navigation; [`SideBar`](#sidebar) used for the top navigation menu.  
 
@@ -606,16 +606,16 @@ This component can be used as follows:
   component: () => import("@/components/ui/layout/Layout.vue"),
 ```
 The following is a visual of this component at work.
-![`Layout`](../imgs/frontend/components/ui/layout/Layout.png)
+![`Layout`](../public/frontend/components/ui/layout/Layout.png)
 ### FeedbackButton
-:::danger Deprecate
+:::danger Deprecated
 :::
 ### NavBar
-:::danger Deprecate
+:::danger Deprecated
 Switched to sidebar
 :::
 ### QuickLinks
-:::danger Deprecate
+:::danger Deprecated
 :::
 
 
@@ -627,14 +627,14 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateIncomingMail`](../imgs/frontend/components/ui/mailregister/CreateIncomingMail.png)
+![`CreateIncomingMail`](../public/frontend/components/ui/mailregister/CreateIncomingMail.png)
 ### CreateOutgoingMail
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for registering outgoing mail.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateOutgoingMail`](../imgs/frontend/components/ui/mailregister/CreateOutgoingMail.png)
+![`CreateOutgoingMail`](../public/frontend/components/ui/mailregister/CreateOutgoingMail.png)
 
 ## Matters
 ### AddMatterNote
@@ -643,7 +643,7 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`AddMatterNote`](../imgs/frontend/components/ui/matters/AddMatterNote.png)
+![`AddMatterNote`](../public/frontend/components/ui/matters/AddMatterNote.png)
 ### AddMatterOutcome
 This component renders a [`modal`](components-common.md#modal) component for selecting an outcome to add to the matter according to the type of matter.
 
@@ -658,14 +658,14 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`AddMatterOutcome`](../imgs/frontend/components/ui/matters/AddMatterOutcome.png)
+![`AddMatterOutcome`](../public/frontend/components/ui/matters/AddMatterOutcome.png)
 ### AssignEmailToMatter
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for assigning email to chosen matter.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`AssignEmailToMatter`](../imgs/frontend/components/ui/matters/AssignEmailToMatter.png)
+![`AssignEmailToMatter`](../public/frontend/components/ui/matters/AssignEmailToMatter.png)
 ### CreateDisbursement
 This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for filling in form to create a disbursement.
 
@@ -679,14 +679,14 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`CreateDisbursement`](../imgs/frontend/components/ui/matters/CreateDisbursement.png)
+![`CreateDisbursement`](../public/frontend/components/ui/matters/CreateDisbursement.png)
 ### CreateMatter
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for creating a new matter.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateMatter`](../imgs/frontend/components/ui/matters/CreateMatter.png)
+![`CreateMatter`](../public/frontend/components/ui/matters/CreateMatter.png)
 ### CreateTrustTransactionRequest
 This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for creating a Trust Transaction Request.
 
@@ -701,21 +701,21 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`CreateTrustTransactionRequest`](../imgs/frontend/components/ui/matters/CreateTrustTransactionRequest.png)
+![`CreateTrustTransactionRequest`](../public/frontend/components/ui/matters/CreateTrustTransactionRequest.png)
 ### EditContactNote
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for editing an existing contact note.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`EditContactNote`](../imgs/frontend/components/ui/matters/EditContactNote.png)
+![`EditContactNote`](../public/frontend/components/ui/matters/EditContactNote.png)
 ### EditMatterNote
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for editing an existing matter note.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`EditMatterNote`](../imgs/frontend/components/ui/matters/EditMatterNote.png)
+![`EditMatterNote`](../public/frontend/components/ui/matters/EditMatterNote.png)
 ### InlineMatter
 This component is to display a Matter in a line for a page of list of Matters in "My Matters Report". 
 This line of Matter renders an overview of the matter, including MatterId in coloured badge, latest note of matter, status of matter and more. 
@@ -732,7 +732,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineMatter`](../imgs/frontend/components/ui/matters/InlineMatter.png)
+![`InlineMatter`](../public/frontend/components/ui/matters/InlineMatter.png)
 ### InlineMatterComponent
 This component renders the inline matter outcome component as shown in the visual below. This component includes a `multiUserSelector` to assign the component to a staff member, `timer` to record time entries as well as a `dueDate` for the component.
 
@@ -750,7 +750,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`InlineMatterComponent`](../imgs/frontend/components/ui/matters/InlineMatterComponent.png)
+![`InlineMatterComponent`](../public/frontend/components/ui/matters/InlineMatterComponent.png)
 ### InlineMatterOutcome
 This component renders a container to hold the [`InlineMatterComponent`](#inlinemattercomponent) according to their outcomes.
 
@@ -767,7 +767,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineMatterOutcome`](../imgs/frontend/components/ui/matters/InlineMatterOutcome.png)
+![`InlineMatterOutcome`](../public/frontend/components/ui/matters/InlineMatterOutcome.png)
 ### MatterComponentTimeEntries
 This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) for creating time entries for a matter outcome component.
 
@@ -781,7 +781,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`MatterComponentTimeEntries`](../imgs/frontend/components/ui/matters/MatterComponentTimeEntries.png)
+![`MatterComponentTimeEntries`](../public/frontend/components/ui/matters/MatterComponentTimeEntries.png)
 ### MatterTimeEntriesForMatter
 This component renders the page under each matter that shows all of the matter time entries of the matter.
 
@@ -799,7 +799,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`MatterTimeEntriesForMatter`](../imgs/frontend/components/ui/matters/MatterTimeEntriesForMatter.png)
+![`MatterTimeEntriesForMatter`](../public/frontend/components/ui/matters/MatterTimeEntriesForMatter.png)
 ### SalesTimeEntriesForMatter
 This component renders the page under each matter that shows all of the sales time entries of the matter.
 
@@ -816,7 +816,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`SalesTimeEntriesForMatter`](../imgs/frontend/components/ui/matters/SalesTimeEntriesForMatter.png)
+![`SalesTimeEntriesForMatter`](../public/frontend/components/ui/matters/SalesTimeEntriesForMatter.png)
 ### MatterTrustRequests
 This component renders the page under each matter that shows all of the trust requests of the matter.
 
@@ -829,7 +829,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`MatterTrustRequests`](../imgs/frontend/components/ui/matters/MatterTrustRequests.png)
+![`MatterTrustRequests`](../public/frontend/components/ui/matters/MatterTrustRequests.png)
 ### MatterTrustTransactions
 This component renders the page under each matter that shows all of the trust transactions of the matter.
 
@@ -843,24 +843,23 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`MatterTrustTransactions`](../imgs/frontend/components/ui/matters/MatterTrustTransactions.png)
+![`MatterTrustTransactions`](../public/frontend/components/ui/matters/MatterTrustTransactions.png)
 ### ReassignEmails
-:::danger Pending confirmation 
-Possibly Deprecated
+:::danger Deprecated
 :::
 <!-- This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for registering new incoming mail.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![``](../imgs/frontend/components/ui -->
+![``](../public/frontend/components/ui -->
 ### UpdateMatterStatus
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for updating status of a matter.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`UpdateMatterStatus`](../imgs/frontend/components/ui/matters/UpdateMatterStatus.png)
+![`UpdateMatterStatus`](../public/frontend/components/ui/matters/UpdateMatterStatus.png)
 
 ## Offerings
 ### InlineOfferingComponent
@@ -879,7 +878,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`InlineOfferingComponent`](../imgs/frontend/components/ui/offerings/InlineOfferingComponent.png)
+![`InlineOfferingComponent`](../public/frontend/components/ui/offerings/InlineOfferingComponent.png)
 ### InlineOfferingOutcome
 This component renders the inline offering outcome under an offering.
 
@@ -898,9 +897,9 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`InlineOfferingOutcome`](../imgs/frontend/components/ui/offerings/InlineOfferingOutcome.png)
+![`InlineOfferingOutcome`](../public/frontend/components/ui/offerings/InlineOfferingOutcome.png)
 ### InlineOfferingOutcomeObjectionGuarantee
-:::danger Deprecate
+:::danger Deprecated
 :::
 ### InlineOfferingProblemOutcome
 This component renders the inline offering problem outcome under an offering.  
@@ -920,7 +919,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineOfferingProblemOutcome`](../imgs/frontend/components/ui/offerings/InlineOfferingProblemOutcome.png)
+![`InlineOfferingProblemOutcome`](../public/frontend/components/ui/offerings/InlineOfferingProblemOutcome.png)
 
 ## Organisations
 ### CreateOrganisation
@@ -929,14 +928,14 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateOrganisation`](../imgs/frontend/components/ui/organisations/CreateOrganisation.png)
+![`CreateOrganisation`](../public/frontend/components/ui/organisations/CreateOrganisation.png)
 ### EditOrganizationNote
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for editing an existing organisation note.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`EditOrganizationNote`](../imgs/frontend/components/ui/organisations/EditOrganizationNote.png)
+![`EditOrganizationNote`](../public/frontend/components/ui/organisations/EditOrganizationNote.png)
 
 ## PqeAdjustment
 ### CreatePQEAdjustment
@@ -948,7 +947,7 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreatePQEAdjustment`](../imgs/frontend/components/ui/pqeadjustment/CreatePQEAdjustment.png)
+![`CreatePQEAdjustment`](../public/frontend/components/ui/pqeadjustment/CreatePQEAdjustment.png)
 
 ## Projects
 ### AssignEmailToProject
@@ -957,28 +956,28 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`AssignEmailToProject`](../imgs/frontend/components/ui/projects/AssignEmailToProject.png)
+![`AssignEmailToProject`](../public/frontend/components/ui/projects/AssignEmailToProject.png)
 ### CreateProject
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for creating a new project.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateProject`](../imgs/frontend/components/ui/projects/CreateProject.png)
+![`CreateProject`](../public/frontend/components/ui/projects/CreateProject.png)
 ### CreateProjectTask
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for creating a new project task.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateProjectTask`](../imgs/frontend/components/ui/projects/CreateProjectTask.png)
+![`CreateProjectTask`](../public/frontend/components/ui/projects/CreateProjectTask.png)
 ### EditProjectNote
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for editing an existing project note.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`EditProjectNote`](../imgs/frontend/components/ui/projects/EditProjectNote.png)
+![`EditProjectNote`](../public/frontend/components/ui/projects/EditProjectNote.png)
 ### InlineProject
 This component renders each inline projects under my projects. This includes function for inline editing of names, owners, tasks and other functions such as changing status of the project. 
 
@@ -992,7 +991,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`InlineProject`](../imgs/frontend/components/ui/projects/InlineProject.png)
+![`InlineProject`](../public/frontend/components/ui/projects/InlineProject.png)
 ### InlineProjectTask
 This component renders each inline projects task under [`InlineProject`](#inlineproject). This includes function for inline editing of take names, assigning staff members, setting status of task and a timer for time entry records. 
 
@@ -1011,7 +1010,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineProjectTask`](../imgs/frontend/components/ui/projects/InlineProjectTask.png)
+![`InlineProjectTask`](../public/frontend/components/ui/projects/InlineProjectTask.png)
 ### InlineProjectTaskCard
 This component renders a task card similar to that of a kanban to be viewed and dragged for rearranging. [`AlpDraggable`](components-common.md#alpdraggable) component will be needed to allow dragging. 
 
@@ -1027,7 +1026,7 @@ This component can be used as follows:
 </inline-project-task-card>
 ```
 The following is a visual of this component at work.
-![`InlineProjectTaskCard`](../imgs/frontend/components/ui/projects/InlineProjectTaskCard.png)
+![`InlineProjectTaskCard`](../public/frontend/components/ui/projects/InlineProjectTaskCard.png)
 ### InlineProjectTaskStep
 This component renders an inline task step under the [`ProjectTask`](#projecttask) that allows adding of resources.
 
@@ -1046,7 +1045,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineProjectTaskStep`](../imgs/frontend/components/ui/projects/InlineProjectTaskStep.png)
+![`InlineProjectTaskStep`](../public/frontend/components/ui/projects/InlineProjectTaskStep.png)
 ### ProjectTask
 This component customises the [`ProjectTaskSlideOver`](#projecttaskslideover) window for managing permissions in the system of a role.
 
@@ -1062,7 +1061,7 @@ This component can be used as follows:
 />
 ```
 The following is a visual of this component at work.
-![`ProjectTask`](../imgs/frontend/components/ui/projects/ProjectTask.png)
+![`ProjectTask`](../public/frontend/components/ui/projects/ProjectTask.png)
 ### ProjectTaskMetadata
 This component renders the metadata section in the [`ProjectTask`](#projecttask).
 
@@ -1073,7 +1072,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`ProjectTaskMetadata`](../imgs/frontend/components/ui/projects/ProjectTaskMetadata.png)
+![`ProjectTaskMetadata`](../public/frontend/components/ui/projects/ProjectTaskMetadata.png)
 ### ProjectTimeEntriesForProject
 This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for filling in form to create a time entry for project, under Projects > Time entries.
 
@@ -1089,7 +1088,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`ProjectTimeEntriesForProject`](../imgs/frontend/components/ui/projects/ProjectTimeEntriesForProject.png)
+![`ProjectTimeEntriesForProject`](../public/frontend/components/ui/projects/ProjectTimeEntriesForProject.png)
 
 ## Relationships
 ### CreateOrganisationRelationship
@@ -1106,14 +1105,14 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`CreateOrganisationRelationship`](../imgs/frontend/components/ui/Relationships/CreateOrganisationRelationship.png)
+![`CreateOrganisationRelationship`](../public/frontend/components/ui/Relationships/CreateOrganisationRelationship.png)
 ### CreateRelationship
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for filling in contact relationships, Family, Referrer and Professional.
 
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateRelationship`](../imgs/frontend/components/ui/Relationships/CreateRelationship.png)
+![`CreateRelationship`](../public/frontend/components/ui/Relationships/CreateRelationship.png)
 
 ## Reminders
 ### CreateReminder
@@ -1122,7 +1121,7 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateReminder`](../imgs/frontend/components/ui/reminders/CreateReminder.png)
+![`CreateReminder`](../public/frontend/components/ui/reminders/CreateReminder.png)
 
 ## Resource-urls
 ### ResourceUrlSelector
@@ -1139,7 +1138,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`ResourceUrlSelector`](../imgs/frontend/components/ui/resource-urls/ResourceUrlSelector.png)
+![`ResourceUrlSelector`](../public/frontend/components/ui/resource-urls/ResourceUrlSelector.png)
 
 ## SafeStorage
 ### CreateContactSafeStorage
@@ -1156,7 +1155,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`CreateContactSafeStorage`](../imgs/frontend/components/ui/safestorage/CreateContactSafeStorage.png)
+![`CreateContactSafeStorage`](../public/frontend/components/ui/safestorage/CreateContactSafeStorage.png)
 ### CreateOrganisationSafeStorage
 This component renders a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform), for creating a safe storage for an organisation.
 
@@ -1171,7 +1170,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`CreateOrganisationSafeStorage`](../imgs/frontend/components/ui/safestorage/CreateOrganisationSafeStorage.png)
+![`CreateOrganisationSafeStorage`](../public/frontend/components/ui/safestorage/CreateOrganisationSafeStorage.png)
 
 ## Time-tracking
 ### CreateTimeEntry
@@ -1180,7 +1179,7 @@ This is a component calling [`CreateTimeEntryForm`](#createtimeentryform) into a
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateTimeEntry`](../imgs/frontend/components/ui/time-tracking/CreateTimeEntryForm.png)
+![`CreateTimeEntry`](../public/frontend/components/ui/time-tracking/CreateTimeEntryForm.png)
 ### CreateTimeEntryForm
 This component consists of the form to fill for [`CreateTimeEntry`](#createtimeentry) using the [`modalform`](components-common.md#modalform) component.
 ### CreateTimeEntryForMatter
@@ -1189,7 +1188,7 @@ This is a component calling [`CreateTimeEntryFormForMatter`](#createtimeentryfor
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateTimeEntryForMatter`](../imgs/frontend/components/ui/time-tracking/CreateTimeEntryFormForMatter.png)
+![`CreateTimeEntryForMatter`](../public/frontend/components/ui/time-tracking/CreateTimeEntryFormForMatter.png)
 ### CreateTimeEntryFormForMatter
 This component consists of the form to fill for [`CreateTimeEntryForMatter`](#createtimeentryformatter) using the [`modalform`](components-common.md#modalform) component. This component consists of both forms for matter and for sales.
 ### CreateTimeEntryForProject
@@ -1198,7 +1197,7 @@ This is a component calling [`CreateTimeEntryFormForProject`](#createtimeentryfo
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`CreateTimeEntryForProject`](../imgs/frontend/components/ui/time-tracking/CreateTimeEntryFormForProject.png)
+![`CreateTimeEntryForProject`](../public/frontend/components/ui/time-tracking/CreateTimeEntryFormForProject.png)
 ### CreateTimeEntryFormForProject
 This component consists of the form to fill for [`CreateTimeEntryForProject`](#createtimeentryforproject) using the [`modalform`](components-common.md#modalform) component.
 ### InlineAddMatterTimeEntries
@@ -1214,7 +1213,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineAddMatterTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineAddMatterTimeEntries.png)
+![`InlineAddMatterTimeEntries`](../public/frontend/components/ui/time-tracking/InlineAddMatterTimeEntries.png)
 ### InlineAddProjectTimeEntries
 This component renders a inline adding of time entry for project. This component is under "**Time Tracking**" > "**Time Entries**" section. It adopts the inline creating instead of the [`modal`](components-common.md#modal) in the [`CreateTimeEntryForProject`](#createtimeentryforproject).
 
@@ -1228,7 +1227,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineAddProjectTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineAddProjectTimeEntries.png)
+![`InlineAddProjectTimeEntries`](../public/frontend/components/ui/time-tracking/InlineAddProjectTimeEntries.png)
 ### InlineAddSalesTimeEntries
 This component renders a inline adding of time entry for sales. This component is under "**Time Tracking**" > "**Time Entries**" section. It adopts the inline creating instead of the [`modal`](components-common.md#modal) in the [`CreateTimeEntryForMatter`](#createtimeentryformatter).
 
@@ -1242,7 +1241,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineAddSalesTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineAddSalesTimeEntries.png)
+![`InlineAddSalesTimeEntries`](../public/frontend/components/ui/time-tracking/InlineAddSalesTimeEntries.png)
 ### InlineMatterTimeEntries
 This component renders each inline matter time entries under "**Time Tracking**" > "**Time Entries**" > "**Matter**" section.  
 
@@ -1260,7 +1259,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineMatterTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineMatterTimeEntries.png)
+![`InlineMatterTimeEntries`](../public/frontend/components/ui/time-tracking/InlineMatterTimeEntries.png)
 ### InlineProjectTimeEntries
 This component renders each inline matter time entries under "**Time Tracking**" > "**Time Entries**" > "**Project**" section.  
 
@@ -1278,7 +1277,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineProjectTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineProjectTimeEntries.png)
+![`InlineProjectTimeEntries`](../public/frontend/components/ui/time-tracking/InlineProjectTimeEntries.png)
 ### InlineSalesTimeEntries
 This component renders each inline matter time entries under "**Time Tracking**" > "**Time Entries**" > "**Sales**" section.  
 
@@ -1296,7 +1295,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`InlineSalesTimeEntries`](../imgs/frontend/components/ui/time-tracking/InlineSalesTimeEntries.png)
+![`InlineSalesTimeEntries`](../public/frontend/components/ui/time-tracking/InlineSalesTimeEntries.png)
 ### MatterTimeEntries
 This component renders the page for matter time entries that includes both the [`InlineAddMatterTimeEntries`](#inlineaddmattertimeentries) for adding new matter time entry as well as the [`InlineMatterTimeEntries`](#inlinemattertimeentries).
 
@@ -1317,7 +1316,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`MatterTimeEntries`](../imgs/frontend/components/ui/time-tracking/MatterTimeEntries.png)
+![`MatterTimeEntries`](../public/frontend/components/ui/time-tracking/MatterTimeEntries.png)
 `InlineAddMatterTimeEntries` + `InlineMatterTimeEntries`
 ### ProjectTimeEntries
 This component renders the page for project time entries that includes both the [`InlineAddProjectTimeEntries`](#inlineaddprojecttimeentries) for adding new project time entry as well as the [`InlineProjectTimeEntries`](#inlineprojecttimeentries).
@@ -1336,7 +1335,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`ProjectTimeEntries`](../imgs/frontend/components/ui/time-tracking/ProjectTimeEntries.png)
+![`ProjectTimeEntries`](../public/frontend/components/ui/time-tracking/ProjectTimeEntries.png)
 ### SalesTimeEntries
 This component renders the page for matter time entries that includes both the [`InlineAddSalesTimeEntries`](#inlineaddsalestimeentries) for adding new matter time entry as well as the [`InlineSalesTimeEntries`](#inlinesalestimeentries).
 
@@ -1355,7 +1354,7 @@ This component can be used as follows:
 ```
 
 The following is a visual of this component at work.
-![`SalesTimeEntries`](../imgs/frontend/components/ui/time-tracking/SalesTimeEntries.png)
+![`SalesTimeEntries`](../public/frontend/components/ui/time-tracking/SalesTimeEntries.png)
 
 ### SubmitTimer
 This is a [`modal`](components-common.md#modal) using [`modalform`](components-common.md#modalform) to customise for submitting a new time log.
@@ -1363,12 +1362,12 @@ This is a [`modal`](components-common.md#modal) using [`modalform`](components-c
 This can be used according to [`GlobalModals`](#globalmodals).
 
 The following is a visual of this component at work.
-![`SubmitTimer`](../imgs/frontend/components/ui/time-tracking/SubmitTimer.png)
+![`SubmitTimer`](../public/frontend/components/ui/time-tracking/SubmitTimer.png)
 ### TimerMatterSelector
-:::danger Deprecate
+:::danger Deprecated
 Using `matter-selector-field` `matter-component-selector-field` directly in `SubmitTimer`
 :::
 ### TimerProjectTaskSelector
-:::danger Deprecate
+:::danger Deprecated
 Using `project-task-selector-field` directly in `SubmitTimer`
 :::

@@ -1,4 +1,4 @@
-# Architecture / Project Structure
+# Project Structure
 
 The application is built with ***Vue.js*** and follows a reasonably standard approach. 
 
@@ -51,7 +51,7 @@ Components can be categorized into several types, including:
 
 Further details about these can be found in the code files and under the components section that follows.
 
-## Composable
+## [Composable](composable.md)
 
 The composition API is a new feature that was introduced in ***Vue 3***. This allows for logic to be encapsulated in a function that can subsequently be reused throughout the system rather than being constrained to a single component.
 
@@ -77,7 +77,7 @@ It deals with the management of the flow of data and ensuring that the applicati
  ┗   ┗   ...
 ```
 
-The folder includes files in charge of the network requests for internal APIs and 3rd party APIs such as [activeCampaign](../back-end/external-services.md#active-campaign), [Xero](../back-end/external-services.md#xero) etc.
+The folder includes files in charge of the network requests for internal APIs and 3rd party APIs such as [activeCampaign](/back-end/external-services.md#active-campaign), [Xero](/back-end/external-services.md#xero) etc.
 
 #### Example:
 
@@ -109,13 +109,10 @@ The router includes a **verification process** for each routing request. This ve
 
 For more information on the router in this application, refer to the `/App/src/router/index.ts` file as well as the official ***Vue Router*** documentation  [here](https://router.vuejs.org/).
 
-::: danger TODO
-Document common pitfalls and patterns for handling nested routes.
-:::
 
-## Vuex Store
+## [Vuex Store](store.md)
 
-The ***Vuex Store*** is a centralized state management tool for Vue.js applications. It allows for the management of application-level state and ensures that data is shared across all components of the application in a predictable manner.
+The ***Vuex Store*** is a **centralized state management** tool for Vue.js applications. It allows for the management of application-level state and ensures that data is shared across all components of the application in a predictable manner.
 
 The ***Vuex Store*** can be thought of as a global data store for the application, where data can be stored, retrieved, and updated. It is particularly useful for complex applications with multiple components, where data needs to be shared between different parts of the application.
 
@@ -129,10 +126,6 @@ The ***Vuex Store*** is also designed to be highly modular and extensible, so yo
 ```
 
 For more information on ***Vuex Store*** in this application, you can refer to the `/App/src/store/index.ts` file as well as the official documentation of Vuex [here](https://vuex.vuejs.org/guide/).
-
-::: danger TODO
-Investigate approaches to simplifying store definitions.
-:::
 
 ## Views
 

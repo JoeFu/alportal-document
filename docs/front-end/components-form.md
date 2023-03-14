@@ -1,11 +1,11 @@
 # Forms Components
 
 This is a brief summary of some of forms components being used in the system today.
-:::tip Note
-Updated Q1 2023
-:::
+<!-- ::: tip  Updated at 2023 Q1
+::: -->
 
-## Selectors
+
+## SelectorFields
 
 This is a group of `selectorField` components that utilises the group of [`selector`](components-input.md#xxxselectors) components to provide a *dropdown list* to select an ***option***, and bind the selected ***option*** to a form field. Which is to autocomplete forms after selecting an ***option***.
 
@@ -28,12 +28,12 @@ The following is an example of using one of the `selectorField`, which is of the
 `selected`: Emits when an ***option*** is selected from the dropdown, with the selected ***option*** as the only argument.
 `close`: Emits when the dropdown is closed, without any arguments.
 
-
-<!-- The main difference between userSelector and userSelectorField components is their purpose and usage context.
-
-userSelector is an input component that provides a search interface to select a user from a list. It uses the SearchSelector component and allows users to search and select a user from a list of users fetched from a server. It emits the selected event when a user is selected, and it also emits the fetch event when the user types in the search box. The userSelector component is used as a standalone component to select a user.
-
-On the other hand, userSelectorField is a form component that uses the UserSelector component to select a user and bind the selected user to a form field. It uses the useField hook from the vee-validate library to manage the form field's state and validation. When a user is selected, it emits the selected event and updates the form field's value using the handleChange function returned by the useField hook. The userSelectorField component is used as part of a form to bind the selected user to a form field and validate its value. -->
+:::tip Differences between [`Selectors`](components-input.md#selectors) and [`SelectorFields`](#selectorfields)
+| Component Name | userSelector | userSelectorField |
+| --- | --- | --- |
+| Purpose | Provides a search interface to select a user from a list | Uses `UserSelector` component to select a user and bind the selected user to a form field |
+| Usage Context | Used as a standalone component to select a user | Used as part of a form to bind the selected user to a form field and validate its value |
+:::
 
 ## AlpFormContainer
 
@@ -108,10 +108,6 @@ The `editorField` component can be used anywhere in the application where a text
 This component is a label component that can be used with form input fields. It can display the `name` of the field, a `label` and an *optional* `icon button`. 
 
 The fieldLabel component is used by placing it before an input field that needs a label. 
-
-:::danger Pending
-Insert User View screen shot
-:::
 
 This can be used as follows:
 

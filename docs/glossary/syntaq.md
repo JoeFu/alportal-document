@@ -8,7 +8,7 @@ Syntaq currently exposes it's document automation functionality through two main
 
 ## Syntaq Forms
 
-Syntaq can provides forms for users to enter data which is subsequently processed and injected into the generated documents. This allows for a significant amount of flexibility in the final document, particularly when factoring in the templating capabilities of the Syntaq engine and Microsoft Word.
+Syntaq can provides forms for users to enter data which is subsequently processed and injected into the generated documents. This allows for a significant amount of flexibility in the final document, particularly when factoring in the template capabilities of the Syntaq engine and Microsoft Word.
 
 Syntaq leverages [Form IO](https://github.com/formio/formio.js) to allow its users to build forms with minimal programming knowledge. These forms may be embedded into web pages using the script tags provided by the Syntaq platform.
 

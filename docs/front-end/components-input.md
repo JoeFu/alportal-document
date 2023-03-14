@@ -1,9 +1,9 @@
 # Inputs Components
 
 This is a brief summary of some of the inputs components being used in the system today.
-:::tip Note
-Updated Q1 2023
-:::
+<!-- ::: tip  Updated at 2023 Q1
+::: -->
+
 
 ## Selectors
 ### SearchSelector
@@ -172,9 +172,9 @@ This can be used as follows:
 #### Props:
 
 - `parameter` (`object`): dynamic parameter data. The object has the following properties:
-  - `id` (`number`): A unique identifier for the parameter.
-  - `parameterName` (`string`): The `name` of the parameter.
-  - `values` (`array`): `EntityDynamicParameterValuesDto` objects, which represent the current values of the parameter.
+  * `id` (`number`): A unique identifier for the parameter.
+  * `parameterName` (`string`): The `name` of the parameter.
+  * `values` (`array`): `EntityDynamicParameterValuesDto` objects, which represent the current values of the parameter.
 - `entityId` (`number`): The `ID` of the entity that the parameter is associated with.
 - `updateValue` (`function`): update the value of the parameter. 
 > The function takes two arguments: 
@@ -458,7 +458,7 @@ This can be used as follows:
 ## InlineTextArea
 
 This component allows the user to edit a text string in place, directly in the page. 
-The inlineTextarea component uses the [VeeValidate](../front-end/key-libraries.md#veevalidate) library to validate the input text. When the user finishes editing and clicks the checkmark button, the input text is validated against the `rules` `prop`. 
+The inlineTextarea component uses the [VeeValidate](/front-end/key-libraries.md#veevalidate) library to validate the input text. When the user finishes editing and clicks the checkmark button, the input text is validated against the `rules` `prop`. 
 - If the text is valid, the `create` and `update:modelValue` events are emitted, the updated value is passed as an argument, and the textarea is hidden. 
 - If the text is invalid, an `error` message is displayed and the user is prompted to correct the input. 
 - If the user cancels editing or the input is invalid, the `cancel` event is emitted and the textarea is hidden.
@@ -522,7 +522,7 @@ This can be used as follows:
 #### Props:
 
 - `modelValue` (`array`): An array of strings representing the inputted values. **Required** and should be passed as a `v-model`.
-- `rules` (`string` or `object`): specifying the validation rules for the input values. Using [veevalidate](../front-end/key-libraries.md#veevalidate) library for validation.
+- `rules` (`string` or `object`): specifying the validation rules for the input values. Using [veevalidate](/front-end/key-libraries.md#veevalidate) library for validation.
 - `placeholder` (`string`): placeholder text in the input field.
 - `unique` (`boolean`): If duplicate values are allowed.
 - `onKeyDown` (`function`): executed when a key is pressed in the input field.
