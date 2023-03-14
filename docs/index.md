@@ -28,7 +28,10 @@ features:
   # - title: 📸 For End User
   #   link: /front-end/introduction
   #   details: The document will describe the user's instructions and some troubleshooting methods.
-  - title: 🧩 Release Notes
-    link: /release-notes/
-    details: A changelog of the platform will be recorded in the documentation.
+  - title: 🧩 Road Map
+    link: /road-map/introduction
+    details: An overview of the planned features, milestones, and timelines for the development and release of the ALP App.
+  # - title: 🧩 Release Notes
+  #   link: /release-notes/
+  #   details: A changelog of the platform will be recorded in the documentation.
 ---
