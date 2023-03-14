@@ -40,7 +40,7 @@ We also use the following supporting services.
 - An ***Apache Tika Server*** for text extraction
 
 The diagram below shows the overall architecture of the ***ALP*** application.
-![ArchitectureOverview](../public/guide/Overview_Layered_Diagram.png)
+![ArchitectureOverview](/guide/Overview_Layered_Diagram.png)
 
 
 ## Getting Started
