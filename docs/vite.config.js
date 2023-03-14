@@ -8,6 +8,7 @@ export default defineConfig({
       buttonLabel: "Search",
       placeholder: "Search docs",
       encode: false,
+      // allowing non full word
       tokenize: "full"
     }),
   ],
