@@ -73,8 +73,8 @@ Read on [LLM](https://community.openai.com/t/how-a-llm-based-application-integra
 
 
 ## Web-scraping and API calls
-[Read more about scraping here](https://apify.com/vdrmota/contact-info-scraper)
-- Use automations to fill in Contact and Organisation data.
+[Read more about Scraping here](https://apify.com/vdrmota/contact-info-scraper)
+- Use automation to fill in Contact and Organisation data.
 > ABN. LinkedIn. 
 > Social media. 
 > ASIC (GetEdge). 

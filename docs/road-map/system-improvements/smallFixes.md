@@ -4,6 +4,7 @@ Change background colour slightly so that it is obvious when you are in admin mo
 
 ## Disable Office Selection for Matter
 [GitHub Issue 1471](https://github.com/AndreyevLawyers/ALP/issues/1471)
+
 Prefill office selection according to Staff
 - Office selection should only be available for System Admin
 
