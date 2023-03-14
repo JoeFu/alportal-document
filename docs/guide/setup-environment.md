@@ -42,7 +42,7 @@ This may change as support in the ecosystem improves.
 ### Troubleshooting for Windows user
 
 If you are facing issues running yarn with Windows Power Shell resulting in this error:
-![Error](../public/guide/Error_while_using_yarn_in_power_shell.png)
+![Error](/guide/Error_while_using_yarn_in_power_shell.png)
 Run Powershell as an administrator and run the following command:
 ```
 Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser

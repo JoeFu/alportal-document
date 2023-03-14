@@ -11,6 +11,7 @@ export default (
         ],
         lastUpdated: true,
         lastUpdatedText: 'Updated Date',
+
         themeConfig: {
             // nav bar icon
             logo: '/andreyev.png',
@@ -30,14 +31,14 @@ export default (
             },
             //right sidebar to show ## and ###
             outline: [2, 3],
-            
 
-            algolia:
-            {
-                appId: 'GE3LFXUYJ9',
-                apiKey: '9c5a78166d698ca538621f5f225d765c',
-                indexName: 'ALPortal'
-            },
+
+            // algolia:
+            // {
+            //     appId: 'GE3LFXUYJ9',
+            //     apiKey: '9c5a78166d698ca538621f5f225d765c',
+            //     indexName: 'ALPortal'
+            // },
         },
     })
 );
