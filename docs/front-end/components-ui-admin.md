@@ -23,7 +23,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateBusinessArea](../public/frontend/components/ui/admin/common/CreateBusinessAreas.png)
+![CreateBusinessArea](/frontend/components/ui/admin/common/CreateBusinessAreas.png)
 ### CreateCapability
 This component can be used as follows:
 
@@ -35,7 +35,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateCapability](../public/frontend/components/ui/admin/common/CreateCapabilities.png)
+![CreateCapability](/frontend/components/ui/admin/common/CreateCapabilities.png)
 ### CreateSubCapability
 This component can be used as follows:
 
@@ -47,7 +47,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateSubCapability](../public/frontend/components/ui/admin/common/CreateSubCapabilities.png)
+![CreateSubCapability](/frontend/components/ui/admin/common/CreateSubCapabilities.png)
 ### CreateEmailGroup
 This component can be used as follows:
 
@@ -59,7 +59,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateEmailGroup](../public/frontend/components/ui/admin/common/CreateEmailGroups.png)
+![CreateEmailGroup](/frontend/components/ui/admin/common/CreateEmailGroups.png)
 ### CreateIndustryCategory
 This component can be used as follows:
 
@@ -71,7 +71,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateIndustryCategory](../public/frontend/components/ui/admin/common/CreateIndustryCategories.png)
+![CreateIndustryCategory](/frontend/components/ui/admin/common/CreateIndustryCategories.png)
 ### CreateIndustrySubCategory
 This component can be used as follows:
 
@@ -83,7 +83,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateIndustrySubCategory](../public/frontend/components/ui/admin/common/CreateIndustrySubCategories.png)
+![CreateIndustrySubCategory](/frontend/components/ui/admin/common/CreateIndustrySubCategories.png)
 ### CreateLawArea
 This component can be used as follows:
 
@@ -95,7 +95,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateLawArea](../public/frontend/components/ui/admin/common/CreateLawAreas.png)
+![CreateLawArea](/frontend/components/ui/admin/common/CreateLawAreas.png)
 ### CreateLawSubArea
 This component can be used as follows:
 
@@ -107,7 +107,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateLawSubArea](../public/frontend/components/ui/admin/common/CreateLawSubAreas.png)
+![CreateLawSubArea](/frontend/components/ui/admin/common/CreateLawSubAreas.png)
 ### CreateOccupation
 This component can be used as follows:
 
@@ -119,7 +119,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateOccupation](../public/frontend/components/ui/admin/common/CreateOccupations.png)
+![CreateOccupation](/frontend/components/ui/admin/common/CreateOccupations.png)
 ### CreateOffice
 This component can be used as follows:
 
@@ -131,7 +131,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateOffice](../public/frontend/components/ui/admin/common/CreateOffices.png)
+![CreateOffice](/frontend/components/ui/admin/common/CreateOffices.png)
 ### CreateOrganisationType
 This component can be used as follows:
 
@@ -143,7 +143,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateOrganisationType](../public/frontend/components/ui/admin/common/CreateOrganisationTypes.png)
+![CreateOrganisationType](/frontend/components/ui/admin/common/CreateOrganisationTypes.png)
 ### CreateSafeStorageDocumentType
 This component can be used as follows:
 
@@ -155,7 +155,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateSafeStorageDocumentType](../public/frontend/components/ui/admin/common/CreateSafeStorageDocumentTypes.png)
+![CreateSafeStorageDocumentType](/frontend/components/ui/admin/common/CreateSafeStorageDocumentTypes.png)
 ### CreateSafeStorageSection
 This component can be used as follows:
 
@@ -167,7 +167,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateSafeStorageSection](../public/frontend/components/ui/admin/common/CreateSafeStorageSections.png)
+![CreateSafeStorageSection](/frontend/components/ui/admin/common/CreateSafeStorageSections.png)
 ### CreateSegment
 This component can be used as follows:
 
@@ -179,7 +179,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateSegment](../public/frontend/components/ui/admin/common/CreateSegments.png)
+![CreateSegment](/frontend/components/ui/admin/common/CreateSegments.png)
 ### CreateSubSegment
 This component can be used as follows:
 
@@ -191,7 +191,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateSubSegment](../public/frontend/components/ui/admin/common/CreateSubSegments.png)
+![CreateSubSegment](/frontend/components/ui/admin/common/CreateSubSegments.png)
 ### CreateStandardDisbursement
 This component can be used as follows:
 
@@ -203,7 +203,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateStandardDisbursement](../public/frontend/components/ui/admin/common/CreateStandardDisbursements.png)
+![CreateStandardDisbursement](/frontend/components/ui/admin/common/CreateStandardDisbursements.png)
 
 ## Dynamic-parameters
 ### CreateDynamicParameter
@@ -219,7 +219,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateDynamicParameter](../public/frontend/components/ui/admin/dynamicParameters/CreateDynamicParameters.png)
+![CreateDynamicParameter](/frontend/components/ui/admin/dynamicParameters/CreateDynamicParameters.png)
 ### DeleteDynamicParameter
 This component customises the [`modal`](./components-common.md#modal) component to display a confirmation modal for deleting Dynamic Parameter.
 
@@ -234,7 +234,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![DeleteDynamicParameter](../public/frontend/components/ui/admin/dynamicParameters/DeleteDynamicParameters.png)
+![DeleteDynamicParameter](/frontend/components/ui/admin/dynamicParameters/DeleteDynamicParameters.png)
 ### DynamicParameter
 :::danger Deprecated
 Using code in `ALP\App\src\views\admin\DynamicParameters.vue`
@@ -249,7 +249,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![DynamicParameter](../public/frontend/components/ui/admin/dynamicParameters/DynamicParameter.png) -->
+![DynamicParameter](/frontend/components/ui/admin/dynamicParameters/DynamicParameter.png) -->
 
 ## Email-template
 ### CreateEmailTemplate
@@ -265,7 +265,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateEmailTemplate](../public/frontend/components/ui/admin/email-template/CreateEmailTemplates.png)
+![CreateEmailTemplate](/frontend/components/ui/admin/email-template/CreateEmailTemplates.png)
 
 ## Entity-parameters
 ### CreateEntityParameter
@@ -282,7 +282,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateEntityParameter](../public/frontend/components/ui/admin/entityParameters/CreateEntityParametersList.png)
+![CreateEntityParameter](/frontend/components/ui/admin/entityParameters/CreateEntityParametersList.png)
 ### EntityParametersList
 This component sets up the page to display list of entity parameters, including the [`CreateEntityParameter`](#createentityparameter) component as an event of a button.
 
@@ -296,7 +296,7 @@ component: () =>
 ```
 
 The following is a visual screenshot of the modal:
-![EntityParametersList](../public/frontend/components/ui/admin/entityParameters/EntityParametersList.png)
+![EntityParametersList](/frontend/components/ui/admin/entityParameters/EntityParametersList.png)
 
 ## Metabase
 ### CreateMetabaseReport
@@ -312,7 +312,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateMetabaseReport](../public/frontend/components/ui/admin/metabase/CreateMetabaseReport.png)
+![CreateMetabaseReport](/frontend/components/ui/admin/metabase/CreateMetabaseReport.png)
 
 ## Metabase-groups
 ### CreateMetabaseReportGroup
@@ -328,7 +328,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateMetabaseReportGroup](../public/frontend/components/ui/admin/metabase-groups/CreateMetabaseReportGroup.png)
+![CreateMetabaseReportGroup](/frontend/components/ui/admin/metabase-groups/CreateMetabaseReportGroup.png)
 
 ## Offerings
 ### ComponentSelector
@@ -347,7 +347,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the side bar:
-![ComponentSelector](../public/frontend/components/ui/admin/offering/ComponentSelector.png)
+![ComponentSelector](/frontend/components/ui/admin/offering/ComponentSelector.png)
 ### CreateOffering
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering.
 
@@ -361,7 +361,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateOffering](../public/frontend/components/ui/admin/offering/CreateOffering.png)
+![CreateOffering](/frontend/components/ui/admin/offering/CreateOffering.png)
 ### CreateOfferingCategory
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering category.
 
@@ -375,7 +375,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateOfferingCategory](../public/frontend/components/ui/admin/offering/CreateOfferingCategory.png)
+![CreateOfferingCategory](/frontend/components/ui/admin/offering/CreateOfferingCategory.png)
 ### CreateOfferingComponent
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering component.
 
@@ -389,7 +389,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateOfferingComponent](../public/frontend/components/ui/admin/offering/CreateOfferingComponent.png)
+![CreateOfferingComponent](/frontend/components/ui/admin/offering/CreateOfferingComponent.png)
 ### CreateOfferingOutcome
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new offering outcome.
 
@@ -403,7 +403,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateOfferingOutcome](../public/frontend/components/ui/admin/offering/CreateOfferingOutcome.png)
+![CreateOfferingOutcome](/frontend/components/ui/admin/offering/CreateOfferingOutcome.png)
 ### InlineOfferingComponent
 This component creates and displays each offering outcome component integrating the [`UpDownSwitch`](./components-common.md#updownswitch) component and the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing functionality.
 
@@ -420,7 +420,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the component:
-![InlineOfferingComponent](../public/frontend/components/ui/admin/offering/InlineOfferingComponent.png)
+![InlineOfferingComponent](/frontend/components/ui/admin/offering/InlineOfferingComponent.png)
 ### InlineOfferingOutcome
 This component creates and displays each offering outcome integrating the [`UpDownSwitch`](./components-common.md#updownswitch) component and the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing functionality.
 
@@ -435,7 +435,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the component:
-![InlineOfferingOutcome](../public/frontend/components/ui/admin/offering/InlineOfferingOutcome.png)
+![InlineOfferingOutcome](/frontend/components/ui/admin/offering/InlineOfferingOutcome.png)
 ### InlineOfferingOutcomeObjectionGuarantee
 :::danger Deprecated
 :::
@@ -456,7 +456,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the component:
-![InlineOfferingProblemOutcome](../public/frontend/components/ui/admin/offering/InlineOfferingProblemOutcome.png)
+![InlineOfferingProblemOutcome](/frontend/components/ui/admin/offering/InlineOfferingProblemOutcome.png)
 ### MergeOffering
 This component customises the [`modal`](./components-common.md#modal), the [`modalForm`](./components-common.md#modalform) and the [`offeringSelector`](components-input.md#xxxselectors) components to display a modal for merging offerings.
 
@@ -470,7 +470,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![MergeOffering](../public/frontend/components/ui/admin/offering/MergeOffering.png)
+![MergeOffering](/frontend/components/ui/admin/offering/MergeOffering.png)
 
 ## Project-templates
 ### CreateProjectTemplate
@@ -486,7 +486,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateProjectTemplate](../public/frontend/components/ui/admin/projectTemplate/CreateProjectTemplates.png)
+![CreateProjectTemplate](/frontend/components/ui/admin/projectTemplate/CreateProjectTemplates.png)
 ### CreateProjectTemplateScheduler
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Project Template scheduler, which also includes a toggle option for repeats. 
 
@@ -501,7 +501,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateProjectTemplateScheduler](../public/frontend/components/ui/admin/projectTemplate/CreateProjectTemplateScheduler.png)
+![CreateProjectTemplateScheduler](/frontend/components/ui/admin/projectTemplate/CreateProjectTemplateScheduler.png)
 ### InlineProjectTemplateTask
 This component creates and displays each Inline Project Template Tasks, integrating the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing functionality, an option to choose from inline input for normal task and search and choosing from [`standard tasks`](#standard-tasks).
 
@@ -524,7 +524,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the component:
-![InlineProjectTemplateTask](../public/frontend/components/ui/admin/projectTemplate/InlineProjectTemplateTask.png)
+![InlineProjectTemplateTask](/frontend/components/ui/admin/projectTemplate/InlineProjectTemplateTask.png)
 ### InlineProjectTemplateTaskStep
 This component is created using the [`InlineInput`](./components-input.md#inlineinput) component to allow inline editing functionality for task steps.
 
@@ -542,7 +542,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the component:
-![InlineProjectTemplateTaskStep](../public/frontend/components/ui/admin/projectTemplate/InlineProjectTemplateTaskStep.png)
+![InlineProjectTemplateTaskStep](/frontend/components/ui/admin/projectTemplate/InlineProjectTemplateTaskStep.png)
 ### ProjectTemplateTask
 This component sets up the page to display the [`slideOver`](components-ui-user.md#slideover) window for editing the project template task, including the [`InlineInput`](./components-input.md#inlineinput) and [`InlineProjectTemplateTaskStep`](#inlineprojecttemplatetaskstep) components.
 
@@ -556,7 +556,7 @@ component: () =>
 ```
 
 The following is a visual screenshot of the component:
-![ProjectTemplateTask](../public/frontend/components/ui/admin/projectTemplate/ProjectTemplateTask.png)
+![ProjectTemplateTask](/frontend/components/ui/admin/projectTemplate/ProjectTemplateTask.png)
 ### ProjectTemplateTaskMetadata
 This component is created using the [`dynamicInput`](./components-input.md#dynamicinput) component to allow inline editing functionality for task steps.
 
@@ -570,7 +570,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the component:
-![ProjectTemplateTaskMetadata](../public/frontend/components/ui/admin/projectTemplate/ProjectTemplateTaskMetadata.png)
+![ProjectTemplateTaskMetadata](/frontend/components/ui/admin/projectTemplate/ProjectTemplateTaskMetadata.png)
 
 
 ## Resource-urls
@@ -587,7 +587,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateResourceUrl](../public/frontend/components/ui/admin/resource-urls/CreateResourceUrls.png)
+![CreateResourceUrl](/frontend/components/ui/admin/resource-urls/CreateResourceUrls.png)
 
 ## Roles
 ### CreateRole
@@ -603,7 +603,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateRole](../public/frontend/components/ui/admin/roles/CreateRole.png)
+![CreateRole](/frontend/components/ui/admin/roles/CreateRole.png)
 ### Role
 This component customises the [`slideOver`](components-ui-user.md#slideover) window for managing permissions in the system of a role.
 
@@ -620,7 +620,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![Role](../public/frontend/components/ui/admin/roles/Role.png)
+![Role](/frontend/components/ui/admin/roles/Role.png)
 
 
 ## Sprints
@@ -637,7 +637,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateSprint](../public/frontend/components/ui/admin/sprints/CreateSprint.png)
+![CreateSprint](/frontend/components/ui/admin/sprints/CreateSprint.png)
 
 ## Standard-tasks
 ### CreateStandardTask
@@ -653,7 +653,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateStandardTask](../public/frontend/components/ui/admin/standard-tasks/CreateStandardTask.png)
+![CreateStandardTask](/frontend/components/ui/admin/standard-tasks/CreateStandardTask.png)
 ### InlineStandardTaskStep
 This component creates and displays each Inline Standard Task Steps, integrating the [`EditInlineInput`](./components-input.md#editinlineinput) component to allow inline editing functionality, an option to select and choose resources to be included in the task step using the [`ResourceSelector`](components-ui-user.md#resourceselector), [`ResourceUrlSelector`](components-ui-user.md#resourceurlselector) and [`SyntaqResourceSelector`](components-ui-user.md#syntaqresourceselector).
 
@@ -670,7 +670,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the component:
-![InlineStandardTaskStep](../public/frontend/components/ui/admin/standard-tasks/InlineStandardTaskStep.png)
+![InlineStandardTaskStep](/frontend/components/ui/admin/standard-tasks/InlineStandardTaskStep.png)
 ### StandardTask
 This component sets up the page to display the [`slideOver`](components-ui-user.md#slideover) window for editing the project template task, including the [`InlineInput`](./components-input.md#inlineinput) and [`InlineStandardTaskStep`](#inlinestandardtaskstep) components.
 
@@ -684,7 +684,7 @@ component: () =>
 ```
 
 The following is a visual screenshot of the component:
-![StandardTask](../public/frontend/components/ui/admin/standard-tasks//StandardTask.png)
+![StandardTask](/frontend/components/ui/admin/standard-tasks//StandardTask.png)
 ### StandardTaskMetadata
 This component is created using the [`dynamicInput`](./components-input.md#dynamicinput) component to allow inline editing functionality for task metadata.
 
@@ -697,7 +697,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the component:
-![StandardTaskMetadata](../public/frontend/components/ui/admin/standard-tasks/StandardTaskMetadata.png)
+![StandardTaskMetadata](/frontend/components/ui/admin/standard-tasks/StandardTaskMetadata.png)
 
 ## Trusts
 ### CreateTrustAccount
@@ -713,7 +713,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateTrustAccount](../public/frontend/components/ui/admin/trusts/CreateTrustAccount.png)
+![CreateTrustAccount](/frontend/components/ui/admin/trusts/CreateTrustAccount.png)
 
 ## Users
 ### ChangePassword
@@ -730,7 +730,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![ChangePassword](../public/frontend/components/ui/admin/users/ChangePassword.png)
+![ChangePassword](/frontend/components/ui/admin/users/ChangePassword.png)
 ### CreateRemuneration
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new Remuneration.
 
@@ -744,7 +744,7 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateRemuneration](../public/frontend/components/ui/admin/users/CreateRemunerations.png)
+![CreateRemuneration](/frontend/components/ui/admin/users/CreateRemunerations.png)
 ### CreateUser
 This component customises the [`modal`](./components-common.md#modal) and the [`modalForm`](./components-common.md#modalform)  components to display a modal for creating new user.
 
@@ -758,5 +758,5 @@ This component can be used as follows:
 ```
 
 The following is a visual screenshot of the modal:
-![CreateUser](../public/frontend/components/ui/admin/users/CreateUsers.png)
+![CreateUser](/frontend/components/ui/admin/users/CreateUsers.png)
 
