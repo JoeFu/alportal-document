@@ -16,8 +16,9 @@ hero:
       text: Get Started
       link: /guide/introduction
     - theme: alt
-      text: API Examples
-      link: /api-examples
+      text: User Manual
+      link: 'https://andreyev-wiki.azurewebsites.net'
+
 
 features:
   - title: 🧜‍♀️ For Fontend Developers
