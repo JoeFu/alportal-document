@@ -17,5 +17,3 @@ However, Contacts are also used to store information for other people, such as O
 An `Organisation` represents a company or organisation that the firm has interacted with in some way.
 
 Typically this will be the organisation that a Contact either owns, is employed by, or is associated with in some other way.
-
-

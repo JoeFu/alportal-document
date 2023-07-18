@@ -81,7 +81,7 @@ To login to the system when running locally, an admin user is initialised.
 :::tip Log in
 Username : `admin@example.com`
 
-Password : `qwe123`
+Password : `123qwe`
 
 One-Time Passcode : Can be ***viewed*** and ***edited*** in **database table** 'alp/table/user_one_time_passwords'
 :::
