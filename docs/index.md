@@ -15,6 +15,9 @@ hero:
     - theme: brand
       text: Get Started
       link: /guide/introduction
+    - theme: alt
+      text: User Manual
+      link: 'https://andreyev-wiki.azurewebsites.net'
 
 
 features:

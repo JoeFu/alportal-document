@@ -59,7 +59,6 @@ function nav() {
                 { text: 'Deployment', link: '/deployment/introduction' },
             ]
         },
-        { text: 'User Manual ', link: 'https://andreyev-wiki.azurewebsites.net' },
         { text: 'Glossary', link: '/glossary/introduction' },
         // { text: 'Release Notes ', link: '/release-notes/' },
         { text: 'Road Map ', link: '/road-map/introduction' },
