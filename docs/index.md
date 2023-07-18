@@ -1,7 +1,7 @@
 ---
 layout: home
 
-title: Andreyev Lawyers
+title: Andreyev Lawyers 
 titleTemplate: Documentations for AL Portal
 
 
@@ -10,10 +10,14 @@ editLink: true
 hero:
   name: Documentations for
   text: AL Portal (2.0)
+  tagline: For Development Team
   actions:
     - theme: brand
       text: Get Started
       link: /guide/introduction
+    - theme: alt
+      text: API Examples
+      link: /api-examples
 
 features:
   - title: 🧜‍♀️ For Fontend Developers

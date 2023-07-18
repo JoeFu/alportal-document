@@ -1,6 +1,6 @@
-# Project Structure
+# Frontend Project Structure
 
-The application is built with ***Vue.js*** and follows a reasonably standard approach. 
+The ALP application is built with ***Vue.js***. 
 
 While we use our customised Components, we do uses the standard ***Vue Router*** and ***Vuex*** libraries.
 
@@ -18,7 +18,7 @@ The following are file structure of the main folders and files that will be expl
 
 ## Components
 
-Components are the fundamental building blocks of a ***Vue.js*** application, and many other modern Single-Page Application (***SPA***) frameworks. They encapsulate the view, logic, and state required to operate a specific part of the page, making them reusable and modular.
+Components contains the fundamental building blocks of our ***Vue.js*** application, with a Single-Page Application (***SPA***) frameworks. Our components are customised to encapsulate the view, logic, and state required to operate a small and specific part of the page, it is reusable and modular.
 
 ```
 📦src
@@ -29,7 +29,7 @@ Components are the fundamental building blocks of a ***Vue.js*** application, an
  ┗   ┗   📂ui
 ```
 
-Components can be categorized into several types, including:
+Components are categorized into the following types,
 
 #### [Common components](./components-common.md)
 
@@ -60,6 +60,7 @@ We have a few composable functions extracted, and they can be found in the `/App
 ```
 📦src
  ┣   📂composable
+ ┣   ┣   date.ts
  ┗   ┗   ...
 ```
 
@@ -74,10 +75,11 @@ It deals with the management of the flow of data and ensuring that the applicati
 ```
 📦src
  ┣   📂network
+ ┣   ┣   xxx-service-proxies.ts
  ┗   ┗   ...
 ```
 
-The folder includes files in charge of the network requests for internal APIs and 3rd party APIs such as [activeCampaign](/back-end/external-services.md#active-campaign), [Xero](/back-end/external-services.md#xero) etc.
+The folder includes files in charge of the network requests for internal APIs and 3rd party APIs such as [activeCampaign](/back-end/services/external/activecampaign.md), [Xero](/back-end/services/external/xeroservices.md) etc.
 
 #### Example:
 
@@ -104,7 +106,7 @@ The router includes a **verification process** for each routing request. This ve
 ```
 📦src
  ┣   📂router
- ┗   ┗   📜index.ts
+ ┗   ┗   index.ts
 ```
 
 For more information on the router in this application, refer to the `/App/src/router/index.ts` file as well as the official ***Vue Router*** documentation  [here](https://router.vuejs.org/).
@@ -121,7 +123,7 @@ The ***Vuex Store*** is also designed to be highly modular and extensible, so yo
 ```
 📦src
  ┣   📂store
- ┃   ┣   📜index.ts
+ ┃   ┣   index.ts
  ┗   ┗   ...
 ```
 

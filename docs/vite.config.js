@@ -1,5 +1,7 @@
 import { SearchPlugin } from "vitepress-plugin-search";
-import { defineConfig } from "vite";
+import { defineConfig } from "vitepress";
+import path from "path";
+
 
 export default defineConfig({
   plugins: [
@@ -12,6 +14,14 @@ export default defineConfig({
       tokenize: "full"
     }),
   ],
+  resolve: {
+    alias: {
+      "vitepress-plugin-mermaid/Mermaid.vue": path.join(
+        __dirname,
+        "../dist/Mermaid.vue"
+      ),
+    },
+  },
   server: {
     fs: {
       // Allow serving files from one level up to the project root

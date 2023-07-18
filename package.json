@@ -6,19 +6,19 @@
   "repository": "https://github.com/JoeFu/alportal-document.git",
   "author": "JoeFu <fuzeqi@gmail.com>",
   "license": "MIT",
+  "devDependencies": {
+    "@mermaid-js/mermaid-mindmap": "^9.3.0",
+    "flexsearch": "^0.7.31",
+    "markdown-it": "^13.0.1",
+    "mermaid": "^9.4.3",
+    "vitepress": "^1.0.0-alpha.64",
+    "vitepress-plugin-mermaid": "^2.0.10",
+    "vitepress-plugin-search": "^1.0.4-alpha.19"
+  },
   "scripts": {
     "docs:dev": "vitepress dev docs",
     "docs:build": "vitepress build docs",
+    "docs:preview": "vitepress preview docs",
     "docs:serve": "vitepress serve docs"
-  },
-  "devDependencies": {
-    "flexsearch": "^0.7.31",
-    "markdown-it": "^13.0.1",
-    "stylus": "^0.59.0",
-    "vite": "^4.1.3",
-    "vitepress": "^1.0.0-alpha.43",
-    "vitepress-plugin-mermaid": "^2.0.8",
-    "vitepress-plugin-search": "^1.0.4-alpha.19",
-    "vue": "^3.2.45"
   }
 }
