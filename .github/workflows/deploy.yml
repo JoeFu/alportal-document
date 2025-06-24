@@ -5,7 +5,7 @@ on:
       - main
 
 env:
-  AZURE_WEBAPP_NAME: alportal-docs    # set this to your application's name
+  AZURE_WEBAPP_NAME: adlv-developer    # set this to your application's name
   NODE_VERSION: '16.x'                # set this to the node version to use
 
 jobs:
