@@ -13,8 +13,8 @@ jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
     steps:
-      # Checkout repo
-      - name: Checkout Code
+      # Checkout your code
+      - name: Checkout code
         uses: actions/checkout@v4
 
       # Setup Node.js
@@ -28,18 +28,24 @@ jobs:
       - name: Install dependencies
         run: yarn install --frozen-lockfile
 
-      # Build VitePress
+      # Build VitePress static site
       - name: Build VitePress site
         run: yarn docs:build
 
-      # Prepare package.json for Azure Web App
-      - name: Prepare package.json for Azure Web App
+      # Prepare webapp directory for deployment
+      - name: Prepare webapp directory
         run: |
           mkdir -p webapp
           cp -r docs/.vitepress/dist/* webapp/
-          cp package.json webapp/package.json
-          yarn add serve --cwd webapp
-          echo '{"scripts": {"start": "serve -s . -l 8080"}}' > webapp/package.json
+          # Write package.json with serve
+          echo '{ \
+            "name": "webapp", \
+            "version": "1.0.0", \
+            "private": true, \
+            "scripts": { "start": "serve -s . -l 8080" }, \
+            "dependencies": { "serve": "^15.0.1" } \
+          }' > webapp/package.json
+          cd webapp && yarn install
 
       # Deploy to Azure Web App
       - name: Deploy to Azure Web App
