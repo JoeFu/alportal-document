@@ -1,31 +1,50 @@
-name: Deploy
+name: Deploy VitePress to Azure Web App
+
 on:
   push:
     branches:
-      - main
+      -"*"
 
 env:
-  AZURE_WEBAPP_NAME: adlv-developer    # set this to your application's name
-  NODE_VERSION: '18.x'                # set this to the node version to use
+  AZURE_WEBAPP_NAME: adlv-developer
+  NODE_VERSION: '20.x'
 
 jobs:
-  deploy:
-    runs-on: ubuntu-latest    
+  build-and-deploy:
+    runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v2
-    - uses: actions/setup-node@v3
-      with:
-        node-version: ${{ env.NODE_VERSION }}
-        cache: yarn
-    - run: yarn install --frozen-lockfile
-    
-    - name: Build
-      run: 
-        yarn docs:build
+      # Checkout repo
+      - name: Checkout Code
+        uses: actions/checkout@v4
 
-    - name: 'Deploy'
-      uses: azure/webapps-deploy@v2
-      with:
-        app-name: ${{ env.AZURE_WEBAPP_NAME }}
-        publish-profile: ${{ secrets.DOCS_AZURE_WEBAPP_PUBLISH_PROFILE }}
-        package: docs/.vitepress/dist
+      # Setup Node.js
+      - name: Setup Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: ${{ env.NODE_VERSION }}
+          cache: yarn
+
+      # Install dependencies
+      - name: Install dependencies
+        run: yarn install --frozen-lockfile
+
+      # Build VitePress
+      - name: Build VitePress site
+        run: yarn docs:build
+
+      # Prepare package.json for Azure Web App
+      - name: Prepare package.json for Azure Web App
+        run: |
+          mkdir -p webapp
+          cp -r docs/.vitepress/dist/* webapp/
+          cp package.json webapp/package.json
+          yarn add serve --cwd webapp
+          echo '{"scripts": {"start": "serve -s . -l 8080"}}' > webapp/package.json
+
+      # Deploy to Azure Web App
+      - name: Deploy to Azure Web App
+        uses: azure/webapps-deploy@v2
+        with:
+          app-name: ${{ env.AZURE_WEBAPP_NAME }}
+          publish-profile: ${{ secrets.DOCS_AZURE_WEBAPP_PUBLISH_PROFILE }}
+          package: ./webapp
