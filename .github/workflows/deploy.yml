@@ -1,17 +1,19 @@
-name: Deploy VitePress to Azure Web App
+name: Deploy VitePress to Azure Static Web Apps
 
 on:
   push:
     branches:
       - "*"
+  workflow_dispatch:
 
 env:
-  AZURE_WEBAPP_NAME: adlv-developer
+  AZURE_STATIC_WEB_APPS_API_TOKEN: ${{ secrets.AZURE_STATIC_WEB_APPS_API_TOKEN }}
   NODE_VERSION: '20.x'
 
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
+    name: Build and Deploy
     steps:
       # Checkout your code
       - name: Checkout code
@@ -19,7 +21,7 @@ jobs:
 
       # Setup Node.js
       - name: Setup Node.js
-        uses: actions/setup-node@v3
+        uses: actions/setup-node@v4
         with:
           node-version: ${{ env.NODE_VERSION }}
           cache: yarn
@@ -32,30 +34,13 @@ jobs:
       - name: Build VitePress site
         run: yarn docs:build
 
-      # Prepare webapp directory for deployment
-      - name: Prepare webapp directory
-        run: |
-          mkdir -p webapp
-          cp -r docs/.vitepress/dist/* webapp/
-          cat > webapp/package.json <<EOF
-          {
-            "name": "webapp",
-            "version": "1.0.0",
-            "private": true,
-            "scripts": {
-              "start": "serve -s . -l 8080"
-            },
-            "dependencies": {
-              "serve": "^15.0.1"
-            }
-          }
-          EOF
-          cd webapp && yarn install
-
-      # Deploy to Azure Web App
-      - name: Deploy to Azure Web App
-        uses: azure/webapps-deploy@v2
+      # Deploy to Azure Static Web Apps
+      - name: Deploy to Azure Static Web Apps
+        uses: Azure/static-web-apps-deploy@v1
         with:
-          app-name: ${{ env.AZURE_WEBAPP_NAME }}
-          publish-profile: ${{ secrets.DOCS_AZURE_WEBAPP_PUBLISH_PROFILE }}
-          package: ./webapp
+          azure_static_web_apps_api_token: ${{ env.AZURE_STATIC_WEB_APPS_API_TOKEN }}
+          repo_token: ${{ secrets.GITHUB_TOKEN }}
+          action: "upload"
+          app_location: "/" # Location of your source code
+          output_location: "docs/.vitepress/dist" # Location of your built app
+          app_build_command: "yarn docs:build"
