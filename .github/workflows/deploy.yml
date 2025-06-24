@@ -3,7 +3,7 @@ name: Deploy VitePress to Azure Web App
 on:
   push:
     branches:
-      -"*"
+      - "*"
 
 env:
   AZURE_WEBAPP_NAME: adlv-developer
